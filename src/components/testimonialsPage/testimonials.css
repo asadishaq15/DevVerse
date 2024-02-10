@@ -1,0 +1,148 @@
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+
+  width: 100%;
+}
+
+/* Adjustments for testimonial info */
+.testimonial-info {
+  width: 100%;
+}
+
+.testimonial-info h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.testimonial-info p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.testimonial-info button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.author-image {
+  width: 100px; 
+  height: 100px; 
+}
+
+.author-image img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 50%; 
+}
+
+.testimonials-carousel-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  width: 100%; 
+}
+
+/* Adjustments for testimonial items */
+.testimonial-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  border: #666;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 550px;
+  width: 100%; /* Adjusted width for all screens */
+  transition: opacity 0.5s ease;
+  list-style: initial;
+}
+
+.testimonial-item p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .testimonials-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .testimonial-info {
+    width: 30%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .testimonials-carousel-container {
+    width: 85%;
+  }
+
+  .testimonial-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials-container {
+    padding: 50px;
+  }
+
+  .testimonial-info {
+    margin-bottom: 50px;
+  }
+
+  .testimonial-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .testimonials-carousel-container {
+    max-width: 600px; /* Adjust the width for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .testimonials-carousel-container {
+    max-width: 500px; /* Adjust the width for even smaller screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .testimonials-container {
+    padding: 40px;
+  }
+
+  .testimonial-info {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .testimonials-carousel-container {
+    width: 100%;
+  }
+
+  .testimonial-item {
+    width: 100%;
+  }
+}

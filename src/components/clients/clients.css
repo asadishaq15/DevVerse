@@ -1,0 +1,56 @@
+/* Clients.css */
+
+.clients {
+    margin-top: 100px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-header {
+    text-align: center;
+  }
+  
+  .section-header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .section-header p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .clients-carousel-container {
+    position: relative;
+  }
+  
+  .owl-nav {
+    position: absolute;
+    top: 20px; /* Adjust the top distance */
+    right: 20px; /* Adjust the right distance */
+  }
+  
+  .owl-nav button {
+    font-size: 24px;
+    color: #007bff; /* Adjust arrow color */
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .owl-nav button:hover {
+    color: #0056b3; /* Adjust arrow color on hover */
+  }
+  
+  .client-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  

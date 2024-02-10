@@ -1,0 +1,150 @@
+.container {
+  margin: auto;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.page-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 23%;
+  height: 2px;
+  background-color: #007bff;
+}
+
+.page-title::before {
+  content: "";
+  position: absolute;
+  left: 23%;
+  bottom: -5px;
+  width: 76%;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.quote-form {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 45px;
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.cool-blue-option {
+  color: #007bff;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 8px; /* Reduce the padding */
+  border-radius: 6px; /* Adjust the border radius */
+  margin-bottom: 5px; /* Reduce the margin between rows */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); /* Reduce the shadow */
+}
+
+.checkbox-group input {
+  margin-right: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+/* Styling for file input */
+input[type="file"] {
+  margin-top: 5px;
+}
+
+/* Bold and slightly larger font size for the flag app section */
+.flag-app-section .form-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+
+  }
+}
+@media (max-width: 576px) {
+  .checkbox-group label {
+    margin-bottom: 8px; /* Add margin between labels for better spacing */
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 5px; /* Add margin to create space between checkbox and label */
+    width: 5px;
+    height: 5px;
+  }
+}

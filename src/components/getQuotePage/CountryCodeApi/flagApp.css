@@ -1,0 +1,48 @@
+/* Add the following styles to your flagApp.css file */
+
+.container-details {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+flex-direction: row;
+}
+
+.flag-image img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.area-code {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.phone-input {
+  flex: 1; /* Takes up remaining space in the row */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Optional: Add media queries for responsive design */
+@media (max-width: 768px) {
+  .flag-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flag-image img {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .area-code {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}

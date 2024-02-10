@@ -1,0 +1,95 @@
+p,
+a {
+  color: #ddd;
+}
+
+.contact-info-container {
+  width: 90%;
+  max-width: 370px;
+  height: 20%;
+  margin: 30px auto;
+  padding: 5px;
+  border-radius: 8px;
+  color: #ddd;
+  background-color: #4a74df;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-title,
+.working-hours-title {
+  font-size: 17px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contact-info-title::after,
+.contact-info-title::before,
+.working-hours-title::after,
+.working-hours-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+}
+
+.contact-info-title::after {
+  width: 40%;
+  background-color: #007bff;
+}
+
+.contact-info-title::before {
+  width: 76%;
+  background-color: #dbdbdb;
+}
+
+.working-hours-title::after {
+  width: 29%;
+  background-color: #007bff;
+}
+
+.working-hours-title::before {
+  width: 70%;
+  background-color: #dbdbdb;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details li {
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  font-size: 23px;
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  .contact-info-container {
+    padding: 3px; /* Reduce padding */
+    max-width: 500px; /* Adjust max-width */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 20px auto; /* Adjust margin */
+    border-radius: 0;
+  }
+
+  .contact-info-title,
+  .working-hours-title {
+    font-size: 15px; /* Reduce font size */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+
+  .contact-details li {
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .contact-icon {
+    font-size: 20px; /* Reduce font size */
+  }
+}

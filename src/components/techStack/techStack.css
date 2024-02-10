@@ -1,0 +1,127 @@
+/* TechStackSlider.css */
+
+/* TechStackSlider.css */
+.tech-stack-heading {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333; /* Adjust the heading color as needed */
+  margin-bottom: 20px;
+}
+.tech-stack-slider-container {
+  width: 80%;
+  margin: auto;
+  background-color: #f9f9f9; /* Updated background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow for a subtle lift */
+}
+
+.slider-item {
+  display: flex;
+  justify-content: center;
+}
+
+.tech-logo-container {
+  background-color: #ffffff; /* Adjusted background color for consistency */
+  padding: 15px; /* Adjusted padding for better spacing */
+  margin: 10px; /* Adjusted margin between logos for consistency */
+  border-radius: 8px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-logo {
+  max-width: 100%;
+  max-height: 100px;
+  margin: auto;
+}
+
+.custom-prev-arrow,
+.custom-next-arrow {
+  font-size: 24px;
+  color: #fff;
+  background-color: #222427;
+  padding: 12px;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.tech-stack-slider-container:hover .custom-prev-arrow,
+.tech-stack-slider-container:hover .custom-next-arrow {
+  opacity: 1; /* Show arrows on hover */
+}
+.custom-prev-arrow {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-next-arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+  background-color: #0056b3;
+}
+
+
+.slider-item {
+  display: flex;
+  justify-content: center;
+}
+
+.tech-logo-container {
+  background-color: #ffffff; /* Adjusted background color for consistency */
+  padding: 15px; /* Adjusted padding for better spacing */
+  margin: 10px; /* Adjusted margin between logos for consistency */
+  border-radius: 8px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-logo {
+  max-width: 100%;
+  max-height: 100px;
+  margin: auto;
+}
+
+.custom-prev-arrow,
+.custom-next-arrow {
+  font-size: 24px;
+  color: #fff;
+  background-color: #313943;
+  padding: 12px; /* Slightly increased padding */
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for a subtle lift */
+}
+
+.custom-prev-arrow {
+  position: absolute;
+  left: 20px; /* Adjusted distance from the left */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-next-arrow {
+  position: absolute;
+  right: 20px; /* Adjusted distance from the right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+  background-color: #282e35;
+}
