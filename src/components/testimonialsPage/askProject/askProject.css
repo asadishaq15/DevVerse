@@ -1,14 +1,13 @@
-/* WideCard.css */
 
 .wide-card {
-  width: 100%; /* Set the card to cover full width */
-  margin: 0 auto; /* Center the card horizontally */
+  width: 100%; 
+  margin: 0 auto; 
   padding: 60px; /* Add padding for spacing */
   text-align: center; /* Center the text */
   background-color: #f0f0f0; /* Set background color */
   border-radius: 8px; /* Add some border radius for rounded corners */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-  height: 450px; /* Increase the height of the card */
+  height: 400px; /* Increase the height of the card */
   position: relative; /* Position the wave element */
 }
 

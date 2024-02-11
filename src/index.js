@@ -24,7 +24,12 @@ import WhyUS from './components/whyUs/whyUs';
 import GetQuotePage from './components/getQuotePage/getQuotePage';
 import ReqQuotePage from './components/getQuotePage/reqQuote/reqQuote';
 import DeliveredProjects from './components/testimonialsPage/deliveredProjects/deliveredProjects';
-import AskProject from './components/testimonialsPage/askProject/asjProject';
+import AskProject from './components/testimonialsPage/askProject/askProject';
+import Testimonials from './components/testimonialsPage/testimonials/testimonials';
+import TestimonialsPage from './components/testimonialsPage/testimonials';
+import TestimonialsBanner from './components/testimonialsPage/testimonialBanner/TestimonialsBanner';
+import Header from './components/navbar';
+import OneStopSolution from './components/OneStopSolution/oneStopSolution';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -36,19 +41,23 @@ root.render(
     {/* <App /> */}
    {/* <Home/> */}
    {/* <About/> */}
+ {/* <Header/> */}
    {/* <Carousel/>
    <WelcomeMessage/>
    <Services/>
    <WhyUS/> */}
-<DeliveredProjects/>
+{/* <DeliveredProjects/>
    <Clients/>
-<AskProject/>
+<AskProject/> */}
   {/* <TeamSection/> */}
   {/* <Contact/> */}
-  {/* <FAQ/> */}
-  {/* <Footer/> */}
+  {/* <FAQ/>
+  <Footer/> */}
   {/* <Portfolio/> */}
 {/* <TechStack/> */}
+<TestimonialsPage/>
+
+{/* <TestimonialsBanner/> */}
 {/* <PortfolioStats/> */}
 
 {/* <FlagApp/> */}

@@ -1,0 +1,35 @@
+/* oneStopSolution.css */
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .heading-container {
+    text-align: center;
+    margin-top: 10px; /* Adjust margin as needed */
+    z-index: 1; /* Ensure the heading appears above the background photo */
+    background: url("https://cdn.pixabay.com/photo/2017/07/08/09/49/red-2483933_1280.jpg") center/cover fixed no-repeat;
+    padding: 10px; /* Add padding around the heading */
+  }
+  
+  .heading {
+    font-size: 28px; /* Adjust font size as needed */
+    color: #fff; /* Set heading color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+  
+  .photo-container {
+    flex: 1; /* Allow the photo container to expand to fill remaining space */
+ margin-bottom: 20px;
+}
+  
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+
+}
+  

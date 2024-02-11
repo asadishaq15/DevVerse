@@ -1,0 +1,81 @@
+/* TestimonialsBanner.css */
+
+.testimonials-banner {
+    position: relative;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzEh7acFyc1r-NqDf-ocljUJawmO6GguLzfPDa4VQOA&s') center/cover fixed no-repeat; /* Adjust background properties */
+    color: #fff; /* Set text color to white or a contrasting color */
+    text-align: left; /* Align text to the left */
+    padding: 100px 20px; /* Adjust padding as needed */
+  }
+  
+  .banner-content {
+    max-width: 650px;
+    padding: 40px;
+    margin-right: auto; /* Push the container to the left side of the page */
+
+  }
+  @media (min-width: 768px) {
+    .banner-content {
+      margin-right: 20px; /* Adjust margin to move content slightly right */
+    }
+  }
+  
+  .banner-content h2 {
+    font-size: 34px; /* Adjust heading font size */
+  color: #3265b7;
+  margin-bottom: 10px;
+  }
+  
+  .banner-content p {
+    font-size: 18px;
+    color: #ffffff;
+    width: 100%;
+    line-height: 1.6;
+    word-spacing: 4px; /* Adjust the spacing between words */
+    border-radius: 8px; /* Limit the width of the paragraph */
+  }
+  
+  .clients-container {
+    margin-top: 50px; /* Adjust as needed */
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0; /* Place waves at the bottom of the container */
+    left: 0;
+    width: 100%;
+    height: 4rem; /* Adjust the height of the wave */
+    background: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/public/wave.png') repeat-x; /* Path to your wave image in the public directory */
+    background-size: 100rem 11rem; /* Adjust the background size */
+    animation: waves 12s linear infinite; /* Adjust animation duration and timing function as needed */
+    background-repeat: repeat-x;
+  }
+  
+  .wave1 {
+    z-index: 1; /* Adjust z-index for layering */
+    opacity: 0.2; /* Adjust opacity if needed */
+    animation-delay: 0s; /* Adjust delay for animation */
+  }
+  
+  .wave2 {
+    z-index: 2; /* Adjust z-index for layering */
+    opacity: 0.2; /* Adjust opacity if needed */
+    animation-delay: 2s; /* Adjust delay for animation */
+    animation-direction: reverse;
+  }
+  
+  .wave3 {
+    z-index: 3; /* Adjust z-index for layering */
+    opacity: 0.2; /* Adjust opacity if needed */
+    animation-delay: 4s; /* Adjust delay for animation */
+  }
+  
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 100rem; /* Adjust the distance the wave travels */
+    }
+  }
+  

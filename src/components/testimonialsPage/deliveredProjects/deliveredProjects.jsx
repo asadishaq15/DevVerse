@@ -4,7 +4,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './deliveredProject.css'; // Ensure to import your CSS file for styling
 
-const CarouselPhotos = ({ photos }) => {
+const DeilveredProjects = ({ photos }) => {
   const DeliveredProjects = [
     {
       id: 1,
@@ -53,10 +53,10 @@ const CarouselPhotos = ({ photos }) => {
 
   return (
     <div className="DeliveredProjects-container">
-      <div className="testimonial-info">
-        <div className="testimonial-heading">
-          <h2>What We Delivered</h2>
-          <p>DevVerse is committed to providing reliable, high-standard mobile apps and software solutions to our clients. We are offering multiple services in Website Development, Graphic Designing, Digital Marketing, and Mobile Apps Development. We make CMS, CRM, and provide ERP solutions</p>
+      <div className="DeliveredProjects-info">
+        <div className="DeliveredProjects-heading">
+          <h2 style={{color:"#3265b7"}}>What We Delivered</h2>
+          <p >DevVerse is committed to providing reliable, high-standard mobile apps and software solutions to our clients. We are offering multiple services in Website Development, Graphic Designing, Digital Marketing, and Mobile Apps Development. We make CMS, CRM, and provide ERP solutions</p>
         </div>
       </div>
       <div className="DeliveredProjects-carousel-container">
@@ -72,4 +72,4 @@ const CarouselPhotos = ({ photos }) => {
   );
 };
 
-export default CarouselPhotos;
+export default DeilveredProjects;
