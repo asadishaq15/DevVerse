@@ -30,6 +30,8 @@ import TestimonialsBanner from './components/testimonialsPage/testimonialBanner/
 import Header from './components/navbar';
 import OneStopSolution from './components/OneStopSolution/oneStopSolution';
 import LatestWorkComponent from './components/ProjectPortfolio/recentProjects';
+import ChatIcon from './components/chatIcon/chatIcon';
+import GoToTop from './components/gotoTop/goToTop';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -54,12 +56,15 @@ root.render(
   {/* <FAQ/>
   <Footer/> */}
 
-{/* <TechStack/> */}
+
 {/* <TestimonialsPage/> */}
 
 {/* <TestimonialsBanner/> */}
 {/* <PortfolioStats/> */}
 <LatestWorkComponent/>
+<TechStack/>
+<ChatIcon/>
+<GoToTop/>
 {/* <FlagApp/> */}
 {/* <GetQuotePage/> */}
 {/* <ReqQuotePage/> */}

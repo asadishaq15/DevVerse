@@ -32,7 +32,7 @@ const GoToTop = () => {
       {isVisible && (
         <TopButton className='top-btn' onClick={goToBtn}>
           <TopIcon>&#8593;</TopIcon>
-          <span>Top</span>
+          <span></span>
         </TopButton>
       )}
     </Wrapper>
@@ -41,23 +41,23 @@ const GoToTop = () => {
 
 const Wrapper = styled.section`
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 105px;
+  right: 15px;
   z-index: 999;
 `;
 
 const TopButton = styled.button`
-  background-color: #3498db;
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  transition: background-color 0.8s ease;
 
   &:hover {
     background-color: #2980b9;
