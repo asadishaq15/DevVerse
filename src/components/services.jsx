@@ -109,7 +109,7 @@ const Services = () => {
       <div className="container">
         <div className="row services-row">
           <div className="section-head col-sm-12" id="service">
-            <div data-aos="zoom-in-up">
+            <div data-aos="fade-up">
             <h1>Our Services</h1>
               </div>
             <p>

@@ -9,10 +9,10 @@ import Team from './components/team';
 import Careers from './components/careers';
 import Contact from './components/contact';
 import Faq from './components/faq';
-import Portfolio from './components/portfolio';
 import Navbar from './components/navbar';
 import Footer from './components/foot';
 import GoToTop from './components/gotoTop/goToTop';
+import LatestWorkComponent from './components/ProjectPortfolio/recentProjects';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<LatestWorkComponent />} />
           <Route path="/team" element={<Team />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />

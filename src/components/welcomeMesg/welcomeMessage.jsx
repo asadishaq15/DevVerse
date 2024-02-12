@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
+import companyLogo from "../../images/CompanyLogo.png"
 import 'aos/dist/aos.css';import './welcomeMessage.css'; // Create a corresponding CSS file for styling
 
 const WelcomeMessage = () => {
@@ -10,7 +11,7 @@ const WelcomeMessage = () => {
   return (
     <div className="welcome-container" data-aos="fade-up">
  <div className="logo-container" data-aos="zoom-in">
-        <img src="https://cdn.pixabay.com/photo/2017/07/25/11/59/logo-2537871_1280.png" alt="Company Logo" className="logo" />
+        <img src={companyLogo} alt="Company Logo" className="logo" />
       </div>
       <div className="text-container">
         <h1 className="welcome-heading" data-aos="fade-right">Welcome to DevVerse – Fastest Growing IT Company</h1>

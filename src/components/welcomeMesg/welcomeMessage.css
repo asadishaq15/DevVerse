@@ -8,6 +8,7 @@
   
   .logo-container {
     flex: 1;
+    background-color: #555;
     text-align: center; /* Center the logo within its container */
   }
   

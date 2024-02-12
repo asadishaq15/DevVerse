@@ -14,7 +14,6 @@ import TeamSection from './components/team';
 import Contact from './components/contact';
 import FAQ from './components/faq';
 import Footer from './components/foot';
-import Portfolio from './components/portfolio';
 import { BrowserRouter } from 'react-router-dom';
 import Carousel from './components/caorusel/carouselComp';
 import TechStack from './components/techStack/techStack';
@@ -30,6 +29,7 @@ import TestimonialsPage from './components/testimonialsPage/testimonials';
 import TestimonialsBanner from './components/testimonialsPage/testimonialBanner/TestimonialsBanner';
 import Header from './components/navbar';
 import OneStopSolution from './components/OneStopSolution/oneStopSolution';
+import LatestWorkComponent from './components/ProjectPortfolio/recentProjects';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -53,13 +53,13 @@ root.render(
   {/* <Contact/> */}
   {/* <FAQ/>
   <Footer/> */}
-  {/* <Portfolio/> */}
+
 {/* <TechStack/> */}
-<TestimonialsPage/>
+{/* <TestimonialsPage/> */}
 
 {/* <TestimonialsBanner/> */}
 {/* <PortfolioStats/> */}
-
+<LatestWorkComponent/>
 {/* <FlagApp/> */}
 {/* <GetQuotePage/> */}
 {/* <ReqQuotePage/> */}
