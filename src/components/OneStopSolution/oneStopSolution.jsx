@@ -13,7 +13,7 @@ const OneStopSolution = () => {
     <div className="container-main">
       {/* Heading */}
       <div className="heading-container">
-        <h2 className="heading">We are One Stop Solution Providers</h2>
+        <h2 className="heading-main" data-aos="fade-right">We are One Stop Solution Providers</h2>
       </div>
       {/* Background photo */}
       <div className="photo-container" data-aos="fade-up"> {/* Add data-aos attribute */}

@@ -3,9 +3,12 @@
 /* TechStackSlider.css */
 .tech-stack-heading {
   text-align: center;
-  font-size: 1.5em;
-  color: #333; /* Adjust the heading color as needed */
-  margin-bottom: 20px;
+  color: black;
+  margin: 30px;
+  font-family: sans-serif;
+  font-weight: 320;
+  font-size: 25px;
+
 }
 .tech-stack-slider-container {
   width: 80%;

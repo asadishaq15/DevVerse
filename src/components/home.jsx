@@ -4,7 +4,6 @@ import Footer from './foot'
 import Contact from './contact'
 import FAQSection from './faq'
 import TeamSection from './team'
-import Services from './services'
 
 const Home = () => {
   return (
@@ -18,7 +17,7 @@ const Home = () => {
       <div className="wave wave2"></div>
       <div className="wave wave3"></div>
     </section>
-    <Services/>
+
     <TeamSection/>
     <Contact/>
     <FAQSection/>

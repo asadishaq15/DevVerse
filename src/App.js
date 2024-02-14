@@ -4,7 +4,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import './App.css';
 import Home from './components/home';
 import About from './components/about';
-import Services from './components/services';
 import Team from './components/team';
 import Careers from './components/careers';
 import Contact from './components/contact';
@@ -13,6 +12,7 @@ import Navbar from './components/navbar';
 import Footer from './components/foot';
 import GoToTop from './components/gotoTop/goToTop';
 import LatestWorkComponent from './components/ProjectPortfolio/recentProjects';
+import Services from './components/services/services';
 
 function App() {
   return (

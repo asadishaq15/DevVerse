@@ -8,7 +8,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import Careers from './components/careers';
 import Home from './components/home';
 import About from './components/about';
-import Services from './components/services';
 import Clients from './components/clients/clients';
 import TeamSection from './components/team';
 import Contact from './components/contact';
@@ -25,13 +24,14 @@ import ReqQuotePage from './components/getQuotePage/reqQuote/reqQuote';
 import DeliveredProjects from './components/testimonialsPage/deliveredProjects/deliveredProjects';
 import AskProject from './components/testimonialsPage/askProject/askProject';
 import Testimonials from './components/testimonialsPage/testimonials/testimonials';
-import TestimonialsPage from './components/testimonialsPage/testimonials';
+import TestimonialsPage from './components/testimonialsPage/testimonials/testimonials';
 import TestimonialsBanner from './components/testimonialsPage/testimonialBanner/TestimonialsBanner';
 import Header from './components/navbar';
 import OneStopSolution from './components/OneStopSolution/oneStopSolution';
 import LatestWorkComponent from './components/ProjectPortfolio/recentProjects';
 import ChatIcon from './components/chatIcon/chatIcon';
 import GoToTop from './components/gotoTop/goToTop';
+import Services from './components/services/services';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -61,8 +61,13 @@ root.render(
 
 {/* <TestimonialsBanner/> */}
 {/* <PortfolioStats/> */}
+<Carousel/>
+<WelcomeMessage/>
 <LatestWorkComponent/>
+<Services/>
 <TechStack/>
+<OneStopSolution/>
+<WhyUS/>
 <ChatIcon/>
 <GoToTop/>
 {/* <FlagApp/> */}

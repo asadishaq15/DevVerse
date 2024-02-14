@@ -1,0 +1,104 @@
+.services-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; 
+
+}
+
+.Services-Heading-container {
+  text-align: center;
+  width: 100vw; 
+  margin: 20px; 
+  color: rgb(255, 255, 255);
+  font-weight: 450;
+  font-family: serif;
+  font-size: 20px;
+  z-index: 1;
+  background: url("https://cdn.pixabay.com/photo/2018/05/05/15/12/chipboard-3376564_1280.jpg") center/cover no-repeat;
+  padding: 40px 10px;
+  background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
+  will-change: transform, opacity; /* Optimize for animations */
+}
+
+.services-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  padding: 25px;
+  width: 120%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px 0px 15px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  will-change: transform, opacity; /* Optimize for animations */
+}
+
+.card-content p {
+  color: #413b3b;
+  font-family: sans-serif;
+  word-spacing: 5px;
+  line-height: 1.7;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 36px;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+h6 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #101010;
+  margin-bottom: 15px;
+}
+
+.contact-button {
+  color: rgb(255, 255, 255);
+  background-color: #007bff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.image-width {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .services-row {
+    max-width: 100%;
+  }
+
+  .service-card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-card {
+    flex-basis: calc(100% - 20px);
+  }
+}
