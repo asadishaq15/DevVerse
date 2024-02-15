@@ -44,7 +44,7 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
   };
   const isFirstSlide = index === 0;
   return (
-
+    <div className="contentWrap">
     <motion.div
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
@@ -134,7 +134,7 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
       )}
     </div>
   </motion.div>
-
+  </div>
   );
 };
 
@@ -256,9 +256,12 @@ const Carousel = () => {
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}
   >
+
+    
     <Slider {...settings} ref={sliderRef}>
       {slides.map((slide, index) => (
         <div key={index}>
+          <div className="content-wrap2">
           <div
             className="slide-content"
             style={{
@@ -284,27 +287,11 @@ const Carousel = () => {
               )}
             </AnimatePresence>
           </div>
+      </div>
         </div>
       ))}
     </Slider>
-    {isArrowsVisible && (
-      <div className="arrows-container">
-        <NextArrow
-          className="arrow left"
-          onClick={() => sliderRef.current.slickPrev()}
-          carouselHovered={isArrowsVisible}
-        >
-        </NextArrow>
-        <Arrow
-          className="arrow right"
-          onClick={() => sliderRef.current.slickNext()}
-          carouselHovered={isArrowsVisible}
-        >
-          <i className="fas fa-chevron-right"></i>
-        </Arrow>
-      </div>
-    )}
-   
+  
   </div>
     
   

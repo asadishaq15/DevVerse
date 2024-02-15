@@ -29,7 +29,7 @@ const ServiceCard = ({  title, description, imageUrl ,path,aosDelay}) => {
 
 const Services = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 2000 });
   }, []);
 
   const servicesData = [

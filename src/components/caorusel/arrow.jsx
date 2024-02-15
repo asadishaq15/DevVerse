@@ -6,20 +6,23 @@ const Arrow = ({ className, style, onClick, children }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
+    <div className='arrow-container'>
+
+ 
     <div
       className={className}
       style={{
         ...style,
         display: "block",
-        padding: "50px",
-        borderRadius: "20px",
-        width: "60px",
-        height: "40px",
+        padding: "40px",
+        width: "85px",
+        height: "85px",
+        margin:"20px",
+        padding:"30px",
         cursor: "pointer",
         zIndex: 1,
-        background: `rgba(255, 255, 255, ${isHovered ? 0.7 : 0.2})`,
-        position: "absolute",
-        margin: "10px",
+        background: isHovered ? "rgba(0, 0, 0, 0.7)" : "rgba(0, 0, 0, 0.2)", // Change background color        position: "absolute",
+ 
         opacity: isHovered ? 3 : 2, // New: Control opacity based on isHovered state
         transition: "opacity 0.3s ease", 
       }}
@@ -28,6 +31,7 @@ const Arrow = ({ className, style, onClick, children }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {children}
+    </div>
     </div>
   );
 };

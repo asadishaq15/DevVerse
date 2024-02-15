@@ -70,6 +70,7 @@ root.render(
 <WhyUS/>
 <ChatIcon/>
 <GoToTop/>
+<Footer/>
 {/* <FlagApp/> */}
 {/* <GetQuotePage/> */}
 {/* <ReqQuotePage/> */}
