@@ -1,0 +1,237 @@
+.web-development-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .breadcrumb-container {
+    background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .breadcrumb-heading {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .breadcrumb-text {
+    margin-top: 30px;
+  }
+  
+  .breadcrumb-heading h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .breadcrumb-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .breadcrumb-text {
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .breadcrumb-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .breadcrumb-text {
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  
+  .web-development-container {
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .web-development-container h2 {
+    margin: 20px 0;
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .web-development-container p {
+    margin-bottom: 20px;
+    color: rgb(60, 56, 56);
+   
+  }
+  
+  .CMS-container {
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    width: 100%;
+  }
+  
+  .cms-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .cms-Text-container {
+    flex: 3;
+    padding: 20px;
+    text-align: center;
+  }
+  .cms-Text-container h3{
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: start;
+    margin-bottom: 30px;
+  }
+  .cms-Text-container p{
+    font-size: 15px;
+    color: black;
+    text-align: start;
+  }
+  .cms-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .cms-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+ 
+  }
+  
+
+
+  .CRM-container {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    width: 1200px;
+    margin-top: 40px; /* Adjust margin as needed */
+  }
+  
+  .crm-Text-container {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  .crm-Text-container h3 {
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: start;
+    margin-bottom: 30px;
+  }
+  
+  .crm-Text-container p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: black;
+    text-align: start;
+  }
+  
+  .crm-Text-container ul {
+    list-style-type: disc;
+    padding-left: 5;
+    font-size: 12px;
+  }
+  
+  .crm-Text-container ul li {
+    margin-bottom: 5px;
+  }
+  
+  .crm-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .crm-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+
+  
+  .Customization-container {
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    width: 100%;
+    margin-top: 40px; /* Adjust margin as needed */
+  }
+  
+  .customization-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Adjust max-width as needed */
+  }
+  
+  .customization-Text-container {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  .customization-Text-container h3 {
+
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: start;
+    margin-bottom: 30px;
+  }
+  
+  .customization-Text-container p {
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: black;
+    text-align: start;
+  }
+  
+  .customization-Text-container ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Add left padding */
+  }
+  
+  .customization-Text-container ul li {
+    margin-bottom: 5px;
+  }
+  
+  .customization-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .customization-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  

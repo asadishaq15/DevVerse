@@ -32,6 +32,8 @@ import LatestWorkComponent from './components/ProjectPortfolio/recentProjects';
 import ChatIcon from './components/chatIcon/chatIcon';
 import GoToTop from './components/gotoTop/goToTop';
 import Services from './components/services/services';
+import WebDevelopmentPage from './Pages/Services/WebDevelopment/webDevlopment';
+import Categories from './Pages/Services/WebDevelopment/categories/categories';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -61,7 +63,7 @@ root.render(
 
 {/* <TestimonialsBanner/> */}
 {/* <PortfolioStats/> */}
-<Carousel/>
+{/* <Carousel/>
 <WelcomeMessage/>
 <LatestWorkComponent/>
 <Services/>
@@ -70,11 +72,9 @@ root.render(
 <WhyUS/>
 <ChatIcon/>
 <GoToTop/>
-<Footer/>
-{/* <FlagApp/> */}
-{/* <GetQuotePage/> */}
-{/* <ReqQuotePage/> */}
-
+<Footer/> */}
+<WebDevelopmentPage/>
+<Categories/>
   </BrowserRouter>
  
   </React.StrictMode>
