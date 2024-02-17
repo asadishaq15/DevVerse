@@ -1,5 +1,6 @@
 
 .slide-content {
+  height: 550px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -11,9 +12,6 @@
   
 }
 
-.contentWrap{
-padding: 80px;
-}
 .slide-content .content {
   display: flex;
   justify-content: space-between;
@@ -24,18 +22,37 @@ padding: 80px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 30px;
-  margin: 30px;
+
   color: #dc310a;
 }
 
-.slide-content h1 {
-  margin-bottom: 10px;
+
+/*styling the content in the slides*/
+
+
+
+
+
+.heading-title-1 {
+  margin-bottom: 8px;
+  font-size:5.7rem;
+
+}
+.heading-title-2 {
+  font-size:5.7rem;
+  margin-bottom: 8px;
+}
+.slide-description{
+  font-size: 1.6rem;
+
 }
 
 .slide-content p {
+
   margin-bottom: 20px;
 }
+
+
 .slide-content .image-content {
   flex: 2;
   display: flex;
@@ -54,24 +71,25 @@ padding: 80px;
 }
 
 .slide-content button {
-  padding: 10px 20px;
-  background-color: #ff5733;
+  padding: 12px 48px;
+  background-color:#007bff;
   border: none;
   color: #fff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 19px;
+  margin-top: 40px;
   transition: background-color 0.3s;
 }
 
 .slide-content button:hover {
-  background-color: #e04425;
+  background-color: #2986e9;
 }
 
 
 .custom-carousel-wrapper {
   position: relative;
+  margin-bottom: 30px;
 }
-
 
 
 .slick-dots {
@@ -83,17 +101,16 @@ padding: 80px;
 }
 
 .slick-dots li {
-  margin: 0 5px;
+  margin: 0 3px;
 }
 
 .slick-dots li button {
   font-size: 0;
   line-height: 0;
-  width: 10px;
-  height: 10px;
-  padding: 5px;
-  border: none;
-  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 2px solid transparent; /* Add border */
   background-color: transparent;
   cursor: pointer;
   position: relative;
@@ -105,16 +122,28 @@ padding: 80px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 15px; /* Small background width */
-  height: 15px; /* Small background height */
-  background-color: #726969; /* Small background color */
-  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  background-color: #5a5454; /* Change color as needed */
+
   transition: background-color 0.3s ease; /* Add transition for smoother color change */
 }
 
 .slick-dots li.slick-active button::before {
-  background-color: #333;
+  background-color: #ffffff; /* Change color of active bullet */
 }
+
+.arrow-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.custom-carousel-wrapper:hover .arrow-container {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .arrow-container {
   visibility: hidden;
@@ -126,3 +155,167 @@ padding: 80px;
   visibility: visible;
   opacity: 1; /* Change opacity to 1 when hovering over the carousel wrapper */
 }
+
+
+
+
+/* Default styles */
+.contentWrap {
+  padding: 120px;
+}
+
+
+
+.image-content img {
+  border-radius: 10px;
+}
+
+.button-container button {
+  font-size: 1.2em;
+}
+
+/* Media queries for enhanced responsiveness */
+@media screen and (max-width: 1200px) {
+  .contentWrap {
+    width: 100%;
+    padding: 0; 
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .text-content {
+    padding: 30px;
+
+  }
+  .heading-title-1 {
+
+    font-size:5.4rem;
+    margin-bottom: 0px;
+  }
+  .heading-title-2 {
+    font-size:5.4rem;
+    margin-bottom: 0px;
+  }
+  .slide-description{
+    font-size: 1.7rem;
+  
+  }
+  .slide-content button {
+    padding: 8px 35px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contentWrap {
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  .slide-content{
+    height: 450px;
+
+  }
+  .text-content{
+margin-top: 20px;
+   padding: 20px;
+  }
+  .heading-title-1 {
+
+    font-size:4.6rem;
+    margin-bottom: 0px;
+  }
+  .heading-title-2 {
+    font-size:4.8rem;
+    margin-bottom: 0px;
+  }
+  .slide-description{
+    font-size: 1.8rem;
+
+  }
+  .slide-content button {
+    padding: 8px 35px;
+    font-size: 12px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentWrap {
+    width: 100%; /* Take full width */
+    padding: 0; /* Remove padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  .slide-content{
+    height: 350px;
+
+  }
+  .text-content{
+
+   padding: 20px;
+  }
+  .custom-carousel-wrapper:hover .arrow-container {
+    visibility: hidden;
+  }
+  .custom-carousel-wrapper{
+    margin-bottom: 120px;
+  }
+  .button-container-wrap{
+    visibility: hidden;
+  }
+  .heading-title-1 {
+
+    font-size:3.6rem;
+    margin-bottom: 0px;
+  }
+  .heading-title-2 {
+    font-size:3.5rem;
+    margin-bottom: 0px;
+  }
+  .slide-description{
+    font-size: 1.6rem;
+  
+  }
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .contentWrap {
+    width: 100%; /* Take full width */
+    
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  .custom-carousel-wrapper:hover .arrow-container {
+    visibility: hidden;
+  }
+  .slide-content{
+    height: 275px;
+
+  }
+  .text-content{
+    margin-top: 30px;
+  padding: 15px;
+  }
+  .custom-carousel-wrapper{
+    margin-bottom: 120px;
+  }
+  .button-container-wrap{
+    visibility: hidden;
+  }
+  .heading-title-1 {
+
+    font-size:2.9rem;
+    margin-bottom: 0px;
+  }
+  .heading-title-2 {
+    font-size:2.9rem;
+    margin-bottom: 0px;
+  }
+  .slide-description{
+    font-size: 1.1rem;
+  
+  }
+}
+

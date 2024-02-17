@@ -64,7 +64,7 @@ const Footer = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6 copyright" style={{ color: '#fff', fontSize: '1.3rem' }}>
-            Copyright &copy; 2024 DevPulse. All Rights Reserved.
+            Copyright &copy; 2024 DevVerse. All Rights Reserved.
           </div>
         </div>
       </div>

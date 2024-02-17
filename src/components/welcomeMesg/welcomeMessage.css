@@ -10,12 +10,14 @@
 .welcome-content {
   max-width: 1100px; /* Adjust max width as needed */
   width: 100%;
-  display: flex; /* Add flexbox to make the logo and text container flex items */
-  align-items: center; /* Center vertically */
+}
+
+.logo-and-message {
+  display: flex;
+  align-items: center;
 }
 
 .logo-container {
-  flex: 0 0 auto;
   background-color: #e8e8e8; /* Light background color */
   margin-right: 30px;
   text-align: center; /* Center the logo horizontally */
@@ -26,9 +28,7 @@
   justify-content: center; /* Center the logo horizontally */
   border-radius: 50%; /* Make it round */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-  margin-top: -80px; 
 }
-
 
 .logo {
   max-width: 100%;
@@ -36,7 +36,7 @@
 }
 
 .text-container {
-  flex: 2;
+  flex: 1;
 }
 
 .welcome-heading {
@@ -55,13 +55,11 @@
   display: flex;
   justify-content: center;
   margin-top: 30px;
-
 }
 
 .button-wrapper {
   margin: 0 10px; 
 }
-
 
 .view-case-study-button {
   background-color: transparent;
@@ -73,9 +71,10 @@
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
 }
-.read-testimonials-button{
+
+.read-testimonials-button {
   background-color: #007bff;
-  color:#ffffff;
+  color: #ffffff;
   font-weight: 500;
   border: 2px solid #007bff;
   padding: 8px 16px;
@@ -93,26 +92,28 @@
   .welcome-container {
     height: auto; /* Adjust height to fit content */
   }
-  
-  .welcome-content {
-    flex-direction: column; /* Stack logo and text vertically on small screens */
-    text-align: center; /* Center align content */
-  }
-  
-  .logo-container {
-    margin-right: 0; /* Remove right margin on small screens */
+
+  .logo-and-message {
+    flex-direction: column; /* Stack logo and message vertically on small screens */
+    align-items: center; /* Center align content */
     margin-bottom: 20px; /* Add bottom margin for spacing */
   }
-  
+
+  .logo-container {
+    margin-right: 0; /* Remove right margin on small screens */
+  }
+
   .logo {
     height: auto; /* Allow logo to resize according to container */
     max-height: 100px; /* Limit maximum height */
   }
+
   .view-case-study-button,
   .read-testimonials-button {
     padding: 6px 12px; /* Adjusted padding for smaller screens */
     font-size: 16px; /* Adjusted font size for smaller screens */
   }
+  
   .welcome-description {
     text-align: left; /* Align paragraph text to the left on smaller screens */
   }

@@ -128,3 +128,20 @@
 .custom-next-arrow:hover {
   background-color: #282e35;
 }
+
+
+
+.fas.fa-chevron-left {
+  color: #272525; 
+  font-size: 28px; 
+  margin-bottom: 45px;
+}
+
+
+.fas.fa-chevron-right {
+  color: #242624; 
+  font-size: 28px; 
+
+}
+
+

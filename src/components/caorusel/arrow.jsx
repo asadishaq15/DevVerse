@@ -22,7 +22,6 @@ const Arrow = ({ className, style, onClick, children }) => {
         cursor: "pointer",
         zIndex: 1,
         background: isHovered ? "rgba(0, 0, 0, 0.7)" : "rgba(0, 0, 0, 0.2)", // Change background color        position: "absolute",
- 
         opacity: isHovered ? 3 : 2, // New: Control opacity based on isHovered state
         transition: "opacity 0.3s ease", 
       }}

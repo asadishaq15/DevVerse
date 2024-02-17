@@ -29,12 +29,15 @@ const Wrapper = styled.div`
   justify-content: center;
   font-size: 34px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
+  z-index: 1;
 
   &:hover {
     background-color: #128c7e; /* Darker shade of WhatsApp green */
   }
+
+  
 `;
 
 export default ChatIcon;
