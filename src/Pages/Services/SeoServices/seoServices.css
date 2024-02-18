@@ -1,0 +1,136 @@
+/* Base styles for the SEO Services page */
+.Seo-Services-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Breadcrumb container styles */
+  .breadcrumb-container {
+    background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .breadcrumb-heading {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .breadcrumb-heading h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Breadcrumb text styles */
+  .breadcrumb-text {
+    margin-top: 30px;
+  }
+  
+  /* Container for SEO Services content */
+  .Seo-Services-container {
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Common styles for all headings */
+  .Seo-Services-container h2,
+  .Natural-SEO-Text-container h2 {
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: start;
+    margin: 20px 0;
+    padding: 0%;
+  }
+  .Seo-Services-page p, ul{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    text-align: start;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  /* Content wrapper for SEO Services */
+  .Seo-Services-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Text container for SEO Services */
+  .Natural-SEO-Text-container {
+    flex: 3;
+    padding: 20px;
+    text-align: start;
+  }
+  
+  /* Image container for SEO Services */
+  .Iphone-Apps-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  /* Image styles for SEO Services */
+  .Iphone-Apps-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  /* Container for Natural SEO content */
+  .Natural-SEO-container {
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    width: 100%;
+  }
+  .Natural-SEO-content{
+    max-width: 1200px;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 992px) {
+    /* Adjust width and padding for smaller screens */
+    .Seo-Services-container {
+      width: 100%;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    .Seo-Services-container {
+      padding: 10px;
+    }
+  
+    /* Stack content in a column and center align */
+    .Seo-Services-container,
+    .Seo-Services-content,
+    .Natural-SEO-container,
+    .Natural-SEO-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust width for better fit and add space between image and text */
+    .Iphone-Apps-Image-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

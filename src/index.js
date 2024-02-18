@@ -38,6 +38,7 @@ import GraphicDesign from './Pages/Services/GraphicDesigning/graphicDesigning';
 import DigitalMarketing from './Pages/Services/DigitalMarketing/digitalMarketing';
 import MobileAppDevelopment from './Pages/Services/MobileAppDevelopment/mobileAppDevelopment';
 import BusinessIntelligence from './Pages/Services/BusinessIntelligence /businessIntelligence';
+import SeoServices from './Pages/Services/SeoServices/seoServices';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -82,7 +83,8 @@ root.render(
 {/* <GraphicDesign/> */}
 {/* <DigitalMarketing/> */}
 {/* <MobileAppDevelopment/> */}
-<BusinessIntelligence/>
+{/* <BusinessIntelligence/> */}
+<SeoServices/>
   </BrowserRouter>
  
   </React.StrictMode>
