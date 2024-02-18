@@ -1,7 +1,10 @@
 /* Clients.css */
 
 .clients {
-    margin-top: 0px;
+
+    width: 100%;
+    max-width: 100vw;
+  
   }
   
   .container {
@@ -9,13 +12,21 @@
     margin: 0 auto;
   }
   
-  .section-header {
-    text-align: center;
+  .section-header-1 {
+    text-align: left;
   }
   
-  .section-header h2 {
-    font-size: 2em;
+  .section-header-1 h4 {
+    font-size: 16px;
     margin-bottom: 10px;
+    font-weight: 400;
+    color: #444;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 8px;
+    border-bottom: 1px solid;
+    border-bottom-color: #ee3733;
+    box-sizing: border-box;
   }
   
   .section-header p {
@@ -54,3 +65,4 @@
     margin: 0 auto;
   }
   
+

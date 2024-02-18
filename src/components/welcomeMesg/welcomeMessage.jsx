@@ -4,6 +4,7 @@ import AOS from 'aos';
 import companyLogo from "../../images/CompanyLogo.png"
 import 'aos/dist/aos.css';
 import './welcomeMessage.css'; 
+import Clients from '../clients/clients';
 
 const WelcomeMessage = () => {
     useEffect(() => {
@@ -44,9 +45,12 @@ const WelcomeMessage = () => {
             </Link>
           </div>
         </div>
+    
       </div>
     </div>
     );
 };
 
 export default WelcomeMessage;
+
+

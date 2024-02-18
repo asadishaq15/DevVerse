@@ -1,0 +1,180 @@
+/* Base styles for the Graphic Designer page */
+.Graphic-designer-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Breadcrumb container styles */
+  .breadcrumb-container {
+    background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .breadcrumb-heading {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .breadcrumb-heading h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Breadcrumb text styles */
+  .breadcrumb-text {
+    margin-top: 30px;
+  }
+  
+  .Graphic-designer-container {
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Common styles for all headings */
+  .Graphic-designer-container h2,
+  .Flyer-Brochures-Text-container h2,
+  .Logo-Design-Text-container h2 {
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: start;
+    margin: 20px 0;
+  }
+  
+  /* Additional styles for specific headings */
+  .Flyer-Brochures-Text-container h2,
+  .Logo-Design-Text-container h2 {
+    margin-bottom: 30px;
+  }
+  
+  /* Container for Flyer and Brochures section */
+  .Flyer-Brochures-container {
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    width: 100%;
+  }
+  
+  /* Content wrapper for Flyer and Brochures */
+  .Flyer-Brochures-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Text container for Flyer and Brochures */
+  .Flyer-Brochures-Text-container {
+    flex: 3;
+    padding: 20px;
+    text-align: start;
+  }
+  
+  /* Image container for Flyer and Brochures */
+  .Flyer-Brochures-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  /* Image styles for Flyer and Brochures */
+  .Flyer-Brochures-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  /* Container for Logo Design section */
+  .Logo-Design-container {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    width: 1200px;
+    margin-top: 40px;
+  }
+  
+  /* Text container for Logo Design */
+  .Logo-Design-Text-container {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  /* Image container for Logo Design */
+  .Logo-Design-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  /* Image styles for Logo Design */
+  .Logo-Design-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 992px) {
+    /* Adjust width and padding for smaller screens */
+    .Logo-Design-container  {
+      width: 100%;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    .Graphic-designer-container,
+    .Flyer-Brochures-container,
+    .Logo-Design-container {
+      padding: 10px;
+    }
+  
+    /* Stack content in a column and center align */
+    .Graphic-designer-container,
+    .Flyer-Brochures-container,
+    .Logo-Design-container,
+    .Flyer-Brochures-content,
+    .Logo-Design-content,
+    .Flyer-Brochures-Text-container,
+    .Logo-Design-Text-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust width for better fit and add space between image and text */
+    .Flyer-Brochures-Image-container,
+    .Logo-Design-Image-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Align list items to the start */
+    .Logo-Design-container {
+        width: 100%; /* Make the container occupy full width */
+        padding: 8px; /* Adjust padding for better spacing */
+      }
+      .Logo-Design-Image-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+  }
+  

@@ -1,5 +1,7 @@
 import React from 'react';
-import './categories.css';
+import './webDevCategories.css';
+import { Link } from 'react-router-dom';
+import Clients from '../../../../components/clients/clients';
 
 const CategoryCard = ({ title, description, imageUrl }) => {
   return (
@@ -56,6 +58,12 @@ const Categories = () => {
           ))}
         </div>
       </div>
+      <div className="button-wrapper">
+            <Link to="/case-study" className='View-caseStudy'>
+              <button className="view-case-study-button" >GET FREE QUOTE</button>
+            </Link>
+          </div>
+          <Clients />
     </div>
   );
 };

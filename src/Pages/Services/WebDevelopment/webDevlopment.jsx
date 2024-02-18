@@ -51,7 +51,7 @@ const WebDevelopmentPage = () => {
         <div className="CMS-container">
         <div className="cms-content">
           <div className="cms-Text-container">
-            <h3>Content Management System</h3>
+            <h2>Content Management System</h2>
             <p>
               Content management system (CMS) is considered a difficult task to maintain but we’re making it real simple 
               by implementing our own techniques. Here our clients can survey and revise the content generated and this 
@@ -70,11 +70,11 @@ const WebDevelopmentPage = () => {
                 <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="CRM Image" />
               </div>
               <div className="crm-Text-container">
-                <h3>Customer Relationship Management (CRM)</h3>
+                <h2>Customer Relationship Management (CRM)</h2>
                 <p>
                   A customer relationship management (CRM) is a tool allowing you to have better management of your business contacts. It offers the possibility of having a panel of marketing solutions in order to capture and build customer loyalty to your brand. Right now, a very good factor and a guarantee of reputation for a company is to ensure a unique relationship with its customers. At Elexoft, we set up a CRM based on your activity by defining the indicators that will be important to take into account. You will be able to process and analyze data relating to your customers and define good business planning.
                 </p>
-                <h3>Our CRM expertise</h3>
+                <h2>Our CRM expertise</h2>
                 <ul>
                   <li>After Sales</li>
                   <li>Assessment KPI's</li>
@@ -92,7 +92,7 @@ const WebDevelopmentPage = () => {
             <div className="Customization-container">
                 <div className="customization-content">
                   <div className="customization-Text-container">
-                    <h3>Wordpress, Joomla, Shopify Customization</h3>
+                    <h2>Wordpress, Joomla, Shopify Customization</h2>
                     <p>
                       If you’re looking for Wordpress or Joomla, trust us that we’ve got it covered for you. 
                       In case you’re having any sort of inconvenience in your project or assignment, our web developers can make this job really easy for you. 
@@ -105,7 +105,7 @@ const WebDevelopmentPage = () => {
                   </div>
                   {/* Second sub-container */}
                   <div className="customization-Image-container">
-                    <img src="https://example.com/your-image.jpg" alt="Customization Image" />
+                    <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="Customization Image" />
                   </div>
                 </div>
               </div>

@@ -33,7 +33,8 @@ import ChatIcon from './components/chatIcon/chatIcon';
 import GoToTop from './components/gotoTop/goToTop';
 import Services from './components/services/services';
 import WebDevelopmentPage from './Pages/Services/WebDevelopment/webDevlopment';
-import Categories from './Pages/Services/WebDevelopment/categories/categories';
+import Categories from './Pages/Services/WebDevelopment/categories/webDevCategories';
+import GraphicDesign from './Pages/Services/GraphicDesigning/graphicDesigning';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -66,15 +67,16 @@ root.render(
 {/* <Carousel/>
 <WelcomeMessage/>
 <LatestWorkComponent/>
-<Services/>
+
 <TechStack/>
 <OneStopSolution/>
 <WhyUS/>
 <ChatIcon/>
 <GoToTop/>
 <Footer/> */}
-<WebDevelopmentPage/>
-<Categories/>
+{/* <WebDevelopmentPage/> */}
+{/* <Categories/> */}
+<GraphicDesign/>
   </BrowserRouter>
  
   </React.StrictMode>

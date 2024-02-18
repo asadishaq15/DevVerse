@@ -75,12 +75,38 @@
     text-align: center;
   }
   
-  .web-development-container p {
+  .web-development-container p,
+  .cms-Text-container p,
+  .crm-Text-container p,
+  .customization-Text-container p {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    text-align: start;
+    line-height: 22px;
     margin-bottom: 20px;
-    color: rgb(60, 56, 56);
-   
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
   
+  .web-development-container h2,
+.cms-Text-container h2,
+.crm-Text-container h2,
+.customization-Text-container h2 {
+  color: rgb(80, 75, 75);
+  font-size: 20px;
+  text-align: start;
+  margin: 20px 0;
+}
+.cms-Text-container h2,
+.crm-Text-container h2,
+.customization-Text-container h2 {
+  margin-bottom: 30px;
+}
+
   .CMS-container {
     display: flex;
     justify-content: center;
@@ -100,17 +126,8 @@
     padding: 20px;
     text-align: center;
   }
-  .cms-Text-container h3{
-    color: rgb(80, 75, 75);
-    font-size: 20px;
-    text-align: start;
-    margin-bottom: 30px;
-  }
-  .cms-Text-container p{
-    font-size: 15px;
-    color: black;
-    text-align: start;
-  }
+  
+ 
   .cms-Image-container {
     flex: 1;
     display: flex;
@@ -140,19 +157,7 @@
     padding: 20px;
   }
   
-  .crm-Text-container h3 {
-    color: rgb(80, 75, 75);
-    font-size: 20px;
-    text-align: start;
-    margin-bottom: 30px;
-  }
-  
-  .crm-Text-container p {
-    margin-bottom: 20px;
-    font-size: 15px;
-    color: black;
-    text-align: start;
-  }
+
   
   .crm-Text-container ul {
     list-style-type: disc;
@@ -196,23 +201,9 @@
     flex: 3;
     padding: 20px;
   }
-  
-  .customization-Text-container h3 {
 
-    color: rgb(80, 75, 75);
-    font-size: 20px;
-    text-align: start;
-    margin-bottom: 30px;
-  }
   
-  .customization-Text-container p {
-    margin-bottom: 20px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    color: black;
-    text-align: start;
-  }
-  
+
   .customization-Text-container ul {
     list-style-type: disc; /* Use disc bullets */
     padding-left: 20px; /* Add left padding */
@@ -234,4 +225,63 @@
     height: auto;
     max-height: 200px;
   }
+
+  @media screen and (max-width: 992px) {
+
+    .CRM-container {
+      width: 100%; /* Make the container occupy full width */
+      padding: 8px; /* Adjust padding for better spacing */
+    }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust padding for better spacing */
+    .web-development-container,
+    .CMS-container,
+    .CRM-container,
+    .Customization-container,
+    .cms-content,
+    .crm-content,
+    .customization-content {
+      padding: 10px;
+    }
+  
+    /* Stack content in a column and center align */
+    .web-development-container,
+    .CMS-container,
+    .CRM-container,
+    .Customization-container,
+    .cms-content,
+    .crm-content,
+    .customization-content,
+    .cms-Text-container,
+    .crm-Text-container,
+    .customization-Text-container {
+      flex-direction: column;
+      align-items: center;
+
+    }
+  
+    /* Adjust width for better fit */
+    .cms-Image-container,
+    .crm-Image-container,
+    .customization-Image-container,
+    .crm-Image-container {
+      width: 100%;
+      margin-bottom: 20px; /* Add space between image and text */
+    }
+    
+    /* Adjust width for better fit */
+    .CRM-container {
+      width: 100%; /* Make the container occupy full width */
+      padding: 8px; /* Adjust padding for better spacing */
+    }
+    .crm-Text-container ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      text-align: start; /* Align list items to the start */
+    }
+  }
+  
   
