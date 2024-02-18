@@ -36,6 +36,8 @@ import WebDevelopmentPage from './Pages/Services/WebDevelopment/webDevlopment';
 import Categories from './Pages/Services/WebDevelopment/categories/webDevCategories';
 import GraphicDesign from './Pages/Services/GraphicDesigning/graphicDesigning';
 import DigitalMarketing from './Pages/Services/DigitalMarketing/digitalMarketing';
+import MobileAppDevelopment from './Pages/Services/MobileAppDevelopment/mobileAppDevelopment';
+import BusinessIntelligence from './Pages/Services/BusinessIntelligence /businessIntelligence';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -78,7 +80,9 @@ root.render(
 {/* <WebDevelopmentPage/> */}
 {/* <Categories/> */}
 {/* <GraphicDesign/> */}
-<DigitalMarketing/>
+{/* <DigitalMarketing/> */}
+{/* <MobileAppDevelopment/> */}
+<BusinessIntelligence/>
   </BrowserRouter>
  
   </React.StrictMode>

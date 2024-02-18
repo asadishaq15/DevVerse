@@ -1,0 +1,138 @@
+/* Base styles for the Business Intelligence page */
+.Business-Intelligence-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Breadcrumb container styles */
+  .breadcrumb-container {
+    background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .breadcrumb-heading {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .breadcrumb-heading h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Breadcrumb text styles */
+  .breadcrumb-text {
+    margin-top: 30px;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    .breadcrumb-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .breadcrumb-text {
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .breadcrumb-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .breadcrumb-text {
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Common styles for all headings */
+  .Business-Intelligence-container h2,
+  .BI-Services-Text-container h2 {
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: start;
+    margin: 20px 0;
+  }
+  .Business-Intelligence-container p,
+  .BI-Services-Text-container p {
+padding: 0%;
+  }
+  /* Container for Business Intelligence section */
+  .Business-Intelligence-container {
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Text container for Business Intelligence */
+  .BI-Services-container {
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    width: 100%;
+  }
+  
+  /* Content wrapper for Business Intelligence */
+  .BI-Services-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Text container for BI Services */
+  .BI-Services-Text-container {
+    flex: 3;
+    padding: 20px;
+    text-align: start;
+  }
+  
+  /* Image container for BI Services */
+  .Iphone-Apps-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  /* Image styles for BI Services */
+  .Iphone-Apps-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .BI-Services-container,
+    .BI-Services-content,
+    .BI-Services-Text-container,
+    .Iphone-Apps-Image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .BI-Services-Text-container {
+      text-align: start;
+      margin-bottom: 20px;
+    }
+  }

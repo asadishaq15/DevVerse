@@ -1,0 +1,156 @@
+/* Mobile App Development Page */
+.Mobile-App-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Breadcrumb Container */
+  .breadcrumb-container {
+    background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .breadcrumb-heading {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .breadcrumb-text {
+    margin-top: 30px;
+  }
+  
+  .breadcrumb-heading h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Mobile App Container */
+  .Mobile-App-container {
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Mobile-App-container h2,
+  .Iphone-Apps-Text-container h2,
+  .Android-Apps-Text-container h2 {
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: start;
+    margin: 20px 0;
+  }
+  
+  .Mobile-App-container p ,
+  .Iphone-Apps-Text-container p,
+  .Android-Apps-Text-container p {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    text-align: start;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* iPhone Apps Container */
+  .Iphone-Apps-container,
+  .Android-Apps-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  
+  .Iphone-Apps-content,
+  .Android-Apps-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  
+  .Iphone-Apps-Text-container,
+  .Android-Apps-Text-container {
+    flex: 3;
+    padding: 20px;
+    text-align: start;
+  }
+
+  .Iphone-Apps-Image-container,
+  .Android-Apps-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Iphone-Apps-Image-container img,
+  .Android-Apps-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 992px) {
+    .Mobile-App-container {
+      padding: 10px;
+    }
+  
+    .Mobile-App-container h2 {
+      font-size: 18px;
+    }
+  
+    .Mobile-App-container p {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .breadcrumb-container,
+    .Mobile-App-container,
+    .Iphone-Apps-container,
+    .Android-Apps-container {
+      padding: 15px;
+    }
+  
+    .Mobile-App-container h2 {
+      font-size: 16px;
+    }
+  
+    .Mobile-App-container p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .Iphone-Apps-Text-container,
+    .Android-Apps-Text-container {
+      padding: 0;
+    }
+  
+    .Iphone-Apps-Image-container,
+    .Android-Apps-Image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Iphone-Apps-Image-container img,
+    .Android-Apps-Image-container img {
+      margin-bottom: 15px;
+    }
+  }
+  
