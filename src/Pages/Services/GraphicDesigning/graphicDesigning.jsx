@@ -3,6 +3,7 @@ import "./graphicDesigning.css"
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
+import GraphicCategories from './categories/graphicCategories';
 
 const GraphicDesign = () => {
   return (
@@ -77,7 +78,7 @@ const GraphicDesign = () => {
              
             </div>
          
-
+    <GraphicCategories/>
     </div>
   );
 };

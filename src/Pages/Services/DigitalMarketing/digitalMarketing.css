@@ -1,0 +1,237 @@
+.Digital-Marketing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .breadcrumb-container {
+    background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .breadcrumb-heading {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .breadcrumb-text {
+    margin-top: 30px;
+  }
+  
+  .breadcrumb-heading h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+
+
+
+  .Digital-Marketing-container {
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Digital-Marketing-container h2 {
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: start;
+    margin: 20px 0;
+  }
+  
+  .Digital-Marketing-container p,
+  .marketing-strategies p,
+  .seo-Text-container p,
+  .smo-Text-container p {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    text-align: start;
+    line-height: 30px;
+    padding: 0px;
+    margin-bottom: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .marketing-strategies h2,
+  .seo-Text-container h2,
+  .smo-Text-container h2 {
+    color: rgb(80, 75, 75);
+    font-size: 20px;
+    text-align: start;
+    margin: 20px 0;
+  }
+  
+ 
+  
+  .seo-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+    width: 100%;
+  }
+  
+  .seo-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+
+  }
+  
+  .seo-Text-container {
+    flex: 3;
+    padding: 20px;
+    text-align: start;
+  }
+  
+ 
+  .seo-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .seo-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  .smo-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .smo-Image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .smo-Image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  .smo-Text-container {
+    flex: 3;
+    padding: 20px;
+    text-align: start;
+  }
+  
+  .marketing-strategies {
+    padding: 20px;
+    background-color: #efefef;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .marketing-strategies-content{
+    max-width: 1200px;
+  }
+  
+
+  
+
+
+  /* Media queries for responsive design */
+@media screen and (max-width: 992px) {
+    /* Adjust width and padding for smaller screens */
+    .Digital-Marketing-container,
+    .seo-content,
+    .smo-container,
+    .marketing-strategies {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .Digital-Marketing-container h2,
+    .seo-Text-container h2,
+    .smo-Text-container h2,
+    .marketing-strategies h2 {
+      font-size: 18px;
+    }
+  
+    .Digital-Marketing-container p,
+    .seo-Text-container p,
+    .smo-Text-container p,
+    .marketing-strategies p {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    .breadcrumb-container,
+    .Digital-Marketing-container,
+    .seo-container,
+    .smo-container,
+    .marketing-strategies {
+      padding: 15px;
+    }
+  
+    /* Stack content in a column and center align */
+    .seo-content,
+    .smo-container,
+    .marketing-strategies {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust width for better fit and add space between image and text */
+    .seo-Text-container,
+    .smo-Text-container {
+      padding: 0;
+    }
+  
+    .seo-Image-container img,
+    .smo-Image-container img {
+      max-width: 100%;
+      height: auto;
+      max-height: 150px;
+      margin-bottom: 15px;
+     
+    }
+   
+  
+    .Digital-Marketing-container h2,
+    .seo-Text-container h2,
+    .smo-Text-container h2,
+    .marketing-strategies h2 {
+      font-size: 16px;
+    }
+  
+    .Digital-Marketing-container p,
+    .seo-Text-container p,
+    .smo-Text-container p,
+    .marketing-strategies p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }

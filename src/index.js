@@ -35,6 +35,7 @@ import Services from './components/services/services';
 import WebDevelopmentPage from './Pages/Services/WebDevelopment/webDevlopment';
 import Categories from './Pages/Services/WebDevelopment/categories/webDevCategories';
 import GraphicDesign from './Pages/Services/GraphicDesigning/graphicDesigning';
+import DigitalMarketing from './Pages/Services/DigitalMarketing/digitalMarketing';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -76,7 +77,8 @@ root.render(
 <Footer/> */}
 {/* <WebDevelopmentPage/> */}
 {/* <Categories/> */}
-<GraphicDesign/>
+{/* <GraphicDesign/> */}
+<DigitalMarketing/>
   </BrowserRouter>
  
   </React.StrictMode>

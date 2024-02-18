@@ -15,7 +15,7 @@ const CategoryCard = ({ title, description, imageUrl }) => {
   );
 };
 
-const Categories = () => {
+const WebDevCategories = () => {
   const servicesData = [
     {
       title: 'Online store',
@@ -68,4 +68,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default WebDevCategories;
