@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Clients from '../../../components/clients/clients';
+import SeoCategories from './categories/seoCategories';
 
 const SeoServices  = () => {
   return (
@@ -19,7 +20,7 @@ const SeoServices  = () => {
           <Link color="inherit" href="/" style={{fontSize:"15px"}}>
             <strong>Home</strong>
           </Link>
-          <Typography color="textPrimary" style={{fontSize:"13px"}}>SEO Services</Typography>
+          <Typography color="textPrimary" style={{fontSize:"13px", color:"black"}}>SEO Services</Typography>
         </Breadcrumbs>
         </div>
 
@@ -68,7 +69,7 @@ const SeoServices  = () => {
           
           </div>
         </div>
-
+        <SeoCategories/>
            <div className="button-wrapper">
             <Link to="/case-study" className='View-caseStudy'>
               <button className="view-case-study-button" >GET FREE QUOTE</button>

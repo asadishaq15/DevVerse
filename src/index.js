@@ -28,7 +28,7 @@ import TestimonialsPage from './components/testimonialsPage/testimonials/testimo
 import TestimonialsBanner from './components/testimonialsPage/testimonialBanner/TestimonialsBanner';
 import Header from './components/navbar';
 import OneStopSolution from './components/OneStopSolution/oneStopSolution';
-import LatestWorkComponent from './components/ProjectPortfolio/recentProjects';
+import LatestWorkComponent from './components/ProjectPortfolio/latestWork';
 import ChatIcon from './components/chatIcon/chatIcon';
 import GoToTop from './components/gotoTop/goToTop';
 import Services from './components/services/services';
@@ -39,6 +39,7 @@ import DigitalMarketing from './Pages/Services/DigitalMarketing/digitalMarketing
 import MobileAppDevelopment from './Pages/Services/MobileAppDevelopment/mobileAppDevelopment';
 import BusinessIntelligence from './Pages/Services/BusinessIntelligence /businessIntelligence';
 import SeoServices from './Pages/Services/SeoServices/seoServices';
+import RecentProjects from './components/RecentProjects/recentProjects';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -84,7 +85,8 @@ root.render(
 {/* <DigitalMarketing/> */}
 {/* <MobileAppDevelopment/> */}
 {/* <BusinessIntelligence/> */}
-<SeoServices/>
+{/* <SeoServices/> */}
+<RecentProjects/>
   </BrowserRouter>
  
   </React.StrictMode>

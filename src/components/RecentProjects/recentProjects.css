@@ -1,0 +1,124 @@
+/* RecentProjects.css */
+
+.recent-projects {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 5px; 
+}
+
+.section-header-1 h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #444;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+ 
+    border-bottom: 1px solid;
+    border-bottom-color: #ee3733;
+    box-sizing: border-box;
+}
+
+.section-header-1 p {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.recent-projects-carousel-container {
+    padding: 2px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+height: auto;
+}
+
+.project-details {
+    margin-top: 0px;
+}
+
+.project-details h5 {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: #444;
+}
+
+.project-details p {
+    padding: 0%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.recent-project-item {
+    border: 2px solid rgb(247, 247, 247);
+    height: 300px; 
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+  .recent-project-item img {
+object-fit: contain;
+aspect-ratio: 3/2;
+  }
+ 
+  .owl-nav {
+position: absolute;
+    top: 30px;
+    right: 130px;
+  }
+  
+  .owl-prev:hover{
+  background-color: transparent;
+  }
+  .owl-next:hover{
+    background-color: transparent;
+    }
+    @media screen and (max-width: 1200px) {
+        .owl-nav {
+            
+            right: 10px;
+          }
+    }
+
+
+    @media screen and (max-width: 992px) {
+
+        .owl-nav {
+            
+            right: 10px;
+          }
+    }
+    @media screen and (max-width: 768px){
+
+        .owl-nav {
+            
+                right: 10px;
+              }
+              .project-details {
+               
+        
+            }
+    }
+  

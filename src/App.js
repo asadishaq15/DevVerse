@@ -11,7 +11,7 @@ import Faq from './components/faq';
 import Navbar from './components/navbar';
 import Footer from './components/foot';
 import GoToTop from './components/gotoTop/goToTop';
-import LatestWorkComponent from './components/ProjectPortfolio/recentProjects';
+import LatestWorkComponent from './components/ProjectPortfolio/latestWork';
 import Services from './components/services/services';
 
 function App() {

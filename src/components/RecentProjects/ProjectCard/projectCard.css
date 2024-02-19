@@ -1,0 +1,46 @@
+.recent-project-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .recent-project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .recent-project-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .recent-project-details {
+    padding: 10px;
+  }
+  
+  .recent-project-name {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .recent-project-tech-stack {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .recent-project-link {
+    color: #03366c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .recent-project-link:hover {
+    text-decoration: underline;
+  }
+  
