@@ -92,8 +92,8 @@ aspect-ratio: 3/2;
 .recentProjects-owl-nav{
   
 }
-  .owl-prev,
-  .owl-next{
+  .recent-projects-owl-prev,
+  .recent-projects-owl-next{
  
     font-size: 1.4em;
     height: 22px;

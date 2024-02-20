@@ -96,10 +96,10 @@ const RecentProjects = () => {
       <div className="section-header-1">
         <h4>Recent Projects</h4>
         <div className="recentProjects-owl-nav" >
-          <button className="owl-prev" onClick={handlePrevClick}>
+          <button className="recent-projects-owl-prev" onClick={handlePrevClick}>
             <i className="fas fa-chevron-left"></i>
           </button>
-          <button className="owl-next" onClick={handleNextClick}>
+          <button className="recent-projects-owl-next" onClick={handleNextClick}>
             <i className="fas fa-chevron-right"></i>
           </button>
         </div>

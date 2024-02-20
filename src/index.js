@@ -40,6 +40,7 @@ import MobileAppDevelopment from './Pages/Services/MobileAppDevelopment/mobileAp
 import BusinessIntelligence from './Pages/Services/BusinessIntelligence /businessIntelligence';
 import SeoServices from './Pages/Services/SeoServices/seoServices';
 import RecentProjects from './components/RecentProjects/recentProjects';
+import Project1 from './Pages/ProjectsPages/Project1/project1';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -86,10 +87,7 @@ root.render(
 {/* <MobileAppDevelopment/> */}
 {/* <BusinessIntelligence/> */}
 {/* <SeoServices/> */}
-<RecentProjects/>
-<Clients/>
-<TechStack/>
-
+<Project1/>
   </BrowserRouter>
  
   </React.StrictMode>
