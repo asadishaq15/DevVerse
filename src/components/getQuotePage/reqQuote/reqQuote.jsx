@@ -210,7 +210,7 @@ const ReqQuotePage = () => {
             <p style={{color:"black"}}>You may attach up to 5 files under 100MB each</p>
           </label>
           {/* ... (Other form fields) */}
-          <button type="submit">Send</button>
+          <button className='submit-button' type="submit">Send</button>
         </form>
       
       </div>

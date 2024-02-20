@@ -24,7 +24,7 @@
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 8px;
     border-bottom: 1px solid;
-    border-bottom-color: #ee3733;
+    border-bottom-color: #036ad9;
     box-sizing: border-box;
   }
   
@@ -38,25 +38,7 @@
   
   }
   
-  .owl-nav {
-    position: absolute;
-    top: 20px; /* Adjust the top distance */
-    right: 20px; /* Adjust the right distance */
-  }
-  
-  .owl-nav button {
-    font-size: 24px;
-    color: #007bff; /* Adjust arrow color */
-    background-color: transparent;
-    padding: 10px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  .owl-nav button:hover {
-    color: #0056b3; /* Adjust arrow color on hover */
-  }
+
   
   .client-item img {
  

@@ -73,7 +73,7 @@ root.render(
 <WelcomeMessage/>
 <LatestWorkComponent/>
 
-<TechStack/>
+
 <OneStopSolution/>
 <WhyUS/>
 <ChatIcon/>
@@ -87,6 +87,9 @@ root.render(
 {/* <BusinessIntelligence/> */}
 {/* <SeoServices/> */}
 <RecentProjects/>
+<Clients/>
+<TechStack/>
+
   </BrowserRouter>
  
   </React.StrictMode>

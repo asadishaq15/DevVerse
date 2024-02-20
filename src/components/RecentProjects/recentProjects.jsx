@@ -13,7 +13,7 @@ import P5 from "../../images/Slider_5.png";
 import P6 from "../../images/Slider_6.png";
 import P7 from "../../images/Slider_7.png";
 
-const RecentProjects = ({ fullWidth }) => {
+const RecentProjects = () => {
   const recentProjects = [
     { 
         name: "Project 1", 
@@ -57,7 +57,8 @@ const RecentProjects = ({ fullWidth }) => {
         link: 'https://example.com/thedrawers',
         techStack: "Python, Django, MySQL"
       },
-  ];  const owlRef = useRef(null);
+  ]; 
+   const owlRef = useRef(null);
 
   const options = {
     items: 6, // Set the number of slides to show
@@ -93,9 +94,8 @@ const RecentProjects = ({ fullWidth }) => {
     <div className="recent-projects">
     <div className="container">
       <div className="section-header-1">
-        
         <h4>Recent Projects</h4>
-        <div className="owl-nav">
+        <div className="recentProjects-owl-nav" >
           <button className="owl-prev" onClick={handlePrevClick}>
             <i className="fas fa-chevron-left"></i>
           </button>
@@ -107,13 +107,13 @@ const RecentProjects = ({ fullWidth }) => {
       <div className="recent-projects-carousel-container">
         <OwlCarousel {...options} ref={owlRef}>
           {recentProjects.map((project, index) => (
-            <div key={index} className="recent-project-item">
+            <a key={index} href={project.link} className="recent-project-item">
               <img src={project.imageUrl} alt={`Project ${index + 1}`} />
               <div className="project-details">
                 <h5>{project.name}</h5>
                 <p>{project.techStack}</p>
               </div>
-            </div>
+            </a>
           ))}
         </OwlCarousel>
       </div>

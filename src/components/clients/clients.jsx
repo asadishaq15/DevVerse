@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import OwlCarousel from 'react-owl-carousel3';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -18,7 +18,7 @@ import php from "../../images/php-1.svg"
 import android from "../../images/android-6.svg"
 import ios from "../../images/ios-2.svg"
 
-const Clients = ({ fullWidth }) => {
+const Clients = () => {
   const clientLogos = [
     
     laravel,
@@ -36,6 +36,8 @@ const Clients = ({ fullWidth }) => {
     android,
     ios
   ];
+
+  const owlRef = useRef(null);
 
   const options = {
     items: 6, // Set the number of slides to show
@@ -55,23 +57,34 @@ const Clients = ({ fullWidth }) => {
         items: 6,
       },
     },
-    nav: true, // Enable navigation
-    navText: [
-      '<i class="fas fa-chevron-left"></i>', // Left arrow (Font Awesome icon)
-      '<i class="fas fa-chevron-right"></i>', // Right arrow (Font Awesome icon)
-    ],
+   
   };
 
-  const containerStyle = fullWidth ? {maxWidth: '100vw', maxWidth:'100%' } : {};
+  const handlePrevClick = () => {
+    owlRef.current.prev();
+  };
+
+  const handleNextClick = () => {
+    owlRef.current.next();
+  };
+
 
   return (
-    <div className="clients" style={containerStyle}>
+    <div className="clients" >
       <div className="container">
         <div className="section-header-1">
           <h4>Our Clients</h4>
+          <div className="recentProjects-owl-nav" >
+          <button className="owl-prev" onClick={handlePrevClick}>
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <button className="owl-next" onClick={handleNextClick}>
+            <i className="fas fa-chevron-right"></i>
+          </button>
+        </div>
         </div>
         <div className="clients-carousel-container">
-          <OwlCarousel {...options}>
+          <OwlCarousel {...options} ref={owlRef}>
             {clientLogos.map((logo, index) => (
               <div key={index} className="client-item">
                 <img src={logo} alt={`Client Logo ${index + 1}`} />

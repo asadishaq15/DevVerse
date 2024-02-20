@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import OwlCarousel from 'react-owl-carousel3';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -47,7 +47,7 @@ const TechStackSlider = () => {
 
     
   ];
-
+ 
   const options = {
     items: 6, // Set the number of slides to show
     loop: true,
@@ -66,12 +66,10 @@ const TechStackSlider = () => {
         items: 6,
       },
     },
-    nav: true, // Enable navigation
-    navText: [
-      '<i class="fas fa-chevron-left"></i>', 
-      '<i class="fas fa-chevron-right"></i>',
-    ],
+   
   };
+
+
 
   return (
     <div className="con-main" data-aos="fade-up">
