@@ -1,7 +1,9 @@
-p,
-a {
+.contact-info-container p,
+.contact-info-container a
+{
   color: #ddd;
 }
+
 
 .contact-info-container {
   width: 90%;

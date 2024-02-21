@@ -8,9 +8,9 @@ import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import { IconButton } from '@mui/material';
 import '../projects.css';
-import img1 from "../../../images/Slider_1.png";
+import img2 from "../../../images/Slider_2.png";
 
-const ProjectDetail = () => {
+const Project2 = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAutoplayEnabled, setIsAutoplayEnabled] = useState(false);
@@ -19,7 +19,7 @@ const ProjectDetail = () => {
     name: "Project Description",
     description: "",
    ProjectDetail:"",
-    images: [img1, img1, img1]
+    images: [img2]
   };
 
   const options = {
@@ -59,7 +59,7 @@ const ProjectDetail = () => {
       <div className="breadcrumb-container">
         {/* Material-UI Breadcrumbs */}
         <div className="breadcrumb-heading">
-          <Typography variant="h1">Best Web Design and Development Services</Typography>
+          <Typography variant="h1">Smart Code</Typography>
         </div>
         <div className="breadcrumb-text">
           <Breadcrumbs aria-label="breadcrumb">
@@ -116,7 +116,7 @@ const ProjectDetail = () => {
         {isImageModalOpen && (
           <div className="full-screen-modal">
             <div className="full-screen-carousel-header">
-              <Typography variant="h2">{project.name}</Typography>
+              <Typography variant="h2" style={{fontSize:"30px"}}>Smart Code</Typography>
             </div>
             <div className="full-screen-carousel-container">
               <OwlCarousel className="owl-theme" {...options} autoplay={isAutoplayEnabled}>
@@ -138,4 +138,4 @@ const ProjectDetail = () => {
   );
 };
 
-export default ProjectDetail;
+export default Project2;

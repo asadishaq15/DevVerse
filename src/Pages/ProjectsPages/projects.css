@@ -1,86 +1,148 @@
 .breadcrumb-container {
-    background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  
-  .breadcrumb-heading {
-    text-align: center;
-    flex: 1;
-  }
-  
-  .breadcrumb-text {
-    margin-top: 30px;
-  }
-  
-  .breadcrumb-heading h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
+  background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
 
-  @media screen and (max-width: 768px) {
-    .breadcrumb-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .breadcrumb-text {
-      margin-right: 0;
-      margin-top: 10px;
-    }
-  }
-  
-  @media screen and (max-width: 992px) {
-    .breadcrumb-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .breadcrumb-text {
-      margin-right: 0;
-      margin-top: 10px;
-    }
-  }
+.breadcrumb-heading {
+  text-align: center;
+  flex: 1;
+}
 
-  .project-detail-container {
-    display: flex;
+.breadcrumb-text {
+  margin-top: 30px;
+  color: rgb(6, 24, 24);
+}
+
+.breadcrumb-heading h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumb-container {
     flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the container */
-  }
-  
-  .project-detail {
-    display: flex;
-    flex-direction: column; 
-  }
-  
-  .project-carousel-container {
-    flex: 3;
-    max-width: 100%;
-
-  }
-  
-  .project-carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  .description-container {
-    flex: 1; 
-    padding: 0 20px;
+    align-items: center;
+    text-align: center;
   }
 
-  /* Add this CSS to your existing styles */
+  .breadcrumb-text {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .breadcrumb-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .breadcrumb-text {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+.project-detail-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+}
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-carousel-item {
+  position: relative;
+
+}
+.project-carousel-container {
+  flex: 3;
+  max-width: 100%;
+  cursor: pointer;
+
+  position: relative; /* Add position relative to position the thumb overlay */
+}
+
+.project-carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; 
+}
+
+.description-container {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.Project-description-heading1{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #4547dc, #ece2db);
+  border-image-slice: 1;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #444;
+}
+
+.Project-description-text{
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #666;;
+  box-sizing: border-box;
+  padding: 0%;
+}
+.Project-detals-heading{
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #4547dc, #ece2db);
+  border-image-slice: 1;
+  font-size: 16px;
+  line-height: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #444;
+}
+/* Thumb Overlay */
+.thumb-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+
+}
+
+.project-carousel-item:hover .thumb-overlay {
+  opacity: 1;
+}
+
+.thumb-overlay-content {
+  /* Style your thumb overlay content */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
 
 /* Full Screen Image Modal */
 .full-screen-modal {
@@ -101,6 +163,60 @@
   max-height: 90%;
 }
 
+.full-screen-icon {
+  font-size: 80px; /* Increase the icon size */
+
+ position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: rgb(0, 0, 0);
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.project-carousel-item:hover .full-screen-icon {
+  transform: translate(50%, -50%) scale(1.2); /* Scale up the icon on hover */
+}
+
+.full-screen-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.full-screen-carousel-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  font-weight:900;
+  color: rgb(255, 255, 255);
+}
+
+.full-screen-carousel-container {
+  width: 70%; /* Adjust the width of the carousel container */
+}
+
+.full-screen-carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.full-screen-carousel-img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  max-height: 100%; /* Ensure the image doesn't exceed its container */
+  object-fit: contain;
+}
+
 .close-icon {
   position: absolute;
   top: 10px;
@@ -110,23 +226,83 @@
   z-index: 10000;
 }
 
+.owl-nav {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1; /* Ensure the arrows are above the thumb overlay */
+}
+
+/* Style the arrow icons */
+.owl-nav i {
+  color: #fff;
+
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Scale up the arrow icons on hover */
+.owl-nav i:hover {
+  transform: scale(1.2);
+}
+
+
 /* Adjust the position and size of other elements as needed */
 
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .project-detail-container {
+    flex-direction: row; 
+  }
+  
+  .description-container {
+    width: 100%; /* Ensure the description container takes full width */
+    max-width: unset; /* Reset max-width */
+  }
+  
+  .project-carousel-container {
+    max-width: 700px; /* Adjust the maximum width of the carousel container */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-detail-container {
+    flex-direction: column; /* Change to column layout for screens smaller than 768px */
+  }
+  
+  .full-screen-icon {
+    font-size: 50px; /* Increase the icon size */
+  }
 
   
-  @media (min-width: 768px) {
-    .project-detail-container {
-      flex-direction: row; /* Change back to row layout for larger screens */
-    }
-  
-    .project-carousel-container {
-      max-width: 700px; /* Adjust the maximum width of the carousel container */
-    }
+
+  .project-carousel-container {
+
+    max-width: 100%; /* Adjust the maximum width of the carousel container */
   }
-  
-  @media (max-width: 767px) {
-    .project-detail-container {
-      flex-direction: column; /* Change to column layout for screens smaller than 768px */
-    }
+}
+
+@media screen and (max-width: 992px) {
+  .project-detail-container {
+    flex-direction: column; /* Change to column layout for screens smaller than 992px */
   }
+
+
+  .project-carousel-container {
   
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;  }
+
+  .description-container {
+    margin-top: 20px;
+    max-width: 90%; /* Ensure the description container takes up to 90% width */
+  }
+}
+

@@ -41,18 +41,22 @@ import BusinessIntelligence from './Pages/Services/BusinessIntelligence /busines
 import SeoServices from './Pages/Services/SeoServices/seoServices';
 import RecentProjects from './components/RecentProjects/recentProjects';
 import Project1 from './Pages/ProjectsPages/Project1/project1';
+import ContactInfoContainer from './components/getQuotePage/contactInfo/contactInfo';
+import Project2 from './Pages/ProjectsPages/Project2/project2';
+import Project3 from './Pages/ProjectsPages/Project3/project3';
+import Project4 from './Pages/ProjectsPages/Project4/project4';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<BrowserRouter>
+
 
     {/* <App /> */}
    {/* <Home/> */}
    {/* <About/> */}
- {/* <Header/> */}
+ <Header/>
    {/* <Carousel/>
    <WelcomeMessage/>
    <Services/>
@@ -87,8 +91,8 @@ root.render(
 {/* <MobileAppDevelopment/> */}
 {/* <BusinessIntelligence/> */}
 {/* <SeoServices/> */}
-<Project1/>
-  </BrowserRouter>
+
+
  
   </React.StrictMode>
 );
