@@ -1,0 +1,134 @@
+/* Header */
+.header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.social-and-quote {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-link {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #333;
+}
+
+.quote-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quote-button:hover {
+    background-color: #0056b3;
+}
+
+/* Bottom Header */
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 150px; /* Adjust as needed */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li:first-child {
+    margin-left: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #007bff;
+}
+
+/* Hamburger Icon */
+.fas.fa-bars {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    .fas.fa-bars {
+        display: block; /* Show hamburger icon for small screens */
+    }
+
+    .navbar {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.open {
+        display: flex; /* Show navigation links when hamburger icon is clicked */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}

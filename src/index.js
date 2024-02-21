@@ -26,7 +26,6 @@ import AskProject from './components/testimonialsPage/askProject/askProject';
 import Testimonials from './components/testimonialsPage/testimonials/testimonials';
 import TestimonialsPage from './components/testimonialsPage/testimonials/testimonials';
 import TestimonialsBanner from './components/testimonialsPage/testimonialBanner/TestimonialsBanner';
-import Header from './components/navbar';
 import OneStopSolution from './components/OneStopSolution/oneStopSolution';
 import LatestWorkComponent from './components/ProjectPortfolio/latestWork';
 import ChatIcon from './components/chatIcon/chatIcon';
@@ -45,6 +44,7 @@ import ContactInfoContainer from './components/getQuotePage/contactInfo/contactI
 import Project2 from './Pages/ProjectsPages/Project2/project2';
 import Project3 from './Pages/ProjectsPages/Project3/project3';
 import Project4 from './Pages/ProjectsPages/Project4/project4';
+import Header from './components/Header/header';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -69,7 +69,7 @@ root.render(
   {/* <FAQ/>
   <Footer/> */}
 
-
+<Header/>
 {/* <TestimonialsPage/> */}
 
 {/* <TestimonialsBanner/> */}
