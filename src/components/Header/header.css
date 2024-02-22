@@ -1,134 +1,213 @@
 /* Header */
-.header {
+.site-header {
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Top Bar */
-.top-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+
+  }
+  .fab{
+    font-size: 0.8em;
+    display: block;
+    width: 34px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border-left: 1px solid #f2f2f2;
+  }
+ .social-links {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #666;
+}
+  
+  .site-header .social-link {
+    margin-right: 10px; /* Adjust the margin between icons as needed */
+  }
+  /* Define background colors for social links */
+.site-header .social-links .social-link {
+    display: inline-block;
+   /* Adjust padding as needed */
+    transition: background-color 0.3s ease;
 }
 
-.contact-info {
-    display: flex;
-    gap: 20px;
+/* Facebook */
+.site-header .social-links .social-link:nth-child(1):hover {
+    background-color: #4664a7;
 }
 
-.social-and-quote {
+/* Twitter */
+.site-header .social-links .social-link:nth-child(2):hover {
+    background-color: #1da1f2;
+}
+
+/* Instagram */
+.site-header .social-links .social-link:nth-child(3):hover {
+    background-color: #d72d4c;
+}
+
+/* LinkedIn */
+.site-header .social-links .social-link:nth-child(4):hover {
+    background-color: #0077b5;
+}
+
+/* WhatsApp */
+.site-header .social-links .social-link:nth-child(5):hover {
+    background-color: #1eba57;
+}
+
+  .top-header .contact-info {
     display: flex;
-    gap: 20px;
     align-items: center;
-}
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #666;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .top-header .contact-info span {
+    display: inline-block;
+    font-size: 13px;
 
-.social-link {
+    line-height: 32px;
+    padding-right: 5px;
+    font-family: 'Open Sans', sans-serif;
+ 
+    font-weight: 300;
+  
+    cursor: pointer;
+    border-left: 1px solid #f2f2f2;
+    color: #666;
+    box-sizing: border-box;
+  }
+  .site-header .contact-info span:hover {
+    color: #2259c8; /* Change to desired hover color */
+}
+  
+  .social-and-quote {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-links {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .social-links .social-link {
+    margin-right: 0.5rem;
     color: #000;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.social-link:hover {
-    color: #333;
-}
-
-.quote-button {
-    background-color: #007bff;
-    color: #fff;
+  }
+  
+  .quote-button {
+    background-color: #2356bd;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 0.3rem 1rem;
+
+    line-height: 33px!important;
     cursor: pointer;
-}
-
-.quote-button:hover {
-    background-color: #0056b3;
-}
-
-/* Bottom Header */
-.bottom-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.logo {
+  }
+  
+  .site-logo {
     text-decoration: none;
-}
-
-.logo img {
-    width: 150px; /* Adjust as needed */
-}
-
-.navbar {
+  }
+  
+  .site-logo img {
+    width: 130%;
+    height: 3rem;
+  }
+  
+  .site-header .navbar ul {
+    list-style-type: none;
     display: flex;
     align-items: center;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-}
-
-.navbar ul li:first-child {
-    margin-left: 0;
-}
-
-.navbar ul li a {
+    justify-content: space-around;
+  }
+  
+  .site-header .navbar ul li {
+    margin: 0 1.5rem;
+  }
+  
+  .site-header .navbar ul li a {
+    font-size: 2rem;
+    color: #000000;
     text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: #007bff;
-}
-
-/* Hamburger Icon */
-.fas.fa-bars {
-    display: none; /* Hide by default */
-    font-size: 24px;
+  }
+  
+  .site-header .navbar ul li a:hover {
+    color: #00bfff;
+    text-decoration: underline;
+  }
+  
+  .site-header .fa-bars {
+    color: #000000;
     cursor: pointer;
-}
-
-/* Media Query for Small Screens */
-@media screen and (max-width: 768px) {
-    .fas.fa-bars {
-        display: block; /* Show hamburger icon for small screens */
+    font-size: 3rem;
+    display: none;
+  }
+  
+  /* Media Query for Small Screens */
+  @media screen and (max-width: 768px) {
+    .site-header {
+      flex-direction: column;
+      align-items: flex-start;
     }
-
-    .navbar {
-        display: none; /* Hide navigation links by default */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust as needed */
-        left: 0;
-        background-color: #fff;
-        width: 100%;
-        padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    .top-header {
+      width: 100%;
     }
-
-    .navbar.open {
-        display: flex; /* Show navigation links when hamburger icon is clicked */
+  
+    .top-header .contact-info {
+      margin-bottom: 1rem;
     }
-
-    .navbar ul {
-        flex-direction: column;
+  
+    .site-header .fa-bars {
+      display: block;
+      margin-top: 1rem;
     }
-
-    .navbar ul li {
-        margin: 10px 0;
+  
+    .site-header .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 90px; /* Adjust as needed */
+      left: 0;
+      background-color: #fff;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 99; /* Ensure it appears below the header */
     }
-}
+  
+    .site-header .navbar.open {
+      display: flex;
+    }
+  
+    .site-header .navbar ul {
+      flex-direction: column;
+    }
+  
+    .site-header .navbar ul li {
+      margin: 10px 0;
+    }
+  }
+  

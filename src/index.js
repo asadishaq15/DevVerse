@@ -56,7 +56,7 @@ root.render(
     {/* <App /> */}
    {/* <Home/> */}
    {/* <About/> */}
- <Header/>
+
    {/* <Carousel/>
    <WelcomeMessage/>
    <Services/>
