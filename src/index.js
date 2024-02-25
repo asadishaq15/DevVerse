@@ -5,46 +5,8 @@ import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import Careers from './components/careers';
-import Home from './components/home';
-import About from './components/about';
-import Clients from './components/clients/clients';
-import TeamSection from './components/team';
-import Contact from './components/contact';
-import FAQ from './components/faq';
-import Footer from './components/foot';
 import { BrowserRouter } from 'react-router-dom';
-import Carousel from './components/caorusel/carouselComp';
-import TechStack from './components/techStack/techStack';
-import PortfolioStats from './components/portfolioStats/portfolioStats';
-import WelcomeMessage from './components/welcomeMesg/welcomeMessage';
-import WhyUS from './components/whyUs/whyUs';
-import GetQuotePage from './components/getQuotePage/getQuotePage';
-import ReqQuotePage from './components/getQuotePage/reqQuote/reqQuote';
-import DeliveredProjects from './components/testimonialsPage/deliveredProjects/deliveredProjects';
-import AskProject from './components/testimonialsPage/askProject/askProject';
-import Testimonials from './components/testimonialsPage/testimonials/testimonials';
-import TestimonialsPage from './components/testimonialsPage/testimonials/testimonials';
-import TestimonialsBanner from './components/testimonialsPage/testimonialBanner/TestimonialsBanner';
-import OneStopSolution from './components/OneStopSolution/oneStopSolution';
-import LatestWorkComponent from './components/ProjectPortfolio/latestWork';
-import ChatIcon from './components/chatIcon/chatIcon';
-import GoToTop from './components/gotoTop/goToTop';
-import Services from './components/services/services';
-import WebDevelopmentPage from './Pages/Services/WebDevelopment/webDevlopment';
-import Categories from './Pages/Services/WebDevelopment/categories/webDevCategories';
-import GraphicDesign from './Pages/Services/GraphicDesigning/graphicDesigning';
-import DigitalMarketing from './Pages/Services/DigitalMarketing/digitalMarketing';
-import MobileAppDevelopment from './Pages/Services/MobileAppDevelopment/mobileAppDevelopment';
-import BusinessIntelligence from './Pages/Services/BusinessIntelligence /businessIntelligence';
-import SeoServices from './Pages/Services/SeoServices/seoServices';
-import RecentProjects from './components/RecentProjects/recentProjects';
-import Project1 from './Pages/ProjectsPages/Project1/project1';
-import ContactInfoContainer from './components/getQuotePage/contactInfo/contactInfo';
-import Project2 from './Pages/ProjectsPages/Project2/project2';
-import Project3 from './Pages/ProjectsPages/Project3/project3';
-import Project4 from './Pages/ProjectsPages/Project4/project4';
-import Header from './components/Header/header';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -52,52 +14,10 @@ root.render(
   <React.StrictMode>
 
 
-
-    {/* <App /> */}
-   {/* <Home/> */}
-   {/* <About/> */}
-
-   {/* <Carousel/>
-   <WelcomeMessage/>
-   <Services/>
-   <WhyUS/> */}
-{/* <DeliveredProjects/>
-   <Clients/>
-<AskProject/> */}
-  {/* <TeamSection/> */}
-  {/* <Contact/> */}
-  {/* <FAQ/>
-  <Footer/> */}
-
-<Header/>
-{/* <TestimonialsPage/> */}
-
-{/* <TestimonialsBanner/> */}
-{/* <PortfolioStats/> */}
-{/* <Carousel/>
-<WelcomeMessage/>
-<LatestWorkComponent/>
+<App/>
 
 
-<OneStopSolution/>
-<WhyUS/>
-<ChatIcon/>
-<GoToTop/>
-<Footer/> */}
-{/* <WebDevelopmentPage/> */}
-{/* <Categories/> */}
-{/* <GraphicDesign/> */}
-{/* <DigitalMarketing/> */}
-{/* <MobileAppDevelopment/> */}
-{/* <BusinessIntelligence/> */}
-{/* <SeoServices/> */}
-
-
- 
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
