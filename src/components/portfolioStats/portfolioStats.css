@@ -20,7 +20,7 @@
   
   /* Updated styles for the icons */
   .stat-column .fa-icon {
-    color: #e6ea81; /* Blue color */
+    color: #345bbf; /* Blue color */
     font-size: 35px;
     margin-bottom: 15px; /* Adjust margin-bottom for spacing */
   }
@@ -34,7 +34,7 @@
   
   .stat-value {
     font-size: 24px;
-    color: #e2e75d;
+    color: #345bbf;
     font-weight: bold; /* Bold numeric values */
     margin: 0;
   }
@@ -45,3 +45,9 @@
     font-size: 20px;
   }
   
+
+  @media screen and (max-width: 768px) {
+    .portfolio-stats-container {
+      display: none;
+    }
+  }

@@ -3,13 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Im
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import './App.css';
 import Home from './components/home';
-import About from './components/about';
-import Team from './components/team';
-import Careers from './components/careers';
 import Contact from './components/contact';
 import Faq from './components/faq';
 import Footer from './components/foot';
-import GoToTop from './components/gotoTop/goToTop';
 import LatestWorkComponent from './components/ProjectPortfolio/latestWork';
 import Services from './components/services/services';
 import Header from './components/Header/header';

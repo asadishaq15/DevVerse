@@ -28,8 +28,8 @@ const WhyUS = () => {
                   <div className="heading-column">
                     <h2>Quality Products</h2>
                   </div>
-                  <div className="description">
-                    <p>
+                  <div >
+                    <p className="why-us-description">
                       We believe in Software Quality that is essential to deliver the product on time and on the required quality.
                     </p>
                   </div>
@@ -45,8 +45,8 @@ const WhyUS = () => {
                   <div className="heading-column">
                     <h2>Timely Work</h2>
                   </div>
-                  <div className="description">
-                    <p>
+                  <div >
+                    <p className="why-us-description">
                       We always plan the Project Development schedule for deploying the Project on time with all completed requirements.
                     </p>
                   </div>
@@ -64,8 +64,8 @@ const WhyUS = () => {
                   <div className="heading-column">
                     <h2>Reliability</h2>
                   </div>
-                  <div className="description">
-                    <p>
+                  <div >
+                    <p className="why-us-description">
                       Failure Free Products are our main target. We always develop the most reliable products without any failure issues in the future.
                     </p>
                   </div>
@@ -81,8 +81,8 @@ const WhyUS = () => {
                   <div className="heading-column">
                     <h2>Maintainable</h2>
                   </div>
-                  <div className="description">
-                    <p>
+                  <div >
+                    <p className="why-us-description">
                       Our products are fully maintainable for the injection of any new functionality or requirement.
                     </p>
                   </div>

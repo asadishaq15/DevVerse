@@ -16,7 +16,7 @@ const WelcomeMessage = () => {
       <div className="welcome-content" >
         <div className="logo-and-message" data-aos="fade-left">
           <div className="logo-container">
-            <img src={companyLogo} alt="Company Logo" className="logo" />
+            <img src='icon deVerse.png' alt="Company Logo" className="logo" />
           </div>
           <div className="text-container">
             <h1 className="welcome-heading">Welcome to DevVerse – Fastest Growing IT Company</h1>

@@ -78,11 +78,11 @@
   color: #ffffff;
 }
 
-.description {
+.why-us-description {
   margin: 0;
   text-align: justify; /* Justify the text */
   font-size: 1.2em;
-  color: #ffffff; /* Adjust description color as needed */
+  color: #fff; /* Adjust description color as needed */
 }
 
 .photo {

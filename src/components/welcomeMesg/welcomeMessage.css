@@ -18,7 +18,7 @@
 }
 
 .logo-container {
-  background-color: #e8e8e8;
+
   margin-right: 30px;
   text-align: center; 
   width: 160px; 
@@ -27,7 +27,6 @@
   align-items: center;
   justify-content: center; /* Center the logo horizontally */
   border-radius: 50%; /* Make it round */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
 .logo {

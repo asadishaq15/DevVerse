@@ -19,7 +19,7 @@ const ServiceCard = ({  title, description, imageUrl ,path,aosDelay}) => {
     </div>
     <div className="card-footer">
       <button className="contact-button" data-aos="zoom-in" data-aos-delay={aosDelay + 10}> {/* Adjust delay as needed */}
-        <Link to="/contact" style={{ color: 'white', fontWeight: "500" }}>CONTACT US</Link>
+        <Link to="/request-quote" style={{ color: 'white', fontWeight: "500" }}>CONTACT US</Link>
       </button>
     </div>
   </div>
@@ -37,21 +37,21 @@ const Services = () => {
    
       title: 'Web App Development',
       description: 'Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge.',
-      path: '/web-app-development',  
+      path: '/web-development',  
       imageUrl :'https://indoanalytica.com/static/images/Web-design-4.gif'
        },
     {
   
       title: 'Mobile App Development',
       description: 'We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms.',
-      path: '/mobile-app-development',  
+      path: '/mobile-apps',  
       imageUrl: 'https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg'
     },
     {
 
       title: 'SEO',
       description: 'Enhance your online presence and reach your target audience with our comprehensive SEO services. Our strategies are tailored to boost your website visibility, drive organic traffic, and improve search engine rankings.',
-      path: '/seo-service',  
+      path: '/seo-services',  
       imageUrl: 'https://www.ecompmarketing.com/images/ecomp-images/seo-iso.png'
     },
     {
@@ -65,7 +65,7 @@ const Services = () => {
 
       title: 'Graphic Designing',
       description: ' Elevate your brand identity and captivate your audience with our bespoke graphic design services. Our talented designers create visually stunning assets, including logos, brochures, and social media graphics, that effectively communicate your brand message and leave a lasting impression.',
-      path: '/graphic-desiging',  
+      path: '/graphic-designing',  
       imageUrl: 'https://www.zilliondesigns.com/blog/wp-content/uploads/Banner-5-Rising-Graphic-Designers-and-What-Sets-Them-Apart-1-1280x720.jpg'
     },
     {
