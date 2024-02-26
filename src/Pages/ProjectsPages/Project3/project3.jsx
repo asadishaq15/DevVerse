@@ -10,7 +10,7 @@ import { IconButton } from '@mui/material';
 import '../projects.css';
 import img3 from "../../../images/Slider_3.png";
 
-const Project3 = () => {
+const UPMobile = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAutoplayEnabled, setIsAutoplayEnabled] = useState(false);
@@ -138,4 +138,4 @@ const Project3 = () => {
   );
 };
 
-export default Project3;
+export default UPMobile;

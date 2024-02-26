@@ -9,17 +9,18 @@ import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import { IconButton } from '@mui/material';
 import '../projects.css';
 import img1 from "../../../images/Slider_1.png";
+import img2 from "../../../images/Slider_5.png";
 
-const ProjectDetail = () => {
+const BARS = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAutoplayEnabled, setIsAutoplayEnabled] = useState(false);
 
   const project = {
-    name: "Project Description",
+    name:"BARS",
     description: "",
    ProjectDetail:"",
-    images: [img1, img1, img1]
+    images: [img1, img2]
   };
 
   const options = {
@@ -59,14 +60,14 @@ const ProjectDetail = () => {
       <div className="breadcrumb-container">
         {/* Material-UI Breadcrumbs */}
         <div className="breadcrumb-heading">
-          <Typography variant="h1">Best Web Design and Development Services</Typography>
+          <Typography variant="h1">BARS</Typography>
         </div>
         <div className="breadcrumb-text">
           <Breadcrumbs aria-label="breadcrumb">
-            <Link color="inherit" href="/" style={{ fontSize: "15px" }}>
+            <Link to="/" color="inherit" style={{ fontSize: "15px" }}>
               <strong>Home</strong>
             </Link>
-            <Link color="inherit" href="/portfolio" style={{ fontSize: "15px" }}>
+            <Link  to="/portfolio" color="inherit"style={{ fontSize: "15px" }}>
               <strong>Portfolio</strong>
             </Link>
             <Typography color="textPrimary" style={{ fontSize: "13px" }}>Project</Typography>
@@ -98,7 +99,7 @@ const ProjectDetail = () => {
             lineHeight: "22px",
             marginBottom:"8px"
           }}
-          >{project.name}</h4></Typography>
+          >Project Description</h4></Typography>
           <Typography variant="body1" className='Project-description-text' 
           style={{
             marginTop:"8px",
@@ -112,7 +113,6 @@ const ProjectDetail = () => {
           </h4>
         </div>
 
-        {/* Full Screen Image Modal */}
         {isImageModalOpen && (
           <div className="full-screen-modal">
             <div className="full-screen-carousel-header">
@@ -138,4 +138,4 @@ const ProjectDetail = () => {
   );
 };
 
-export default ProjectDetail;
+export default BARS;

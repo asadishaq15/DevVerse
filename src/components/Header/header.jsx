@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
+import companyLogo from "../../images/companyLogo.png"
 import './header.css';
 
 const Header = () => {
@@ -63,7 +64,7 @@ const Header = () => {
         <div className="companyLogo">
 
         <Link to="/" className="site-logo">
-          <img src='deVerse png.png' alt="Logo" />
+          <img src={companyLogo} alt="Logo" />
         </Link>
         </div>
         <div className={`fas fa-bars ${isNavOpen ? 'open' : ''}`} onClick={toggleNav}></div>

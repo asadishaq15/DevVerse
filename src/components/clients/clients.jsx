@@ -3,38 +3,20 @@ import OwlCarousel from 'react-owl-carousel3';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './clients.css'; // Create a corresponding CSS file for styling
-import laravel from "../../images/laravel-2.svg"
-import javascript from "../../images/javascript-1.svg"
-import html from "../../images/html-1.svg"
-import css from "../../images/css-3.svg"
-import react from "../../images/react-2.svg"
-import node from "../../images/nodejs.svg"
-import nextjs from "../../images/next-js.svg"
-import c from "../../images/c--4.svg"
-import tailwindcss from "../../images/tailwind-css-2.svg"
-import mySQL from "../../images/mysql-logo.svg"
-import mongoDB from "../../images/mongodb-icon-1.svg"
-import php from "../../images/php-1.svg"
-import android from "../../images/android-6.svg"
-import ios from "../../images/ios-2.svg"
-
+import LR from "./clientLogos/LR.jpg"
+import jsconsultant from "./clientLogos/jsconsultant.jpg"
+import veuloCars from "./clientLogos/veuloCars.jpg"
+import SE from "./clientLogos/SE.jpg"
+import ZahrawiCollege from "./clientLogos/college-logo.jpg"
 const Clients = () => {
   const clientLogos = [
     
-    laravel,
-    javascript,
-    html,
-    css,
-    react,
-    node,
-    nextjs,
-    c,
-    tailwindcss,
-    mySQL,
-    mongoDB,
-    php,
-    android,
-    ios
+   LR,
+   jsconsultant,
+   veuloCars,
+   SE,
+   ZahrawiCollege
+
   ];
 
   const owlRef = useRef(null);

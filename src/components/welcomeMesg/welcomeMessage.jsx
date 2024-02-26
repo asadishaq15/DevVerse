@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
-import companyLogo from "../../images/CompanyLogo.png"
+import icon from "../../images/companyIcon.png"
 import 'aos/dist/aos.css';
 import './welcomeMessage.css'; 
 import Clients from '../clients/clients';
@@ -16,7 +16,7 @@ const WelcomeMessage = () => {
       <div className="welcome-content" >
         <div className="logo-and-message" data-aos="fade-left">
           <div className="logo-container">
-            <img src='icon deVerse.png' alt="Company Logo" className="logo" />
+            <img src={icon} alt="Company Logo" className="logo" />
           </div>
           <div className="text-container">
             <h1 className="welcome-heading">Welcome to DevVerse – Fastest Growing IT Company</h1>

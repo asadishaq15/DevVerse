@@ -3,6 +3,7 @@ import "./webDevelopment.css"
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
+import WebDevCategories from './categories/webDevCategories';
 
 const WebDevelopmentPage = () => {
   return (
@@ -109,7 +110,7 @@ const WebDevelopmentPage = () => {
                   </div>
                 </div>
               </div>
-
+          <WebDevCategories/>
     </div>
   );
 };

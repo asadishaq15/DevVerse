@@ -10,7 +10,7 @@ import { IconButton } from '@mui/material';
 import '../projects.css';
 import img4 from "../../../images/Slider_4.png";
 
-const Project4 = () => {
+const OCEAM = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAutoplayEnabled, setIsAutoplayEnabled] = useState(false);
@@ -138,4 +138,4 @@ const Project4 = () => {
   );
 };
 
-export default Project4;
+export default OCEAM;

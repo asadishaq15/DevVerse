@@ -79,7 +79,8 @@
 }
 
 .why-us-description {
-  margin: 0;
+  padding: 0%;
+
   text-align: justify; /* Justify the text */
   font-size: 1.2em;
   color: #fff; /* Adjust description color as needed */

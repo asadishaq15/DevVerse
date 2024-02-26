@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './askProject.css';
+import { Link } from 'react-router-dom';
 
 const AskProject = () => {
   useEffect(() => {
@@ -17,7 +18,9 @@ const AskProject = () => {
       </div>
       <div className="innerContainer" data-aos="flip-up">
         <h2 className="wide-card-heading">Have a project in mind?</h2>
+        <Link to="/request-quote"> 
         <button className="wide-card-button">Get A Free Quote</button>
+        </Link>
       </div>
     </div>
   );

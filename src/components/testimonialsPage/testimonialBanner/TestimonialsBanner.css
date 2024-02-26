@@ -2,7 +2,7 @@
 
 .testimonials-banner {
     position: relative;
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzEh7acFyc1r-NqDf-ocljUJawmO6GguLzfPDa4VQOA&s') center/cover fixed no-repeat; /* Adjust background properties */
+    background: url('') center/cover fixed no-repeat; /* Adjust background properties */
     color: #fff; /* Set text color to white or a contrasting color */
     text-align: left; /* Align text to the left */
     padding: 100px 20px; /* Adjust padding as needed */

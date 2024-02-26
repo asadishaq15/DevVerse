@@ -10,6 +10,7 @@ import P4 from "../../images/Slider_4.png";
 import P5 from "../../images/Slider_5.png";
 import P6 from "../../images/Slider_6.png";
 import P7 from "../../images/Slider_7.png"
+import { Link } from 'react-router-dom';
 
 const LatestWorkComponent = () => {
     useEffect(() => {
@@ -18,39 +19,35 @@ const LatestWorkComponent = () => {
 
   const projects = [
     { 
-      name: "Project 1", 
+      name: "BARS", 
       imageUrl: P1,
-      link: 'https://lh3.googleusercontent.com/proxy/6B65hEWdfKW7b00bqoAERB7mfO9La_XVxiwmLWKrxWzJMR7AdOyKufkJUK6Gggx_mxDFSEbURe6CotFT84I9fmtaf3Y5JNhnDwLQpmJvtcGvHmAIbrx79jCQXPGMCyqX1_kvrqFPLSlhBQ' 
+      link: '/project/115/bars-application' 
     },
     { 
         name: "Smart Code", 
         imageUrl: P2,
-        link: 'https://lh3.googleusercontent.com/proxy/6B65hEWdfKW7b00bqoAERB7mfO9La_XVxiwmLWKrxWzJMR7AdOyKufkJUK6Gggx_mxDFSEbURe6CotFT84I9fmtaf3Y5JNhnDwLQpmJvtcGvHmAIbrx79jCQXPGMCyqX1_kvrqFPLSlhBQ' 
+        link: '/project/116/smart-code-application' 
       },
       { 
         name: "UP Mobile", 
         imageUrl: P3,
-        link: 'https://lh3.googleusercontent.com/proxy/6B65hEWdfKW7b00bqoAERB7mfO9La_XVxiwmLWKrxWzJMR7AdOyKufkJUK6Gggx_mxDFSEbURe6CotFT84I9fmtaf3Y5JNhnDwLQpmJvtcGvHmAIbrx79jCQXPGMCyqX1_kvrqFPLSlhBQ' 
+        link: '/project/117/up-mobile-application' 
       },
       { 
         name: "OCEAM", 
         imageUrl: P4,
-        link: 'https://lh3.googleusercontent.com/proxy/6B65hEWdfKW7b00bqoAERB7mfO9La_XVxiwmLWKrxWzJMR7AdOyKufkJUK6Gggx_mxDFSEbURe6CotFT84I9fmtaf3Y5JNhnDwLQpmJvtcGvHmAIbrx79jCQXPGMCyqX1_kvrqFPLSlhBQ' 
+        link: '/project/118/oceam-application' 
       },
-      { 
-        name: "BARS", 
-        imageUrl: P5,
-        link: 'https://lh3.googleusercontent.com/proxy/6B65hEWdfKW7b00bqoAERB7mfO9La_XVxiwmLWKrxWzJMR7AdOyKufkJUK6Gggx_mxDFSEbURe6CotFT84I9fmtaf3Y5JNhnDwLQpmJvtcGvHmAIbrx79jCQXPGMCyqX1_kvrqFPLSlhBQ' 
-      },
+   
       { 
         name: "Swipe Gallery", 
         imageUrl: P6,
-        link: 'https://lh3.googleusercontent.com/proxy/6B65hEWdfKW7b00bqoAERB7mfO9La_XVxiwmLWKrxWzJMR7AdOyKufkJUK6Gggx_mxDFSEbURe6CotFT84I9fmtaf3Y5JNhnDwLQpmJvtcGvHmAIbrx79jCQXPGMCyqX1_kvrqFPLSlhBQ' 
+        link: '/project/119/swipe-gallery' 
       },
       { 
         name: "The Drawers", 
         imageUrl: P7,
-        link: 'https://lh3.googleusercontent.com/proxy/6B65hEWdfKW7b00bqoAERB7mfO9La_XVxiwmLWKrxWzJMR7AdOyKufkJUK6Gggx_mxDFSEbURe6CotFT84I9fmtaf3Y5JNhnDwLQpmJvtcGvHmAIbrx79jCQXPGMCyqX1_kvrqFPLSlhBQ' 
+        link: '/project/121/the-drawers' 
       },
     ];
 
@@ -91,7 +88,8 @@ const LatestWorkComponent = () => {
               <h3 style={{
                     marginTop:"auto",
                     fontSize:"22px",
-                    fontFamily:"sans-serif"
+                    fontFamily:"sans-serif",
+                    color:"white"
               }}>
                 {project.name}
                 
@@ -100,7 +98,10 @@ const LatestWorkComponent = () => {
           </a>
         ))}
       </div>
+      <Link to="/portfolio">
+   
       <button className="end-button">VIEW PORTFOLIO</button>
+      </Link>
     </div>
   );
 };
