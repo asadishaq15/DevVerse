@@ -2,6 +2,11 @@ import React from 'react';
 import './webDevCategories.css';
 import { Link } from 'react-router-dom';
 import Clients from '../../../../components/clients/clients';
+import onlineStore from "../../../../assets/online store.gif";
+import corporate from "../../../../assets/corporate website 1 (1).gif";
+import portal from "../../../../assets/portal.gif";
+import landingPage from "../../../../assets/landing.gif";
+import responsive from "../../../../assets/responsive site.gif";
 
 const CategoryCard = ({ title, description, imageUrl }) => {
   return (
@@ -20,27 +25,27 @@ const WebDevCategories = () => {
     {
       title: 'Online store',
       description: 'A platform for an online sales business. It requires the development of a complex structure, several mandatory sections ("Delivery", "Payment", "Contacts", etc). Consists of dozens of pages with descriptions of products requiring promotion.',
-      imageUrl: 'https://indoanalytica.com/static/images/Web-design-4.gif'
+      imageUrl: onlineStore
     },
     {
       title: 'Corporate website',
       description: 'Web-based platform for document management, personnel management and information exchange between branches and remote units. Requires exclusive design and 24/7 support.',
-      imageUrl: 'https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg'
+      imageUrl:corporate,
     },
     {
       title: 'Portal',
       description: 'A large Internet resource with a large amount of information. Optimal for publishing news articles, sports reports, announcements. Attracts a lot of visitors and provides passive income by placing ads on the most visited pages.',
-      imageUrl: 'https://www.ecompmarketing.com/images/ecomp-images/seo-iso.png'
+      imageUrl: portal
     },
     {
       title: 'Landing',
       description: 'A one-page website to inform potential buyers about the benefits of the product. An autonomous advertising resource requiring a catchy design and quality content.',
-      imageUrl: 'https://www.agilecrm.com/img/dashboard-new/dashboard.png'
+      imageUrl: landingPage
     },
     {
       title: 'Responsive site',
       description: 'A resource that provides the correct display of information on any devices (smartphones, tablets). Attracts mobile users, increases business competitiveness.',
-      imageUrl: 'https://www.zilliondesigns.com/blog/wp-content/uploads/Banner-5-Rising-Graphic-Designers-and-What-Sets-Them-Apart-1-1280x720.jpg'
+      imageUrl: responsive,
     },
   ];
 

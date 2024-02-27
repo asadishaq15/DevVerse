@@ -1,0 +1,55 @@
+/* Breadcrumb container styles */
+.breadcrumb-container {
+    background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .breadcrumb-heading {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .breadcrumb-heading h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Breadcrumb text styles */
+  .breadcrumb-text {
+    margin-top: 30px;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .breadcrumb-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .breadcrumb-text {
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .breadcrumb-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .breadcrumb-text {
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  }

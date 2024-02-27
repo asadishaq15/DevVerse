@@ -2,7 +2,8 @@ import React from 'react';
 import './appCategories.css';
 import { Link } from 'react-router-dom';
 import Clients from '../../../../components/clients/clients';
-
+import HybridApplication from "../../../../assets/hybrid app.gif"
+import mobileApp from "../../../../assets/mobile app design.gif"
 const CategoryCard = ({ title, description, imageUrl }) => {
   return (
     <div className="categories-card">
@@ -25,12 +26,12 @@ const AppCategories = () => {
       {
         title: 'MOBILE WEB APPLICATION',
         description: 'The mobile web application is a thin client. Long neglected in favor of the native application, it is back in force with the development of HTML5 and CSS3 standards which will improve the user experience and offer more richness and functionality on mobile.',
-        imageUrl: 'https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg'
+        imageUrl: mobileApp
       },
       {
         title: 'HYBRID APPLICATION',
         description: 'A hybrid application combines the use of HTML5, JavaScript and CSS web technologies which are directly encapsulated in a native application. This allows you to benefit from all the functionalities of the mobile terminal and to distribute the application.',
-        imageUrl: 'https://www.ecompmarketing.com/images/ecomp-images/seo-iso.png'
+        imageUrl: HybridApplication
       },
     
   ];
