@@ -59,14 +59,14 @@ const GraphicDesign = () => {
           </div>
           {/* Second sub-container */}
           <div className="Flyer-Brochures-Image-container">
-            <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="CMS Image" />
+            <img src="https://alleyesonyou.com/wp-content/uploads/2021/12/Brochuretrifold.png" alt="CMS Image" />
           </div>
           </div>
         </div>
 
         <div className="Logo-Design-container">
         <div className="Logo-Design-Image-container">
-                <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="CRM Image" />
+                <img src="https://www.webmaxit.com/blog/wp-content/uploads/2021/02/Creative-Logo-Design-Services-in-USA.png" alt="CRM Image" />
               </div>
               <div className="Logo-Design-Text-container">
                 <h2>Logo Design</h2>

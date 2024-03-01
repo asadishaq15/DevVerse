@@ -27,7 +27,7 @@
 
 }
 
-.fab {
+.header-fab-icon {
   font-size: 0.8em;
   display: block;
   width: 34px;
@@ -112,7 +112,7 @@
 }
 
 .site-header .contact-info span:hover {
-  color: #2259c8; /* Change to desired hover color */
+  color: #2259c8;
 }
 
 .social-and-quote {

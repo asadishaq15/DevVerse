@@ -34,7 +34,7 @@ const SeoServices  = () => {
         We pride ourselves on offering a full range of SEO services Pakistan that integrates all the different steps of quality user acquisition, as you can discover below:
        </p>
        <div className="Iphone-Apps-Image-container">
-            <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="CMS Image" />
+            <img src="https://cdn.pixabay.com/photo/2022/12/28/11/55/seo-7682705_640.png" alt="CMS Image" />
           </div>
       
       </div>

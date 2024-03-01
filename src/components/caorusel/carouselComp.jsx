@@ -168,9 +168,9 @@ const Carousel = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 400,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 10000,
     slidesToShow: 1,
     slidesToScroll: 1,

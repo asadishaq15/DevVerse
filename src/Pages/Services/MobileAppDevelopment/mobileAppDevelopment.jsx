@@ -61,14 +61,14 @@ const MobileAppDevelopment = () => {
           </div>
           {/* Second sub-container */}
           <div className="Iphone-Apps-Image-container">
-            <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="CMS Image" />
+            <img src="https://www.webbrainstechnologies.com/wp-content/uploads/2022/08/ios-1.png" alt="CMS Image" />
           </div>
           </div>
         </div>
 
         <div className="Android-Apps-container">
         <div className="Android-Apps-Image-container">
-                <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="CRM Image" />
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/android-3384009_1280.png" alt="CRM Image" />
               </div>
               <div className="Android-Apps-Text-container">
                 <h2>Android Apps</h2>

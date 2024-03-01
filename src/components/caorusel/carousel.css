@@ -8,7 +8,7 @@
 
 }
 .slide-content .text-content.left-align {
-  order: 2; /* Change the order to 2 to align text content to the left */
+  /* Change the order to 2 to align text content to the left */
   
 }
 
@@ -16,6 +16,7 @@
 max-width: 100%;
 margin: 0;
 padding: 0%;
+
 }
 .slide-content .content {
   display: flex;
@@ -209,7 +210,7 @@ padding: 0%;
   .contentWrap {
     width: 100%;
     padding: 20px; 
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box; 
   }
   .slide-content{
     height: 450px;

@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import './App.css';
 import Home from './components/home';
-import Contact from './components/contact';
+import Contact from './components/Contact/contact';
 import Faq from './components/faq';
-import Footer from './components/foot';
+import Footer from './components/Footer/foot';
 import LatestWorkComponent from './components/ProjectPortfolio/latestWork';
 import Services from './components/services/services';
 import Header from './components/Header/header';
@@ -25,12 +25,14 @@ import TheDrawers from './Pages/ProjectsPages/Project7/project7';
 import ScrollToTopOnRouteChange from './components/scrollToTopOnPageChange/scrollTop';
 import GetQuotePage from './components/getQuotePage/getQuotePage';
 import GoToTop from './components/gotoTop/goToTop';
+import ChatIcon from './components/chatIcon/chatIcon';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <ScrollToTopOnRouteChange/>
+        <ChatIcon/>
         <Header />  
         <GoToTop/>
         <Routes>

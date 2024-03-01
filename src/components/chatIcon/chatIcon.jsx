@@ -3,9 +3,9 @@ import styled from '@emotion/styled';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const ChatIcon = () => {
+  const message = encodeURIComponent("Welcome to DevVerse!");
   const handleChat = () => {
-    // Replace 'your-whatsapp-number' with your actual WhatsApp number
-    window.open('https://wa.me/your-whatsapp-number', '_blank');
+    window.open(`https://wa.me/+923168704514?text=${message}`, '_blank');
   };
 
   return (
@@ -31,7 +31,7 @@ const Wrapper = styled.div`
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
-  z-index: 1;
+  z-index: 999;
 
   &:hover {
     background-color: #128c7e; /* Darker shade of WhatsApp green */

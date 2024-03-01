@@ -17,6 +17,7 @@ import Project4 from './Pages/ProjectsPages/Project4/project4';
 import Project5 from './Pages/ProjectsPages/Project5/project5';
 import Project6 from './Pages/ProjectsPages/Project6/project6';
 import Project7 from './Pages/ProjectsPages/Project7/project7';
+import Services from './components/services/services';
 
 
 
@@ -26,6 +27,7 @@ root.render(
 
 
 <App/>
+
 
 
   </React.StrictMode>

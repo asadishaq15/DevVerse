@@ -68,7 +68,7 @@ const WebDevelopmentPage = () => {
 
         <div className="CRM-container">
         <div className="crm-Image-container">
-                <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="CRM Image" />
+                <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-crm-illustration_23-2149379498.jpg?w=1480&t=st=1709317855~exp=1709318455~hmac=8ab25d0efedfefeb432f2cf6e68a9c5d1aefadd9007031b69fae21caf7b2662f" alt="CRM Image" />
               </div>
               <div className="crm-Text-container">
                 <h2>Customer Relationship Management (CRM)</h2>
@@ -106,7 +106,7 @@ const WebDevelopmentPage = () => {
                   </div>
                   {/* Second sub-container */}
                   <div className="customization-Image-container">
-                    <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="Customization Image" />
+                    <img src="https://img.freepik.com/free-vector/online-shopping-concept_52683-63898.jpg?t=st=1709318018~exp=1709321618~hmac=86801319caacb3720f4d87b5f5ba97adfadb9c505d9219b37b8a6d146e85c74f&w=1480" alt="Customization Image" />
                   </div>
                 </div>
               </div>
