@@ -4,25 +4,27 @@ import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import WebDevCategories from './categories/webDevCategories';
+import CMS from "../../../assets/CMS-Web-Development.png";
+import CRM from "../../../assets/CRM-handdrawn.jpg";
+import ecommerce from "../../../assets/E-Commerce.png";
 
 const WebDevelopmentPage = () => {
   return (
+    <div className="webDevelopmentMain">
     <div className="web-development-page">
       {/* Breadcrumb with background image */}
       <div className="breadcrumb-container">
-        {/* Material-UI Breadcrumbs */}
         <div className="breadcrumb-heading">
           <Typography variant="h1">Best Web Design and Development Services</Typography>
         </div>
         <div className="breadcrumb-text">
-        <Breadcrumbs aria-label="breadcrumb">
-          <Link color="inherit" href="/" style={{fontSize:"15px"}}>
-            <strong>Home</strong>
-          </Link>
-          <Typography color="textPrimary" style={{fontSize:"13px"}}>Web Development Services</Typography>
-        </Breadcrumbs>
+          <Breadcrumbs aria-label="breadcrumb">
+            <Link color="inherit" href="/" style={{fontSize:"15px"}}>
+              <strong>Home</strong>
+            </Link>
+            <Typography color="textPrimary" style={{fontSize:"13px"}}>Web Development Services</Typography>
+          </Breadcrumbs>
         </div>
-
       </div>
 
       <div className="web-development-container">
@@ -49,7 +51,8 @@ const WebDevelopmentPage = () => {
            business strategy and requirements to help create the competitive online presence.
         </p>
       </div>
-        <div className="CMS-container">
+
+      <div className="CMS-container">
         <div className="cms-content">
           <div className="cms-Text-container">
             <h2>Content Management System</h2>
@@ -61,56 +64,58 @@ const WebDevelopmentPage = () => {
           </div>
           {/* Second sub-container */}
           <div className="cms-Image-container">
-            <img src="https://esolz.net/wp-content/uploads/2021/04/CMS-Web-Development.png" alt="CMS Image" />
-          </div>
+            <img src={CMS} alt="CMS Image" />
           </div>
         </div>
+      </div>
 
-        <div className="CRM-container">
+      <div className="CRM-container">
         <div className="crm-Image-container">
-                <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-crm-illustration_23-2149379498.jpg?w=1480&t=st=1709317855~exp=1709318455~hmac=8ab25d0efedfefeb432f2cf6e68a9c5d1aefadd9007031b69fae21caf7b2662f" alt="CRM Image" />
-              </div>
-              <div className="crm-Text-container">
-                <h2>Customer Relationship Management (CRM)</h2>
-                <p>
-                  A customer relationship management (CRM) is a tool allowing you to have better management of your business contacts. It offers the possibility of having a panel of marketing solutions in order to capture and build customer loyalty to your brand. Right now, a very good factor and a guarantee of reputation for a company is to ensure a unique relationship with its customers. At Elexoft, we set up a CRM based on your activity by defining the indicators that will be important to take into account. You will be able to process and analyze data relating to your customers and define good business planning.
-                </p>
-                <h2>Our CRM expertise</h2>
-                <ul>
-                  <li>After Sales</li>
-                  <li>Assessment KPI's</li>
-                  <li>Identification of Customer Needs</li>
-                  <li>Customer Relationship</li>
-                  <li>Improved Sales</li>
-                  <li>Prospect Contact Base</li>
-                  <li>Customer Follow-up</li>
-                  <li>Marketing</li>
-                </ul>
-              </div>
-            
-             
-            </div>
-            <div className="Customization-container">
-                <div className="customization-content">
-                  <div className="customization-Text-container">
-                    <h2>Wordpress, Joomla, Shopify Customization</h2>
-                    <p>
-                      If you’re looking for Wordpress or Joomla, trust us that we’ve got it covered for you. 
-                      In case you’re having any sort of inconvenience in your project or assignment, our web developers can make this job really easy for you. 
-                      We’re a web developing company who is bringing much needed advancement in wordpress, joomla and shopify customization and we’re doing it in style. 
-                      Through our shopify tool, you can sell your administration on your web and we can guide as best web development company. 
-                      We’ll help you by all means in starting your any sort of entrepreneurship business and through our website maintenance services; 
-                      you can make your business a big thing in a span of couple of weeks/months. In today’s world it is really hectic and tough to start an online 
-                      merchandise store because you need absolute knowledge to get the ball rolling. But in our case, we can simply make it happen for you.
-                    </p>
-                  </div>
-                  {/* Second sub-container */}
-                  <div className="customization-Image-container">
-                    <img src="https://img.freepik.com/free-vector/online-shopping-concept_52683-63898.jpg?t=st=1709318018~exp=1709321618~hmac=86801319caacb3720f4d87b5f5ba97adfadb9c505d9219b37b8a6d146e85c74f&w=1480" alt="Customization Image" />
-                  </div>
-                </div>
-              </div>
-          <WebDevCategories/>
+          <img src={CRM} alt="CRM Image" />
+        </div>
+        <div className="crm-Text-container">
+          <h2>Customer Relationship Management (CRM)</h2>
+          <p>
+            A customer relationship management (CRM) is a tool allowing you to have better management of your business contacts. It offers the possibility of having a panel of marketing solutions in order to capture and build customer loyalty to your brand. Right now, a very good factor and a guarantee of reputation for a company is to ensure a unique relationship with its customers. At Elexoft, we set up a CRM based on your activity by defining the indicators that will be important to take into account. You will be able to process and analyze data relating to your customers and define good business planning.
+          </p>
+          <h2>Our CRM expertise</h2>
+          <ul>
+            <li>After Sales</li>
+            <li>Assessment KPI's</li>
+            <li>Identification of Customer Needs</li>
+            <li>Customer Relationship</li>
+            <li>Improved Sales</li>
+            <li>Prospect Contact Base</li>
+            <li>Customer Follow-up</li>
+            <li>Marketing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="Customization-container">
+        <div className="customization-content">
+          <div className="customization-Text-container">
+            <h2>Wordpress, Joomla, Shopify Customization</h2>
+            <p>
+              If you’re looking for Wordpress or Joomla, trust us that we’ve got it covered for you. 
+              In case you’re having any sort of inconvenience in your project or assignment, our web developers can make this job really easy for you. 
+              We’re a web developing company who is bringing much needed advancement in wordpress, joomla and shopify customization and we’re doing it in style. 
+              Through our shopify tool, you can sell your administration on your web and we can guide as best web development company. 
+              We’ll help you by all means in starting your any sort of entrepreneurship business and through our website maintenance services; 
+              you can make your business a big thing in a span of couple of weeks/months. In today’s world it is really hectic and tough to start an online 
+              merchandise store because you need absolute knowledge to get the ball rolling. But in our case, we can simply make it happen for you.
+            </p>
+          </div>
+          {/* Second sub-container */}
+          <div className="customization-Image-container">
+            <img src={ecommerce} alt="Customization Image" />
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+    <WebDevCategories/>
     </div>
   );
 };

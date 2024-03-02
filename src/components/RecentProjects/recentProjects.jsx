@@ -12,49 +12,45 @@ import P4 from "../../images/Slider_4.png";
 import P5 from "../../images/Slider_5.png";
 import P6 from "../../images/Slider_6.png";
 import P7 from "../../images/Slider_7.png";
+import { Link } from 'react-router-dom';
 
 const RecentProjects = () => {
   const recentProjects = [
     { 
-        name: "Project 1", 
+        name: "BARS", 
         imageUrl: P1,
-        link: 'https://example.com/project1',
+        link: '/project/115/bars-application',
         techStack: "React, Node.js, Express, MongoDB"
       },
       { 
         name: "Smart Code", 
         imageUrl: P2,
-        link: 'https://example.com/smartcode',
+        link: '/project/116/smart-code-application',
         techStack: "Angular, Firebase"
       },
       { 
         name: "UP Mobile", 
         imageUrl: P3,
-        link: 'https://example.com/upmobile',
+        link: '/project/117/up-mobile-application',
         techStack: "iOS, Swift"
       },
       { 
         name: "OCEAM", 
         imageUrl: P4,
-        link: 'https://example.com/oceam',
+        link: '/project/118/oceam-application',
         techStack: "Java, Spring Boot"
       },
-      { 
-        name: "BARS", 
-        imageUrl: P5,
-        link: 'https://example.com/bars',
-        techStack: "Vue.js, Flask, PostgreSQL"
-      },
+    
       { 
         name: "Swipe Gallery", 
         imageUrl: P6,
-        link: 'https://example.com/swipegallery',
+        link: '/project/119/swipe-gallery',
         techStack: "React Native, Redux"
       },
       { 
         name: "The Drawers", 
         imageUrl: P7,
-        link: 'https://example.com/thedrawers',
+        link: '/project/121/the-drawers',
         techStack: "Python, Django, MySQL"
       },
   ]; 
@@ -105,17 +101,18 @@ const RecentProjects = () => {
         </div>
       </div>
       <div className="recent-projects-carousel-container">
-        <OwlCarousel {...options} ref={owlRef}>
-          {recentProjects.map((project, index) => (
-            <a key={index} href={project.link} className="recent-project-item">
-              <img src={project.imageUrl} alt={`Project ${index + 1}`} />
-              <div className="project-details">
-                <h5>{project.name}</h5>
-                <p>{project.techStack}</p>
-              </div>
-            </a>
-          ))}
-        </OwlCarousel>
+      <OwlCarousel {...options} ref={owlRef}>
+        {recentProjects.map((project, index) => (
+          <Link key={index} to={project.link} className="recent-project-item">
+            <img src={project.imageUrl} alt={`Project ${index + 1}`} />
+            <div className="project-details">
+              <h5>{project.name}</h5>
+              <p>{project.techStack}</p>
+            </div>
+          </Link>
+        ))}
+      </OwlCarousel>
+
       </div>
     </div>
   </div>

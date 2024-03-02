@@ -40,6 +40,9 @@ const Services = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+  useEffect(() => {
+    document.title = 'Services'; // Set the desired title
+  }, []);
 
   const servicesData = [
     {
@@ -107,6 +110,7 @@ const Services = () => {
     },
   
   ];
+
 
   return (
     <div className="services-container">

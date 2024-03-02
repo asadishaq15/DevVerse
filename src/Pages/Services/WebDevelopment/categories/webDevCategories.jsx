@@ -1,5 +1,4 @@
 import React from 'react';
-import './webDevCategories.css';
 import { Link } from 'react-router-dom';
 import Clients from '../../../../components/clients/clients';
 import onlineStore from "../../../../assets/online store.gif";
@@ -7,7 +6,7 @@ import corporate from "../../../../assets/corporate website 1 (1).gif";
 import portal from "../../../../assets/portal.gif";
 import landingPage from "../../../../assets/landing.gif";
 import responsive from "../../../../assets/responsive site.gif";
-
+import '../../categories.css'
 const CategoryCard = ({ title, description, imageUrl }) => {
   return (
     <div className="categories-card">

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from './Footer/foot'
 import Contact from './Contact/contact'
 import FAQSection from './faq'
@@ -15,6 +15,9 @@ import TechStackSlider from './techStack/techStack'
 import Clients from './clients/clients'
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'DevVerse | Top Software House'; 
+  }, []);
   return (
 <div>
 

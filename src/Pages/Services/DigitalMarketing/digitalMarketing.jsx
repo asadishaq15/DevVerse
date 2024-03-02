@@ -5,7 +5,8 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import MarketingCategories from './categories/marketingCategorie';
 import Clients from '../../../components/clients/clients';
-
+import seo from "../../../assets/SEOimg2.png"
+import smo from "../../../assets/images.png"
 const DigitalMarketing = () => {
   return (
     <div className="Digital-Marketing-page">
@@ -55,14 +56,14 @@ const DigitalMarketing = () => {
           </div>
           {/* Second sub-container */}
           <div className="seo-Image-container">
-            <img src="https://connect-sol.com/wp-content/uploads/2021/09/SEO-768x384-1.png" alt="CMS Image" />
+            <img src={seo} alt="CMS Image" />
           </div>
           </div>
         </div>
 
         <div className="smo-container">
         <div className="smo-Image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhi2np99JvIsvHlmy6S-vMtuYYfFqOP2QV79mkdN-62qCYJZxA6z-QyqweMtSaWbJZ5pk&usqp=CAU" alt="CRM Image" />
+                <img src={smo} alt="CRM Image" />
               </div>
               <div className="smo-Text-container">
                 <h2>Social Media Optimization (SMO)</h2>

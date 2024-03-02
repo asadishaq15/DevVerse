@@ -1,5 +1,5 @@
 import React from 'react';
-import './appCategories.css';
+import '../../categories.css'
 import { Link } from 'react-router-dom';
 import Clients from '../../../../components/clients/clients';
 import HybridApplication from "../../../../assets/hybrid app.gif"

@@ -38,8 +38,8 @@ const FAQSection = () => {
 
   return (
     <section className="faq">
-      <h1 className="heading" style={{ marginTop: '-2rem', color: '#00bfff' }} id="faq">
-        FAQ
+      <h1 className="faq-heading"  id="faq">
+      Frequently asked <strong>questions</strong>
       </h1>
       <div className="row">
         <div className="accordion-container">

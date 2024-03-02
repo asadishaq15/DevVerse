@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import OwlCarousel from 'react-owl-carousel3';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -9,11 +9,15 @@ import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import { IconButton } from '@mui/material';
 import '../projects.css';
 import img6 from "../../../images/Slider_6.png";
+import RecentProjects from '../../../components/RecentProjects/recentProjects';
 
 const SwipeGallery = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAutoplayEnabled, setIsAutoplayEnabled] = useState(false);
+    useEffect(()=>{
+      document.title='DevVerse | Swipe Gallery';
+    },[])
 
   const project = {
     name: "Project Description",
@@ -63,10 +67,10 @@ const SwipeGallery = () => {
         </div>
         <div className="breadcrumb-text">
           <Breadcrumbs aria-label="breadcrumb">
-            <Link color="inherit" href="/" style={{ fontSize: "15px" }}>
+            <Link to="/"  color="inherit" href="/" style={{ fontSize: "15px" }}>
               <strong>Home</strong>
             </Link>
-            <Link color="inherit" href="/portfolio" style={{ fontSize: "15px" }}>
+            <Link to="/portfolio"  color="inherit" href="/portfolio" style={{ fontSize: "15px" }}>
               <strong>Portfolio</strong>
             </Link>
             <Typography color="textPrimary" style={{ fontSize: "13px" }}>Project</Typography>
@@ -134,6 +138,7 @@ const SwipeGallery = () => {
           </div>
         )}
       </div>
+      <RecentProjects/>
     </div>
   );
 };

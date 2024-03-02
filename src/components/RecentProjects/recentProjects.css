@@ -112,14 +112,14 @@ aspect-ratio: 3/2;
 
   }
  
-  .owl-next:hover{
+  .recent-projects-owl-prev:hover{
     color: #fff;
-    background-color:#036ad9 ;
+    background-color:#0729e6 ;
   }
 
-  .owl-prev:hover{
+  .recent-projects-owl-next:hover{
     color: #fff;
-    background-color:#036ad9 ;
+    background-color:#0729e6 ;
   }
   
  

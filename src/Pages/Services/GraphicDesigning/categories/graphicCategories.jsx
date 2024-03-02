@@ -1,11 +1,11 @@
 import React from 'react';
-import './graphicCategories.css';
 import { Link } from 'react-router-dom';
 import Clients from '../../../../components/clients/clients';
 import UIUX  from "../../../../assets/ui ux design.gif";
 import SiteDesign  from "../../../../assets/online store.gif";
 import MobileAppDesign  from "../../../../assets/mobile app design.gif";
 import logoDesign from "../../../../assets/logo design.gif"
+import '../../categories.css'
 
 const CategoryCard = ({ title, description, imageUrl }) => {
   return (

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './portfolioStats.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faTasks, faUsers, faClock } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const PortfolioStats = () => {
   const [completedProjects, setCompletedProjects] = useState(0);
@@ -38,6 +39,13 @@ const PortfolioStats = () => {
   }, []);
 
   return (
+    <div className="PortfolioMain">
+
+
+         <Link to="/portfolio">
+   
+   <button className="end-button">VIEW PORTFOLIO</button>
+   </Link>
     <div className="portfolio-stats-container">
     <div className="stat-column">
       <FontAwesomeIcon icon={faBuilding} size="2x" className="fa-icon" />
@@ -59,6 +67,7 @@ const PortfolioStats = () => {
       <p className="stat-value">{weeklyWorkingHours}</p>
       <p className="stat-description">Dedicated hours per week</p>
     </div>
+  </div>
   </div>
   );
 };

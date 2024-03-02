@@ -1,6 +1,5 @@
 import React from 'react';
-import './marketingCategories.css';
-import { Link } from 'react-router-dom';
+import '../../categories.css'
 import paidReference from "../../../../assets/paid referencing.gif";
 import NaturalReferencing from "../../../../assets/natural referencing.gif";
 import InboundMarketing  from "../../../../assets/inbound marketing.gif";

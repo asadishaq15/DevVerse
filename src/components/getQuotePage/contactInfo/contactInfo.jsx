@@ -8,15 +8,15 @@ const ContactInfoContainer = () => {
       <p>
         Renowned mobile app and web development company delivering user-engaging mobile applications and responsive websites for multiple industry verticals.
       </p>
-      <ul className="contact-details">
+      <ul className="contact-details" style={{color:"white"}}>
         <li>
-          <span className="contact-icon">&#x2709;</span> Email:  <a href="mailto:sales@elexoft.com"> sales@devverse.com</a>
+          <span className="contact-icon" style={{color:"white"}}>&#x2709;</span> Email:  <a href="mailto:sales@elexoft.com">  sales@devverse.com</a>
         </li>
         <li>
-          <span className="contact-icon">&#x260E;</span> Phone:  <a href="tel:+92514592013"> +92 514 592013</a>
+          <span className="contact-icon" style={{color:"white"}} >&#x260E;</span> Phone:  <a href="tel:+92514592013">  +92 514 592013</a>
         </li>
         <li>
-          <span className="contact-icon">&#x1F4F1;</span> Mobile:  <a href="tel:+923066664480"> +92 306 6664480</a>
+          <span className="contact-icon" style={{color:"white"}}>&#x1F4F1;</span> Mobile:  <a href="tel:+923066664480">  +92 306 6664480</a>
         </li>
       </ul>
       <h2 className="working-hours-title">Working Hours</h2>

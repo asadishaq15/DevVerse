@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import OwlCarousel from 'react-owl-carousel3';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -10,12 +10,17 @@ import { IconButton } from '@mui/material';
 import '../projects.css';
 import img1 from "../../../images/Slider_1.png";
 import img2 from "../../../images/Slider_5.png";
+import RecentProjects from '../../../components/RecentProjects/recentProjects';
 
 const BARS = () => {
+  
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAutoplayEnabled, setIsAutoplayEnabled] = useState(false);
-
+ 
+  useEffect(() => {
+    document.title = 'DevVerse | BARS'; 
+  }, []); 
   const project = {
     name:"BARS",
     description: "",
@@ -134,6 +139,7 @@ const BARS = () => {
           </div>
         )}
       </div>
+      <RecentProjects/>
     </div>
   );
 };

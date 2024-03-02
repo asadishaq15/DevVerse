@@ -4,9 +4,12 @@ import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import AppCategories from './categories/appCategories';
-
+import iosDev from "../../../assets/ios-1.png"
+import androidDev from "../../../assets/android.png"
 const MobileAppDevelopment = () => {
   return (
+
+<div className="mobile-App-Main">
     <div className="Mobile-App-page">
    
       <div className="breadcrumb-container">
@@ -61,14 +64,14 @@ const MobileAppDevelopment = () => {
           </div>
           {/* Second sub-container */}
           <div className="Iphone-Apps-Image-container">
-            <img src="https://www.webbrainstechnologies.com/wp-content/uploads/2022/08/ios-1.png" alt="CMS Image" />
+            <img src={iosDev} alt="CMS Image" />
           </div>
           </div>
         </div>
 
         <div className="Android-Apps-container">
         <div className="Android-Apps-Image-container">
-                <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/android-3384009_1280.png" alt="CRM Image" />
+                <img src={androidDev} alt="CRM Image" />
               </div>
               <div className="Android-Apps-Text-container">
                 <h2>Android Apps</h2>
@@ -84,8 +87,9 @@ const MobileAppDevelopment = () => {
              
             </div>
           
-            <AppCategories/>
 
+    </div>
+            <AppCategories/>
     </div>
   );
 };

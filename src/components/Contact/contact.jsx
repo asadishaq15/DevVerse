@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './contact.css'
 const Contact = () => {
+  useEffect(() => {
+    document.title = 'Contact Us | Software House | DevVerse'; 
+  }, []); 
+  
   return (
     <section id="contact" className="contact">
       <h1 className="Contact-heading" style={{

@@ -6,6 +6,8 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Clients from '../../../components/clients/clients';
 import SeoCategories from './categories/seoCategories';
+import seo from "../../../assets/seoimg.png"
+
 
 const SeoServices  = () => {
   return (
@@ -34,7 +36,7 @@ const SeoServices  = () => {
         We pride ourselves on offering a full range of SEO services Pakistan that integrates all the different steps of quality user acquisition, as you can discover below:
        </p>
        <div className="Iphone-Apps-Image-container">
-            <img src="https://cdn.pixabay.com/photo/2022/12/28/11/55/seo-7682705_640.png" alt="CMS Image" />
+            <img src={seo} alt="CMS Image" />
           </div>
       
       </div>
