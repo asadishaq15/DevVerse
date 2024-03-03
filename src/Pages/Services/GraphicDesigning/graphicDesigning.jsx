@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./graphicDesigning.css"
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -9,6 +9,12 @@ import LogoDesign from "../../../assets/Creative-Logo-Design-Services-in-USA.png
 import Clients from '../../../components/clients/clients';
 
 const GraphicDesign = () => {
+  
+  useEffect(()=>{
+    document.title='Best Graphic Designing Services';
+  },[]);
+
+
   return (
   <div className="graphic-deigining-main">
     <div className="Graphic-designer-page">

@@ -5,12 +5,23 @@ import './header.css';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState(null); 
   const [isDropdownOpen, setisDropdownOpen] = useState(false); // State for Services dropdown
   const [isTopHeaderScrolled, setIsTopHeaderScrolled] = useState(false);
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const toggleLink = (link) => {
+    setActiveLink(link === activeLink ? null : link);
+    setActiveDropdown(null); // Close active dropdown when a link is clicked
+  };
+
+  const toggleDropdown = (dropdown) => {
+    setActiveDropdown(dropdown === activeDropdown ? null : dropdown);
+    setActiveLink(null); // Close active link when a dropdown is clicked
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +48,8 @@ const Header = () => {
   const message = encodeURIComponent("Welcome to DevVerse!");
   return (
 
-      <header className={`site-header ${isTopHeaderScrolled ? 'fixed-top-header' : ''}`}>      <div className="top-header-container">
+    <header className={`site-header ${isNavOpen ? 'open' : ''}`}> 
+      <div className="top-header-container">
       <div className="top-header">
         <div className="contact-info">
          <Link to="contact"> <span><i className="fas fa-map-marker-alt"></i> Islamabad, Pakistan</span></Link>
@@ -72,30 +84,29 @@ const Header = () => {
         <div className="navigation-links">
           <nav className={`navbar ${isNavOpen ? 'open' : ''}`}>
             <ul className="navigation-links">
-              <li><Link to="/">Home</Link></li>
-              {/* Use onClick event handler to toggle Services dropdown */}
-              <li className="dropdown" onClick={toggleServicesDropdown}>
-                <a href="services" className="dropbtn">Services</a>
+            <li><Link to="/" className={activeLink === '/' ? 'active' : ''} onClick={() => toggleLink('/')}>Home</Link></li>             
+            <li className={`dropdown ${activeDropdown === 'services' ? 'active' : ''}`} onClick={() => toggleDropdown('services')}>
+
+              <Link to="/services" className="dropbtn">Services</Link>
                 {/* Conditionally render dropdown content based on isDropdownOpen state */}
-                <div className={`dropdown-content ${isDropdownOpen ? 'open' : ''}`}>
-                  <Link to="/web-development">Web Development</Link>
+                <div className={`dropdown-content ${activeDropdown === 'services' ? 'open' : ''}`}>                  <Link to="/web-development">Web Development</Link>
                   <Link to="/mobile-apps">Mobile Apps</Link>
                   <Link to="/graphic-designing">Graphic Designing</Link>
                   <Link to="/seo-services">SEO Services</Link>
                   <Link to="/digital-marketing">Digital Marketing</Link>
                 </div>
               </li>
-              <li><Link to="/portfolio">Portfolio</Link></li>
-              <li><Link to="/testimonials">Testimonials</Link></li>
-              <li className="dropdown" onClick={toggleServicesDropdown}>
-                <a href="/contact" className="dropbtn">Contact</a>
+              <li><Link to="/portfolio" className={activeLink === '/portfolio' ? 'active' : ''} onClick={() => toggleLink('/portfolio')}>Portfolio</Link></li>
+              <li><Link to="/testimonials" className={activeLink === '/testimonials' ? 'active' : ''} onClick={() => toggleLink('/testimonials')}>Testimonials</Link></li>
+              <li className={`dropdown ${activeDropdown === 'contact' ? 'active' : ''}`} onClick={() => toggleDropdown('contact')}>
+              <Link to="/contact" className="dropbtn">Contact</Link>
                 {/* Conditionally render dropdown content based on isDropdownOpen state */}
-                <div className={`dropdown-content ${isDropdownOpen ? 'open' : ''}`}>
+                <div className={`dropdown-content ${activeDropdown === 'contact' ? 'open' : ''}`}>
                   <Link to="/contact">Contact Us</Link>
                   <Link to="/request-quote">Get A Quote</Link>
                 </div>
               </li>
-              <li><Link to="/faq">FAQ</Link></li>
+              <li><Link to="/faq" className={activeLink === '/faq' ? 'active' : ''} onClick={() => toggleLink('/faq')}>FAQ</Link></li>
             </ul>
           </nav>
         </div>

@@ -50,10 +50,7 @@ const BARS = () => {
     setSelectedImage(null);
   };
 
-  const handleModalClick = (e) => {
-    // Prevent the click event from bubbling up to the parent container
-    e.stopPropagation();
-  };
+ 
 
   const handleToggleAutoplay = () => {
     setIsAutoplayEnabled(!isAutoplayEnabled);

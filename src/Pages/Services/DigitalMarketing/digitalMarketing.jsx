@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./digitalMarketing.css"
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -8,6 +8,9 @@ import Clients from '../../../components/clients/clients';
 import seo from "../../../assets/SEOimg2.png"
 import smo from "../../../assets/images.png"
 const DigitalMarketing = () => {
+  useEffect(()=>{
+    document.title='Best Digital Marketing Services';
+  },[]);
   return (
     <div className="Digital-Marketing-page">
    

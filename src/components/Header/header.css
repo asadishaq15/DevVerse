@@ -1,21 +1,31 @@
-/* Header */
 .site-header {
   background-color: #fff;
   width: 100%;
   position: relative;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  padding-top: 0%;
-
+  z-index: 1000;
 }
 
 .top-header-container {
   max-width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #f2f2f2;
   margin-right: 15px;
+}
+
+.navigation-container {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  z-index: inherit;
+  margin: 80px auto 0; /* Adjust top margin to accommodate the fixed top header */
+  background: #fff!important;
 }
 
 .top-header {
@@ -149,15 +159,6 @@
   display: block;
 }
 
-.navigation-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: #fff!important;
-}
-
 
 
 .companyLogo {
@@ -185,7 +186,7 @@
 }
 /* Dropdown Button */
 .dropbtn {
-  font-size: 14px; /* Reduced font size */
+  font-size: 20px; /* Reduced font size */
   border: none;
   outline: none;
   color: black;
@@ -213,19 +214,22 @@
 .site-header .navbar ul li .dropdown-content a{
   display: block;
   color: #666;
-  font-size: 12px; /* Reduced font size */
+  font-size: 13px; 
   font-family: 'Open Sans', sans-serif;
-  padding: 8px 6px; /* Adjusted padding to decrease height */
+  padding: 11px 16px; /* Adjusted padding to decrease height */
   text-decoration: none;
   box-sizing: border-box;
 
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #eeeeee;
 
 }
 
+.site-header .navbar ul li .dropdown-content a:hover{
+  border: transparent;
+}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  color: #184cb5;
+  color: #0e44af;
   border: none;
   
 }
@@ -267,14 +271,23 @@
   line-height: 20px;
   box-sizing: border-box;
   list-style: none;
+  border-bottom: 2px solid transparent; /* Add initial border */
+  transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Transition color and border-color */
 }
 
 .site-header .navbar ul li a:hover,
 .site-header .navbar ul li a.active {
   color: #184cb5;
-  border-bottom: 2px solid #184cb5;
-  text-decoration: none;
+  border-bottom-color: #184cb5; /* Change border color when hovered */
 }
+
+.navigation-links ul li a.active,
+.navigation-links ul li a:hover,
+.dropdown.active .dropbtn {
+  color: #184cb5;
+  border-bottom-color: #184cb5;
+}
+
 
 .site-header .fa-bars {
   color: #000000;

@@ -7,15 +7,7 @@
           rightImageSrc: 'https://img.freepik.com/premium-photo/white-wall-clean-cement-background-textured-blank-copy-space_24076-674.jpg', // Add the right image source
           buttonLink: "https://www.example.com/apps" 
         },
-        {
-          title1: "Mobile Apps Development",
-          title2: "We Build Awesome Apps",
-          description: "We know how to build Apps that will help you increase business.",
-          buttonText: "READ MORE",
-          rightImageSrc: "https://cdn.pixabay.com/photo/2023/02/26/07/37/android-mobile-app-development-7815022_1280.png", // Add the right image source
-          backgroundColor:"#f2f3f4",
-          buttonLink: "https://www.example.com/apps" 
-        },
+       
         {
         
           title1: "Web Development",
@@ -24,8 +16,19 @@
           buttonText: "READ MORE",
           rightImageSrc: "https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png", // Add the right image source
           backgroundColor:"#e5e4e2 ",
-          buttonLink: "https://www.example.com/apps" 
+          buttonLink: '/web-development'
         },
+
+        {
+          title1: "Mobile Apps Development",
+          title2: "We Build Awesome Apps",
+          description: "We know how to build Apps that will help you increase business.",
+          buttonText: "READ MORE",
+          rightImageSrc: "https://cdn.pixabay.com/photo/2023/02/26/07/37/android-mobile-app-development-7815022_1280.png", // Add the right image source
+          backgroundColor:"#f2f3f4",
+          buttonLink: "/mobile-apps" 
+        },
+
         {
         
           title1: "Software Development",
@@ -34,7 +37,7 @@
           buttonText: "READ MORE",
           rightImageSrc: "https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png", // Add the right image source
           backgroundColor:"#e5e4e2 ",
-          buttonLink: "https://www.example.com/apps" 
+          buttonLink: "/services",
         },
         {
           title1: "Search Engine",
@@ -43,7 +46,7 @@
           buttonText: "READ MORE",
           rightImageSrc: "https://cdn.pixabay.com/photo/2016/10/17/03/01/seo-1746842_1280.png", // Add the right image source
           backgroundColor:"#bebebe  ",
-          buttonLink: "https://www.example.com/web" 
+          buttonLink: "/seo-services",
         },
         
       ];

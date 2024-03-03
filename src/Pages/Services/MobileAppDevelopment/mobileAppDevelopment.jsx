@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./mobileAppDevelopment.css"
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -7,6 +7,9 @@ import AppCategories from './categories/appCategories';
 import iosDev from "../../../assets/ios-1.png"
 import androidDev from "../../../assets/android.png"
 const MobileAppDevelopment = () => {
+  useEffect(()=>{
+    document.title='Best Mobile Apps Development';
+  },[]);
   return (
 
 <div className="mobile-App-Main">

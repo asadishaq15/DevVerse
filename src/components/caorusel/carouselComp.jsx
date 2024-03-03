@@ -7,6 +7,7 @@ import bg_slide1 from "../../images/img2.jpg";
 import Arrow from './arrow';
 import './carousel.css';
 import slides from './carouselData';
+import { Link } from 'react-router-dom';
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
@@ -96,31 +97,24 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
         >
           {description}
         </motion.p>
-        {isButtonVisible && (
-          <div className="button-container-wrap">
-
-      
-           <motion.a
-           href={buttonLink}
-           target="_blank" // Open link in a new tab
-           rel="noopener noreferrer" // Recommended for security when using target="_blank"
-         >
-           <motion.button
-             initial={{ scale: 0 }}
-             animate={{ scale: 1 }}
-             transition={{ duration: 0.3, ease: 'easeOut', delay: 2.0 }}
-             whileTap={{ scale: 0.8 }}
-             onTapStart={handleTapStart}
-             onTap={handleTapEnd}
-             onTapCancel={handleTapCancel}
-             className={`your-read-more-button-styles ${isTapped ? 'tapped' : ''}`}
-            
-           >
-             {buttonText}
-           </motion.button>
-         </motion.a>
-         </div>
-        )}
+              {isButtonVisible && (
+        <div className="button-container-wrap">
+          <Link to={buttonLink}  >
+            <motion.button
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.3, ease: 'easeOut', delay: 2.0 }}
+              whileTap={{ scale: 0.8 }}
+              onTapStart={handleTapStart}
+              onTap={handleTapEnd}
+              onTapCancel={handleTapCancel}
+              className={`your-read-more-button-styles ${isTapped ? 'tapped' : ''}`}
+            >
+              {buttonText}
+            </motion.button>
+          </Link>
+        </div>
+)}
       </div>
       {rightImageSrc && (
         <motion.div
@@ -168,9 +162,9 @@ const Carousel = () => {
 
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 400,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 10000,
     slidesToShow: 1,
     slidesToScroll: 1,

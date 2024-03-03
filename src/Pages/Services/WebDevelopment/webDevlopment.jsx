@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./webDevelopment.css"
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -9,6 +9,9 @@ import CRM from "../../../assets/CRM-handdrawn.jpg";
 import ecommerce from "../../../assets/E-Commerce.png";
 
 const WebDevelopmentPage = () => {
+  useEffect(()=>{
+    document.title='Best Web Design and Development';
+  },[]);
   return (
     <div className="webDevelopmentMain">
     <div className="web-development-page">

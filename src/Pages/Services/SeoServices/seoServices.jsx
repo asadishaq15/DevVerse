@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./seoServices.css"
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -10,6 +10,10 @@ import seo from "../../../assets/seoimg.png"
 
 
 const SeoServices  = () => {
+  useEffect(()=>{
+    document.title='Best SEO Services';
+  },[]);
+
   return (
     <div className="Seo-Services-page">
    
