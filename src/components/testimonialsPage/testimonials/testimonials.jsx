@@ -10,7 +10,7 @@ const TestimonialsPage = () => {
     document.title='Testimonals - Client Speaks | DevVerse';
   },[])
   return (
-    <div>
+    <div className='Testimonials-Page-Container'>
       <TestimonialsBanner/>
       <DeilveredProjects/>
 

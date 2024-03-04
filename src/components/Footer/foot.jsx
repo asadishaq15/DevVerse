@@ -1,6 +1,6 @@
 import React from 'react';
 
-import companyLogo from "../../images/companyIcon.png"
+import CompanyLogo from "../../assets/0.1.png";
 import PsebLogo from "../../assets/secp logo.jpeg";
 import PakFlag from "../../assets/pak flag.png";
 import SaudiFlag from "../../assets/saudi flag.png";
@@ -19,7 +19,7 @@ const Footer = () => {
                 <input type="email" name="email" placeholder='mail@example.com' />
                 <input type="submit" value="Send" />
               </form>
-              <img src={companyLogo} className='footer-logo' style={{marginTop:"40px"}}></img>
+              <img src={CompanyLogo} className='footer-logo' style={{marginTop:"40px"}}></img>
             </div>
             <div className="SocialLinksContainer">
             <h4 className="SocialLinksHeading">FOLLOW US</h4>
@@ -30,15 +30,15 @@ const Footer = () => {
               <Link to="https://x.com/devverseorg?s=21" className="twitter" target="_blank">
                 <i className="fab fa-twitter"></i>
               </Link>
-              <Link to="https://www.instagram.com/devverseorg/?igsh=YjVuNnY1Y3htZjhi#/" className="linkedin" target="_blank">
+              <Link to="https://www.linkedin.com/company/devverse-01/" className="linkedin" target="_blank">
                 <i className="fab fa-linkedin"></i>
               </Link>
-              <Link to="https://www.linkedin.com/company/devverse-01/" className="instagram" target="_blank">
+              <Link to="https://www.instagram.com/devverseorg/?igsh=YjVuNnY1Y3htZjhi#/" className="instagram" target="_blank">
                 <i className="fab fa-instagram"></i>
               </Link>
             </div>
           </div>
-
+          
         
 
         <div className="col-md-5 footer-links">
@@ -52,7 +52,9 @@ const Footer = () => {
 
             <div className="col-md-3 footer-contact" style={{ fontSize: '1.5rem' }}>
               <h4>Registered By SECP</h4>
+              <Link to="https://www.secp.gov.pk/">
               <img src={PsebLogo} alt="Devverse Logo" style={{ width: '100%', maxWidth: '150px', height: 'auto', marginTop: '10px' }} />
+              </Link>
               <br/>
               <br/>
                <img src={PakFlag} alt="Flag Image" style={{ width: '100%', maxWidth: '60px', height: 'auto', marginTop: '10px' }} />

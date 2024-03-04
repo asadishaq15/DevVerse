@@ -84,7 +84,7 @@ const Header = () => {
         <div className="navigation-links">
           <nav className={`navbar ${isNavOpen ? 'open' : ''}`}>
             <ul className="navigation-links">
-            <li><Link to="/" className={activeLink === '/' ? 'active' : ''} onClick={() => toggleLink('/')}>Home</Link></li>             
+            <li><Link to="/" className={activeLink === '/' ? 'active' : ''} onClick={() => toggleLink('/')}>Home</Link></li>              {/* Use onClick event handler to toggle Services dropdown */}
             <li className={`dropdown ${activeDropdown === 'services' ? 'active' : ''}`} onClick={() => toggleDropdown('services')}>
 
               <Link to="/services" className="dropbtn">Services</Link>

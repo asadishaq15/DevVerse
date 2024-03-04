@@ -54,10 +54,10 @@ const DeilveredProjects = ({ photos }) => {
   return (
     <div className="DeliveredProjects-container">
       <div className="DeliveredProjects-info">
-        <div className="DeliveredProjects-heading">
-          <h2 style={{color:"#3265b7"}}>What We Delivered</h2>
-          <p >DevVerse is committed to providing reliable, high-standard mobile apps and software solutions to our clients. We are offering multiple services in Website Development, Graphic Designing, Digital Marketing, and Mobile Apps Development. We make CMS, CRM, and provide ERP solutions</p>
-        </div>
+      <div className="DeliveredProjects-heading">
+        <h2 style={{color:"#3265b7"}}>What We Delivered</h2>
+        <p className="heading-paragraph">DevVerse is committed to providing reliable, high-standard mobile apps and software solutions to our clients. We are offering multiple services in Website Development, Graphic Designing, Digital Marketing, and Mobile Apps Development. We make CMS, CRM, and provide ERP solutions</p>
+      </div>
       </div>
       <div className="DeliveredProjects-carousel-container">
         <OwlCarousel {...options}>

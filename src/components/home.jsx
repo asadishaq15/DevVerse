@@ -19,7 +19,7 @@ const Home = () => {
     document.title = 'DevVerse | Top Software House'; 
   }, []);
   return (
-<div>
+<div className='homePage-container'>
 
 
 

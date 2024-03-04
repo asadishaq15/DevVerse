@@ -56,8 +56,29 @@
     transition: transform 0.3s ease;
     cursor: pointer;
   }
-
-
+ 
+  .DeliveredProjects-info {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+  .DeliveredProjects-heading h2 {
+    font-size: 24px; /* Further reduce heading font size */
+  }
+  
+  .DeliveredProjects-heading p {
+    font-size: 14px; /* Further reduce paragraph font size */
+  }
+  
+  .carousel-item img {
+    height: 400px; /* Adjust height of carousel images for smaller screens */
+  }
+  .DeliveredProjects-heading {
+    padding: 15px; /* Reduce padding for smaller screens */
+    margin-bottom: 30px; /* Reduce margin bottom for smaller screens */
+  }
+  .DeliveredProjects-heading p {
+    width: 70%; /* Set the width to 60% of its container */
+    padding: 0%; 
+}
 }
 .carousel-item img {
   width: 100%; /* Set the image to cover the full width of the container */
@@ -66,6 +87,18 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+
+  .banner-content{
+    padding: 0%;
+  }
+
+  .DeliveredProjects-heading p {
+    width: 50%; /* Set the width to 60% of its container */
+    padding: 0%; 
+    margin: 0%;
+}
 }
 
 .carousel-item img:hover {

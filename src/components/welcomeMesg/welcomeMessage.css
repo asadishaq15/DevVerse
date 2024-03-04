@@ -119,6 +119,7 @@
 @media screen and (max-width: 768px) {
   .welcome-container {
     height: auto; 
+    padding: 0%;
   }
 
   .logo-and-message {
