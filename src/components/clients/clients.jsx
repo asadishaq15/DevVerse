@@ -56,11 +56,11 @@ const Clients = () => {
       <div className="container">
         <div className="section-header-1">
           <h4>Our Clients</h4>
-          <div className="recentProjects-owl-nav" >
-          <button className="owl-prev" onClick={handlePrevClick}>
+          <div className="Clients-owl-nav" >
+          <button className="Clients-owl-prev" onClick={handlePrevClick}>
             <i className="fas fa-chevron-left"></i>
           </button>
-          <button className="owl-next" onClick={handleNextClick}>
+          <button className="Clients-owl-next" onClick={handleNextClick}>
             <i className="fas fa-chevron-right"></i>
           </button>
         </div>

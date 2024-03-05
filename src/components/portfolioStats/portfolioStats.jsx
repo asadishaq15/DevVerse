@@ -13,7 +13,7 @@ const PortfolioStats = () => {
   useEffect(() => {
     const animateCount = (targetValue, setValue) => {
       let currentValue = 0;
-      const step = Math.ceil(targetValue / 200);
+      const step = Math.ceil(targetValue / 400);
 
       const interval = setInterval(() => {
         currentValue += step;

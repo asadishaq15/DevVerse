@@ -60,7 +60,7 @@
   width: 95%;
   height: 40px;
   color: #000;
-  border: 1px solid #bcbcbc;
+  border: 1px solid #dfdfdf;
 
   outline: none;
   margin-bottom: 20px;
@@ -127,7 +127,7 @@
   .contact-form input,
   .contact-form textarea
   {
-    border: none;
+
     width: calc(100% - 20px);
   }
 }
