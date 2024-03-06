@@ -26,7 +26,7 @@ const WhyUS = () => {
                 </div>
                 <div className="content">
                   <div className="heading-column">
-                    <h2>Quality Products</h2>
+                    <h2  >Quality Products</h2>
                   </div>
                   <div >
                     <p className="why-us-description">

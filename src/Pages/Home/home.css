@@ -1,0 +1,16 @@
+
+@media screen and (max-width: 768px)  {
+  
+    .hide-on-small-screen{
+     display: none;
+    }
+    
+   }
+
+
+   
+   @media screen and (max-width: 597px) {
+    .hide-on-small-screen{
+        display: none;
+       }
+   }

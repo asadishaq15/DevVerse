@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import './App.css';
-import Home from './components/home';
 import Contact from './components/Contact/contact';
 import Faq from './components/faq';
 import Footer from './components/Footer/foot';
@@ -26,6 +25,7 @@ import ScrollToTopOnRouteChange from './components/scrollToTopOnPageChange/scrol
 import GetQuotePage from './components/getQuotePage/getQuotePage';
 import GoToTop from './components/gotoTop/goToTop';
 import ChatIcon from './components/chatIcon/chatIcon';
+import Home from './Pages/Home/home';
 
 function App() {
   return (

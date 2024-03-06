@@ -29,7 +29,7 @@ const Wrapper = styled.div`
   justify-content: center;
   font-size: 34px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
   z-index: 999;
 

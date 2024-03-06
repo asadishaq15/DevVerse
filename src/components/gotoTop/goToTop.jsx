@@ -1,21 +1,19 @@
-import { keyframes } from '@emotion/react';
-import styled from '@emotion/styled';
-
-
 import React, { useEffect, useState } from 'react';
+import { IconButton } from '@mui/material';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const goToBtn = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  const goToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const listenToScroll = () => {
-    let heightToHidden = 250;
+    let heightToVisible = 250;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
-    if (winScroll > heightToHidden) {
+    if (winScroll > heightToVisible) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -28,58 +26,31 @@ const GoToTop = () => {
   }, []);
 
   return (
-    <Wrapper>
+    <>
       {isVisible && (
-        <TopButton className='top-btn' onClick={goToBtn}>
-          <TopIcon>&#8593;</TopIcon>
-          <span></span>
-        </TopButton>
+        <IconButton
+          onClick={goToTop}
+          sx={{
+            position: 'fixed',
+            bottom: '105px',
+            right: '15px',
+            zIndex: '999',
+            height:'36px',
+            width:'36px',
+            lineHeight:'36px',
+            borderRadius:'0px',
+            backgroundColor: '#444',
+            color: '#fff',
+            '&:hover': {
+              backgroundColor: '#2980b9',
+            },
+          }}
+        >
+          <ArrowUpwardIcon />
+        </IconButton>
       )}
-    </Wrapper>
+    </>
   );
 };
-
-const Wrapper = styled.section`
-  position: fixed;
-  bottom: 105px;
-  right: 15px;
-  z-index: 999;
-`;
-
-const TopButton = styled.button`
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
-  transition: background-color 0.8s ease;
-
-  &:hover {
-    background-color: #2980b9;
-  }
-
-  span {
-    margin-left: 5px;
-  }
-`;
-
-const bounce = keyframes`
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-1rem);
-  }
-`;
-
-const TopIcon = styled.span`
-  display: inline-block;
-  animation: ${bounce} 1.2s linear infinite alternate-reverse;
-`;
 
 export default GoToTop;

@@ -95,16 +95,8 @@
 
 /* For smaller screens */
 @media (max-width: 768px) {
-  .text-photo-container {
-    flex-direction: column; /* Change flex direction for smaller screens */
-  }
-
-  .text-side {
-    order: 2; /* Move text side below photo side */
-    margin-top: 20px; /* Add margin to separate text and photo sides */
-  }
-
-  .photo-side {
-    order: 1; /* Move photo side above text side */
-  }
+  
+ .main-container{
+  display: none;
+ }
 }
