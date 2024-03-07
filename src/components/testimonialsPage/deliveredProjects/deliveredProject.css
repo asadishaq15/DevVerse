@@ -40,18 +40,19 @@
 
 .DeliveredProjects-carousel-container {
   width: 108%;
-  height: 694.691px;
+  height: auto;
 
 }
 @media only screen and (max-width: 768px) {
   .DeliveredProjects-carousel-container {
     width: 130%; 
-    height: 694.691px;; /* Adjust height for smaller screens */
+    height:auto;; /* Adjust height for smaller screens */
   }
   .carousel-item img {
     width: 100%; /* Set the image to cover the full width of the container */
-    height: 694.691px; /* Set the height of the image */
-    object-fit: cover;
+    height: auto; /* Set the height of the image */
+    object-fit: contain; 
+    aspect-ratio: 3/2;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -82,8 +83,9 @@
 }
 .carousel-item img {
   width: 100%; /* Set the image to cover the full width of the container */
-  height: 694.691px; /* Set the height of the image */
-  object-fit: cover;
+  height: auto; /* Set the height of the image */
+  object-fit: contain; 
+  padding: 0%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;

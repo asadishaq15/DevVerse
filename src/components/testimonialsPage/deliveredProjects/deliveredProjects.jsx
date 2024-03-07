@@ -3,33 +3,48 @@ import OwlCarousel from 'react-owl-carousel3';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './deliveredProject.css'; // Ensure to import your CSS file for styling
+import s1 from "../../../assets/s1.jpg"
+import s2 from "../../../assets/s2.jpg"
+import s3 from "../../../assets/s3.jpg"
+import s4 from "../../../assets/s4.jpg"
+import s5 from "../../../assets/s5.jpg"
+import s6 from "../../../assets/s6.jpg"
+import s7 from "../../../assets/s7.jpg"
 
 const DeilveredProjects = ({ photos }) => {
   const DeliveredProjects = [
     {
       id: 1,
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscCytvWC2M6bqUR5EtpzVmDbVbPrAtlA2FrNDuUHgsg&s",
+      image: s1,
     },
     {
       id: 2,
-      image: "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg",
+      image: s2,
     },
     {
       id: 3,
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbq7TFORQ_IaDWe4Rf8LOtMnJ_7JpkLOipqgcqMETwTg&s",
+      image: s3
     },
     {
       id: 4,
-      image: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsX29mZmljZV8zNV9oYXBweV9ibGFja193b21hbl9zbWlsZXNfYXRfY2FtZXJhX2lzb2xhdGVkX182Nzc5ZmU0OC1lMmJiLTQxMmYtOGE3OC1jNzQ2ZmFmNjQxM2VfMS5qcGc.jpg",
+      image: s4
     },
     {
       id: 5,
-      image: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsX29mZmljZV8zNV9oYXBweV9ibGFja193b21hbl9hbmRfc2hvcnRfaGFpcl9zbWlsZXNfYXRfY18wMGNjMzhkOS0yY2YyLTQzZjktYTFkNy1mOTI1MmU1NzVhY2NfMS5qcGc.jpg",
+      image: s5
+    },
+    {
+      id: 6,
+      image: s6
+    },
+    {
+      id: 7,
+      image: s7
     },
   ];
 
   const options = {
-    items: 4, // Set the number of slides to show
+    items: 4,
     loop: true,
     margin: 20,
     dots: false, // Disable default dots

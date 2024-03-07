@@ -5,13 +5,7 @@ import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import { BrowserRouter } from 'react-router-dom';
-import GraphicCategories from './Pages/Services/GraphicDesigning/categories/graphicCategories';
-import GraphicDesign from './Pages/Services/GraphicDesigning/graphicDesigning';
-import Clients from './components/clients/clients';
-import WebDevCategories from './Pages/Services/WebDevelopment/categories/webDevCategories';
-import WebDevelopmentPage from './Pages/Services/WebDevelopment/webDevlopment';
-import MobileAppDevelopment from './Pages/Services/MobileAppDevelopment/mobileAppDevelopment';
+
 
 
 
