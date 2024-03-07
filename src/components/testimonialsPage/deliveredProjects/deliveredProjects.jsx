@@ -3,13 +3,13 @@ import OwlCarousel from 'react-owl-carousel3';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './deliveredProject.css'; // Ensure to import your CSS file for styling
-import s1 from "../../../assets/s1.jpg"
-import s2 from "../../../assets/s2.jpg"
-import s3 from "../../../assets/s3.jpg"
-import s4 from "../../../assets/s4.jpg"
-import s5 from "../../../assets/s5.jpg"
-import s6 from "../../../assets/s6.jpg"
-import s7 from "../../../assets/s7.jpg"
+import s1 from "../../../assets/s1h.png"
+import s2 from "../../../assets/s2h.png"
+import s3 from "../../../assets/s3h.png"
+import s4 from "../../../assets/s4h.png"
+import s5 from "../../../assets/s5h.png"
+import s6 from "../../../assets/s6h.png"
+import s7 from "../../../assets/s7h.png"
 
 const DeilveredProjects = ({ photos }) => {
   const DeliveredProjects = [
@@ -46,7 +46,7 @@ const DeilveredProjects = ({ photos }) => {
   const options = {
     items: 4,
     loop: true,
-    margin: 20,
+    margin: 15,
     dots: false, // Disable default dots
     autoplay: true,
     autoplayTimeout: 3000, // Set the autoplay interval to 3 seconds

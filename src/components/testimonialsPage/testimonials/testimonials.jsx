@@ -4,6 +4,7 @@ import Testimonials from './testimonials'
 import AskProject from '../askProject/askProject'
 import TestimonialsBanner from '../testimonialBanner/TestimonialsBanner'
 import OneStopSolution from '../../OneStopSolution/oneStopSolution'
+import UserReviews from '../UserReviews/userReviews'
 
 const TestimonialsPage = () => {
   useEffect(()=>{
@@ -13,7 +14,7 @@ const TestimonialsPage = () => {
     <div className='Testimonials-Page-Container'>
       <TestimonialsBanner/>
       <DeilveredProjects/>
-
+        <UserReviews/>    
       <OneStopSolution/>
      <AskProject/>
     </div>

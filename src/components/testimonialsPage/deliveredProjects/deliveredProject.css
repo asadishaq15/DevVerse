@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   width: 100%; /* Set the container to cover full width of the screen */
 }
 
 .DeliveredProjects-info {
-
-  width: 650px; /* Ensure the container takes up the full width */
+width: 100%;
+  max-width: 650px; /* Ensure the container takes up the full width */
   margin-right: auto; /* Push the container to the left side of the page */
   padding: 20px;
 }
@@ -43,16 +43,24 @@
   height: auto;
 
 }
+
+.carousel-item img {
+  width: 100%; /* Set the image to cover the full width of the container */
+  height: 95vh; /* Set the height of the image */
+  padding: 0%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
 @media only screen and (max-width: 768px) {
   .DeliveredProjects-carousel-container {
-    width: 130%; 
+    width: 140%; 
     height:auto;; /* Adjust height for smaller screens */
   }
   .carousel-item img {
     width: 100%; /* Set the image to cover the full width of the container */
     height: auto; /* Set the height of the image */
-    object-fit: contain; 
-    aspect-ratio: 3/2;
+
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -69,9 +77,6 @@
     font-size: 14px; /* Further reduce paragraph font size */
   }
   
-  .carousel-item img {
-    height: 400px; /* Adjust height of carousel images for smaller screens */
-  }
   .DeliveredProjects-heading {
     padding: 15px; /* Reduce padding for smaller screens */
     margin-bottom: 30px; /* Reduce margin bottom for smaller screens */
@@ -81,31 +86,27 @@
     padding: 0%; 
 }
 }
-.carousel-item img {
-  width: 100%; /* Set the image to cover the full width of the container */
-  height: auto; /* Set the height of the image */
-  object-fit: contain; 
-  padding: 0%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
+
+
+
 @media only screen and (max-width: 576px) {
 
   .banner-content{
     padding: 0%;
   }
+  .DeliveredProjects-carousel-container {
+    width: 150%; 
+    height:auto;; /* Adjust height for smaller screens */
+  }
 
   .DeliveredProjects-heading p {
-    width: 50%; /* Set the width to 60% of its container */
+    width: 100%; /* Set the width to 60% of its container */
     padding: 0%; 
     margin: 0%;
 }
 }
 
-.carousel-item img:hover {
-  transform: scale(1.06);
-}
+
 
 .carousel-item:not(:last-child) {
   margin-right: 10px;

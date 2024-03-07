@@ -3,10 +3,10 @@ import OwlCarousel from 'react-owl-carousel3';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './clients.css'; // Create a corresponding CSS file for styling
-import LR from "./clientLogos/LCR.jpg"
-import jsconsultant from "./clientLogos/JS Consulting.jpg"
+import LR from "./clientLogos/lapsoride.png"
+import jsconsultant from "./clientLogos/jsconsultant.png"
 import veuloCars from "./clientLogos/veuloCars.jpg"
-import SE from "./clientLogos/Saring enterpriser.jpg"
+import SE from "./clientLogos/Saring.png"
 import ZahrawiCollege from "./clientLogos/college-logo.jpg"
 const Clients = () => {
   const clientLogos = [
@@ -14,8 +14,10 @@ const Clients = () => {
    
  
    veuloCars,
-  
-   ZahrawiCollege
+  jsconsultant,
+   ZahrawiCollege,
+   LR,
+   SE
 
   ];
 
