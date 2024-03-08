@@ -6,7 +6,7 @@ import './clients.css'; // Create a corresponding CSS file for styling
 import LR from "./clientLogos/lapsoride.png"
 import jsconsultant from "./clientLogos/jsconsultant.png"
 import veuloCars from "./clientLogos/veuloCars.jpg"
-import SE from "./clientLogos/Saring.png"
+import SE from "./clientLogos/seupdated.png"
 import ZahrawiCollege from "./clientLogos/college-logo.jpg"
 const Clients = () => {
   const clientLogos = [
@@ -38,7 +38,7 @@ const Clients = () => {
         items: 3,
       },
       1000: {
-        items: 6,
+        items: 2,
       },
     },
    
