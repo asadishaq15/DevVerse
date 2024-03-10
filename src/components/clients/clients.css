@@ -1,76 +1,69 @@
 /* Clients.css */
 
 .clients {
-
-    width: 100%;
+  width: 100%;
   height: auto;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0;
-  }
-  
-  .section-header-1 {
-    text-align: left;
-  }
-  
-  .section-header-1 h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-weight: 400;
-    color: #444;
-    line-height: 22px;
-    font-family: 'Open Sans', sans-serif;
-    padding-bottom: 8px;
-    border-bottom: 1px solid;
-    border-bottom-color: #036ad9;
-    box-sizing: border-box;
-  }
-  
-  .section-header p {
-    font-size: 1.2em;
-    color: #555;
-  }
-  
-  .clients-carousel-container {
-    position: relative;
-  
-  }
-  .Clients-owl-prev,
-  .Clients-owl-next{
+}
 
-    font-size: 1.4em;
-    height: 22px;
-    width: 22px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    line-height: 22px;
-    display: inline-block;
-    zoom: 1;
-    border-radius: 2px;
-    background-color: #fff;
-    margin-left: 4px;
-    margin: 2px;
-    width: 20px;
-    color: #ccc;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+}
 
-  .Clients-owl-next:hover{
-    color: #fff;
-    background-color:#0729e6 ;
-  }
-  
-  .Clients-owl-prev:hover{
-    color: #fff;
-    background-color:#0729e6 ;
-  }
+.section-header {
+  text-align: center; /* Center the header */
+}
 
-  
-  .client-item img {
- 
-object-fit: contain;
-    aspect-ratio: 3/2;
-  }
-  
+.section-header h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #444;
+  line-height: 22px;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #036ad9;
+  box-sizing: border-box;
+}
 
+.section-header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.clients-carousel-container {
+  position: relative;
+}
+
+.Clients-owl-prev,
+.Clients-owl-next {
+  font-size: 1.4em;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  line-height: 22px;
+  display: inline-block;
+  zoom: 1;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-left: 4px;
+  margin: 2px;
+  width: 20px;
+  color: #ccc;
+}
+
+.Clients-owl-next:hover {
+  color: #fff;
+  background-color: #0729e6;
+}
+
+.Clients-owl-prev:hover {
+  color: #fff;
+  background-color: #0729e6;
+}
+
+.client-item img {
+  max-width: 100%; /* Limit the image width to its container */
+  height: auto; /* Maintain aspect ratio */
+}

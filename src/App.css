@@ -485,7 +485,7 @@ html{
             width: 200px;
             height: auto;
           
-           
+           margin-top: 0px;
             padding: 5px; /* Add padding around the logo */
             animation: pulse 3s ease-in-out infinite;
         }
@@ -810,7 +810,7 @@ html{
         .faq{
        margin-top: 20px;
 
-            min-height: 80vh;
+            height: 80vh;
             width: 100vw;
             text-align: center;
             padding: 0 2rem;
@@ -823,7 +823,7 @@ html{
             font-family: sans-serif;
             font-weight: 400;
             color: white;
-        
+       
             margin-bottom: 5rem;
             font-size: 25px;
         }

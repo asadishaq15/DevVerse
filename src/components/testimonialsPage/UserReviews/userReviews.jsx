@@ -1,6 +1,7 @@
 // UserReviews.jsx
 
 import React from 'react';
+import {  Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel3';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -39,6 +40,12 @@ const UserReviews = () => {
     dots: true,
     autoplay: true,
     autoplayTimeout: 5000,
+    rewind: true,
+    responsiveClass: true,
+    autoHeight: true,
+    autoplayTimeout: 7000,
+    smartSpeed: 800,
+
     responsive: {
       0: {
         items: 1,
@@ -71,7 +78,9 @@ const UserReviews = () => {
         <div className="content-header">
           <h2>What they've said about us</h2>
           <p>Employers 100% satisfaction ratio and tremendous respect showcase the affection of employers towards Elexoft.</p>
-          <button>Contact Us</button>
+      <Link to="/contact">
+      <button>Contact Us <span style={{ paddingLeft: '5px' ,fontSize:"20px"}}>&rarr;</span></button>
+          </Link>
         </div>
       </div>
 

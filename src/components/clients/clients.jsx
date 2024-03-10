@@ -1,80 +1,71 @@
-import React, { useRef } from 'react';
-import OwlCarousel from 'react-owl-carousel3';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import './clients.css'; // Create a corresponding CSS file for styling
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './clients.css'; // Your custom CSS file
 import LR from "./clientLogos/lapsoride.png"
 import jsconsultant from "./clientLogos/jsconsultant.png"
 import veuloCars from "./clientLogos/veuloCars.jpg"
-import SE from "./clientLogos/seupdated.png"
+import SE from "./clientLogos/Saring.png"
 import ZahrawiCollege from "./clientLogos/college-logo.jpg"
+
 const Clients = () => {
   const clientLogos = [
-    
-   
- 
-   veuloCars,
-  jsconsultant,
-   ZahrawiCollege,
-   LR,
-   SE
-
+    veuloCars,
+    jsconsultant,
+    ZahrawiCollege,
+    LR,
+    SE
   ];
 
-  const owlRef = useRef(null);
-
-  const options = {
-    items: 6, // Set the number of slides to show
-    loop: true,
-    margin: 20,
-    dots: false, // Disable default dots
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplayTimeout: 3000, // Set the autoplay interval to 3 seconds
-    responsive: {
-      0: {
-        items: 1,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        }
       },
-      600: {
-        items: 3,
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
       },
-      1000: {
-        items: 2,
-      },
-    },
-   
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
-
-  const handlePrevClick = () => {
-    owlRef.current.prev();
-  };
-
-  const handleNextClick = () => {
-    owlRef.current.next();
-  };
-
 
   return (
     <div className="clients" >
       <div className="container">
-        <div className="section-header-1">
+        <div className="section-header">
           <h4>Our Clients</h4>
-          <div className="Clients-owl-nav" >
-          <button className="Clients-owl-prev" onClick={handlePrevClick}>
-            <i className="fas fa-chevron-left"></i>
-          </button>
-          <button className="Clients-owl-next" onClick={handleNextClick}>
-            <i className="fas fa-chevron-right"></i>
-          </button>
         </div>
-        </div>
-        <div className="clients-carousel-container">
-          <OwlCarousel {...options} ref={owlRef}>
+        <div className="clients-carousel">
+          <Slider {...settings}>
             {clientLogos.map((logo, index) => (
               <div key={index} className="client-item">
                 <img src={logo} alt={`Client Logo ${index + 1}`} />
               </div>
             ))}
-          </OwlCarousel>
+          </Slider>
         </div>
       </div>
     </div>
