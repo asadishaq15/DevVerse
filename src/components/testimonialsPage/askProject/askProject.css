@@ -53,7 +53,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   left: 0;
   width: 100%;
   height: 50px; /* Adjust the height of the wave */
-  background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/public/wave.svg'); /* Add your wave image */
+  background-image: url(''); /* Add your wave image */
   background-size: cover;
 }
 
@@ -64,7 +64,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     left: 0;
     width: 100%;
     height: 11rem; /* Adjust the height of the wave */
-    background: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/public/wave.png') repeat-x; /* Path to your wave image in the public directory */
+    background: url('') repeat-x; /* Path to your wave image in the public directory */
     background-size: 100rem 11rem; /* Adjust the background size */
     animation: waves 8s linear infinite; /* Adjust animation duration and timing function as needed */
     background-repeat: repeat-x;
