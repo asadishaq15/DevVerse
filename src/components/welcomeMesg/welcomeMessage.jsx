@@ -19,7 +19,7 @@ const WelcomeMessage = () => {
             <img src={icon} alt="Company Logo" className="logo" />
           </div>
           <div className="text-container">
-            <h1 className="welcome-heading">Welcome to DevVerse – Fastest Growing IT Company</h1>
+            <h1 className="welcome-heading">Welcome to DevVersey</h1>
             <p className="welcome-description">
               DevVerse Technologies is an IT Software Company founded in Sep 2021 in Pakistan. 
               We are offering multiple services in Website Development, Graphic Designing, Digital Marketing,
