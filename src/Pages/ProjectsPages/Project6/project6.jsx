@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import OwlCarousel from 'react-owl-carousel3';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { Link } from 'react-router-dom';
@@ -23,20 +25,22 @@ const SwipeGallery = () => {
     name: "Project Description",
     description: "",
    ProjectDetail:"",
-    images: [img6]
+    images: [img6,img6,img6]
   };
 
-  const options = {
-    items: 1,
-    loop: true,
-    margin: 10,
+
+  const settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
     dots: false,
-    nav: true,
-    navText: [
-      '<i class="fas fa-chevron-left"></i>',
-      '<i class="fas fa-chevron-right"></i>'
-    ],
+    infinite: true,
+    autoplay: false,
+    speed: 500,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
   };
+
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -81,8 +85,8 @@ const SwipeGallery = () => {
       <div className="project-detail-container">
         {/* Carousel */}
         <div className="project-carousel-container">
-          <OwlCarousel className="owl-theme" {...options}>
-            {project.images.map((image, index) => (
+        <Slider {...settings}>
+                 {project.images.map((image, index) => (
               <div key={index} className="project-carousel-item" onClick={() => handleImageClick(image)}>
                 <img src={image} alt={`Project ${index + 1}`} />
                 {/* Thumb Overlay */}
@@ -91,7 +95,7 @@ const SwipeGallery = () => {
                 </div>
               </div>
             ))}
-          </OwlCarousel>
+      </Slider>
         </div>
 
         {/* Description */}
@@ -123,13 +127,13 @@ const SwipeGallery = () => {
               <Typography variant="h2">Swipe Gallery</Typography>
             </div>
             <div className="full-screen-carousel-container">
-              <OwlCarousel className="owl-theme" {...options} autoplay={isAutoplayEnabled}>
+            <Slider {...settings} autoplay={isAutoplayEnabled}>
                 {project.images.map((image, index) => (
                   <div key={index} className="full-screen-carousel-item">
                     <img className ="full-screen-carousel-img" src={image} alt={`Project ${index + 1}`} />
                   </div>
                 ))}
-              </OwlCarousel>
+            </Slider>
             </div>
             <CloseIcon className="close-icon" onClick={handleCloseModal} />
             <IconButton onClick={handleToggleAutoplay} className="autoplay-button">

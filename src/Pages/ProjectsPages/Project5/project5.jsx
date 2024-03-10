@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import OwlCarousel from 'react-owl-carousel3';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { Link } from 'react-router-dom';
@@ -15,24 +17,27 @@ const Project5 = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAutoplayEnabled, setIsAutoplayEnabled] = useState(false);
 
-
   const project = {
     name: "Project Description",
     description: "",
-   ProjectDetail:"",
+    ProjectDetail:"",
     images: [img5]
   };
 
-  const options = {
-    items: 1,
-    loop: true,
-    margin: 10,
+  useEffect(() => {
+    document.title = 'DevVerse | BARS';
+  }, []);
+
+  const settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
     dots: false,
-    nav: true,
-    navText: [
-      '<i class="fas fa-chevron-left"></i>',
-      '<i class="fas fa-chevron-right"></i>'
-    ],
+    infinite: true,
+    autoplay: false,
+    speed: 500,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
   };
 
   const handleImageClick = (image) => {
@@ -78,7 +83,7 @@ const Project5 = () => {
       <div className="project-detail-container">
         {/* Carousel */}
         <div className="project-carousel-container">
-          <OwlCarousel className="owl-theme" {...options}>
+          <Slider {...settings}>
             {project.images.map((image, index) => (
               <div key={index} className="project-carousel-item" onClick={() => handleImageClick(image)}>
                 <img src={image} alt={`Project ${index + 1}`} />
@@ -88,47 +93,43 @@ const Project5 = () => {
                 </div>
               </div>
             ))}
-          </OwlCarousel>
+          </Slider>
         </div>
 
         {/* Description */}
         <div className="description-container">
-          <Typography variant="h2" className='Project-description-heading1'><h4
-          style={{
-            fontSize:"16px",
-            lineHeight: "22px",
-            marginBottom:"8px"
-          }}
-          >{project.name}</h4></Typography>
-          <Typography variant="body1" className='Project-description-text' 
-          style={{
-            marginTop:"8px",
-            fontSize:"13px",
-            lineHeight:"21px"
-          }}
-          >{project.description}</Typography>
+          <Typography variant="h2" className='Project-description-heading1'>
+            <h4 style={{ fontSize:"16px", lineHeight: "22px", marginBottom:"8px" }}>
+              {project.name}
+            </h4>
+          </Typography>
+          <Typography variant="body1" className='Project-description-text'>
+            {project.description}
+          </Typography>
           <h4 className='Project-detals-heading'>
               Project Details
-          <Typography variant="body1" className='Project-description-details'>{project.ProjectDetail}</Typography>
+            <Typography variant="body1" className='Project-description-details'>
+              {project.ProjectDetail}
+            </Typography>
           </h4>
         </div>
 
         {/* Full Screen Image Modal */}
         {isImageModalOpen && (
-          <div className="full-screen-modal">
+          <div className="full-screen-modal" onClick={handleCloseModal}>
             <div className="full-screen-carousel-header">
               <Typography variant="h2">BARS</Typography>
             </div>
             <div className="full-screen-carousel-container">
-              <OwlCarousel className="owl-theme" {...options} autoplay={isAutoplayEnabled}>
+              <Slider {...settings} autoplay={isAutoplayEnabled}>
                 {project.images.map((image, index) => (
                   <div key={index} className="full-screen-carousel-item">
                     <img className ="full-screen-carousel-img" src={image} alt={`Project ${index + 1}`} />
                   </div>
                 ))}
-              </OwlCarousel>
+              </Slider>
             </div>
-            <CloseIcon className="close-icon" onClick={handleCloseModal} />
+            <CloseIcon className="close-icon" />
             <IconButton onClick={handleToggleAutoplay} className="autoplay-button">
               <PlayCircleOutlineIcon color={isAutoplayEnabled ? "primary" : "action"} />
             </IconButton>
@@ -139,4 +140,4 @@ const Project5 = () => {
   );
 };
 
-export default Project5 ;
+export default Project5;

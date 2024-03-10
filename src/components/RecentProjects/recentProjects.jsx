@@ -1,9 +1,9 @@
 // RecentProjects.js
 
 import React, { useRef } from 'react';
-import OwlCarousel from 'react-owl-carousel3';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './recentProjects.css';
 import P1 from "../../images/Slider_1.png";
 import P2 from "../../images/Slider_2.png";
@@ -54,36 +54,49 @@ const RecentProjects = () => {
         techStack: "Python, Django, MySQL"
       },
   ]; 
-   const owlRef = useRef(null);
+  const sliderRef = useRef(null);
 
-  const options = {
-    items: 6, // Set the number of slides to show
-    loop: true,
-    margin: 20,
-    dots: false, // Disable default dots
+   const settings = {
+    slidesToShow: 6,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplayTimeout: 3000, // Set the autoplay interval to 3 seconds
-    responsive: {
-      0: {
-        items: 1,
+    swipe:true,
+    autoplaySpeed: 3000,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+        }
       },
-      600: {
-        items: 3,
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        }
       },
-      1000: {
-        items: 6,
-      },
-    },
-  
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  };
+  const handleSwipeStart = (event) => {
+    // Prevent the default action of the swipe event
+    event.preventDefault();
   };
 
   const handlePrevClick = () => {
-    owlRef.current.prev();
+    sliderRef.current.slickPrev();
   };
 
   const handleNextClick = () => {
-    owlRef.current.next();
+    sliderRef.current.slickNext();
   };
+
 
 
   return (
@@ -101,7 +114,7 @@ const RecentProjects = () => {
         </div>
       </div>
       <div className="recent-projects-carousel-container">
-      <OwlCarousel {...options} ref={owlRef}>
+      <Slider {...settings} ref={sliderRef} onTouchStart={handleSwipeStart}>
         {recentProjects.map((project, index) => (
           <Link key={index} to={project.link} className="recent-project-item">
             <img src={project.imageUrl} alt={`Project ${index + 1}`} />
@@ -111,7 +124,7 @@ const RecentProjects = () => {
             </div>
           </Link>
         ))}
-      </OwlCarousel>
+ </Slider>
 
       </div>
     </div>

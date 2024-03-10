@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import OwlCarousel from 'react-owl-carousel3';
+import Slider from 'react-slick'; 
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { Link } from 'react-router-dom';
@@ -27,17 +27,17 @@ const SmartCode = () => {
     document.title = 'DevVerse | Smart Code'
 }, []);
 
-  const options = {
-    items: 1,
-    loop: true,
-    margin: 10,
-    dots: false,
-    nav: true,
-    navText: [
-      '<i class="fas fa-chevron-left"></i>',
-      '<i class="fas fa-chevron-right"></i>'
-    ],
-  };
+    const settings = {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: true,
+      autoplay: false,
+      speed: 500,
+      autoplaySpeed: 2000,
+      pauseOnHover: true,
+    };
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -82,8 +82,9 @@ const SmartCode = () => {
       <div className="project-detail-container">
         {/* Carousel */}
         <div className="project-carousel-container">
-          <OwlCarousel className="owl-theme" {...options}>
-            {project.images.map((image, index) => (
+        <Slider {...settings}>
+          
+              {project.images.map((image, index) => (
               <div key={index} className="project-carousel-item" onClick={() => handleImageClick(image)}>
                 <img src={image} alt={`Project ${index + 1}`} />
                 {/* Thumb Overlay */}
@@ -92,7 +93,7 @@ const SmartCode = () => {
                 </div>
               </div>
             ))}
-          </OwlCarousel>
+        </Slider>
         </div>
 
         {/* Description */}
@@ -124,14 +125,13 @@ const SmartCode = () => {
               <Typography variant="h2" style={{fontSize:"30px"}}>Smart Code</Typography>
             </div>
             <div className="full-screen-carousel-container">
-              <OwlCarousel className="owl-theme" {...options} autoplay={isAutoplayEnabled}>
-                {project.images.map((image, index) => (
+            <Slider {...settings} autoplay={isAutoplayEnabled}>                {project.images.map((image, index) => (
                   <div key={index} className="full-screen-carousel-item">
                     <img className ="full-screen-carousel-img" src={image} alt={`Project ${index + 1}`} />
                   </div>
                 ))}
-              </OwlCarousel>
-            </div>
+            </Slider>
+              </div>
             <CloseIcon className="close-icon" onClick={handleCloseModal} />
             <IconButton onClick={handleToggleAutoplay} className="autoplay-button">
               <PlayCircleOutlineIcon color={isAutoplayEnabled ? "primary" : "action"} />

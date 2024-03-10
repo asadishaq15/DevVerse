@@ -1,7 +1,7 @@
 import React from 'react';
-import OwlCarousel from 'react-owl-carousel3';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './deliveredProject.css'; // Ensure to import your CSS file for styling
 import s1 from "../../../assets/s1h.png"
 import s2 from "../../../assets/s2h.png"
@@ -11,7 +11,7 @@ import s5 from "../../../assets/s5h.png"
 import s6 from "../../../assets/s6h.png"
 import s7 from "../../../assets/s7h.png"
 
-const DeilveredProjects = ({ photos }) => {
+const DeliveredProjects = ({ photos }) => {
   const DeliveredProjects = [
     {
       id: 1,
@@ -44,26 +44,34 @@ const DeilveredProjects = ({ photos }) => {
   ];
 
   const options = {
-    items: 4,
-    loop: true,
-    margin: 15,
-    dots: false, // Disable default dots
+    slidesToShow: 4,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplayTimeout: 3000, // Set the autoplay interval to 3 seconds
-    responsive: {
-      0: {
-        items: 2,
-        center: true, // Center the active item on smaller screens
+    autoplaySpeed: 3000,
+    margin: 15, 
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        }
       },
-      600: {
-        items: 2,
-        center: true, // Center the active item on medium screens
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        }
       },
-      1000: {
-        items: 4,
-        center: true, // Center the active item on larger screens
-      },
-    },
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        }
+      }
+    ]
   };
 
   return (
@@ -75,16 +83,16 @@ const DeilveredProjects = ({ photos }) => {
       </div>
       </div>
       <div className="DeliveredProjects-carousel-container">
-        <OwlCarousel {...options}>
-        {DeliveredProjects.map((DeliveredProjects) => (
-          <div key={DeliveredProjects.id} className="carousel-item">
-            <img src={DeliveredProjects.image} alt={`Slide ${DeliveredProjects.id}`} />
+        <Slider {...options}>
+        {DeliveredProjects.map((DeliveredProject) => (
+          <div key={DeliveredProject.id} className="carousel-item">
+            <img src={DeliveredProject.image} alt={`Slide ${DeliveredProject.id}`} />
           </div>
         ))}
-        </OwlCarousel>
+        </Slider>
       </div>
     </div>
   );
 };
 
-export default DeilveredProjects;
+export default DeliveredProjects;

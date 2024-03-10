@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import OwlCarousel from 'react-owl-carousel3';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { Link } from 'react-router-dom';
@@ -15,27 +17,30 @@ const UPMobile = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAutoplayEnabled, setIsAutoplayEnabled] = useState(false);
+
   useEffect(() => {
     document.title = 'DevVerse | UP Mobile'
-}, []);
+  }, []);
+
   const project = {
     name: "Project Description",
     description: "",
-   ProjectDetail:"",
-    images: [img3]
+    ProjectDetail:"",
+    images: [img3,img3,img3]
   };
 
-  const options = {
-    items: 1,
-    loop: true,
-    margin: 10,
+  const settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
     dots: false,
-    nav: true,
-    navText: [
-      '<i class="fas fa-chevron-left"></i>',
-      '<i class="fas fa-chevron-right"></i>'
-    ],
+    infinite: true,
+    autoplay: false,
+    speed: 500,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
   };
+
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -47,29 +52,34 @@ const UPMobile = () => {
     setSelectedImage(null);
   };
 
-  const handleModalClick = (e) => {
-    // Prevent the click event from bubbling up to the parent container
-    e.stopPropagation();
-  };
-
   const handleToggleAutoplay = () => {
     setIsAutoplayEnabled(!isAutoplayEnabled);
   };
 
+  const PrevArrow = ({ onClick }) => (
+    <IconButton className="slick-arrow" onClick={onClick}>
+      <i className="fas fa-chevron-left" />
+    </IconButton>
+  );
+
+  const NextArrow = ({ onClick }) => (
+    <IconButton className="slick-arrow" onClick={onClick}>
+      <i className="fas fa-chevron-right" />
+    </IconButton>
+  );
+
   return (
     <div className="project-page-container">
-      {/* Breadcrumb */}
       <div className="breadcrumb-container">
-        {/* Material-UI Breadcrumbs */}
         <div className="breadcrumb-heading">
           <Typography variant="h1">UP Mobile</Typography>
         </div>
         <div className="breadcrumb-text">
           <Breadcrumbs aria-label="breadcrumb">
-            <Link to="/"  color="inherit" href="/" style={{ fontSize: "15px" }}>
+            <Link to="/" color="inherit" href="/" style={{ fontSize: "15px" }}>
               <strong>Home</strong>
             </Link>
-            <Link to="/portfolio"  color="inherit" href="/portfolio" style={{ fontSize: "15px" }}>
+            <Link to="/portfolio" color="inherit" href="/portfolio" style={{ fontSize: "15px" }}>
               <strong>Portfolio</strong>
             </Link>
             <Typography color="textPrimary" style={{ fontSize: "13px" }}>Project</Typography>
@@ -78,57 +88,45 @@ const UPMobile = () => {
       </div>
 
       <div className="project-detail-container">
-        {/* Carousel */}
         <div className="project-carousel-container">
-          <OwlCarousel className="owl-theme" {...options}>
+          <Slider {...settings}>
             {project.images.map((image, index) => (
               <div key={index} className="project-carousel-item" onClick={() => handleImageClick(image)}>
                 <img src={image} alt={`Project ${index + 1}`} />
-                {/* Thumb Overlay */}
                 <div className="thumb-overlay">
                   <FullscreenIcon className="full-screen-icon" style={{fontSize:"45px"}}/>
                 </div>
               </div>
             ))}
-          </OwlCarousel>
+          </Slider>
         </div>
 
-        {/* Description */}
         <div className="description-container">
-          <Typography variant="h2" className='Project-description-heading1'><h4
-          style={{
-            fontSize:"16px",
-            lineHeight: "22px",
-            marginBottom:"8px"
-          }}
-          >{project.name}</h4></Typography>
-          <Typography variant="body1" className='Project-description-text' 
-          style={{
-            marginTop:"8px",
-            fontSize:"13px",
-            lineHeight:"21px"
-          }}
-          >{project.description}</Typography>
+          <Typography variant="h2" className='Project-description-heading1'>
+            <h4 style={{ fontSize: "16px", lineHeight: "22px", marginBottom: "8px" }}>{project.name}</h4>
+          </Typography>
+          <Typography variant="body1" className='Project-description-text' style={{ marginTop: "8px", fontSize: "13px", lineHeight: "21px" }}>
+            {project.description}
+          </Typography>
           <h4 className='Project-detals-heading'>
-              Project Details
-          <Typography variant="body1" className='Project-description-details'>{project.ProjectDetail}</Typography>
+            Project Details
+            <Typography variant="body1" className='Project-description-details'>{project.ProjectDetail}</Typography>
           </h4>
         </div>
 
-        {/* Full Screen Image Modal */}
         {isImageModalOpen && (
           <div className="full-screen-modal">
             <div className="full-screen-carousel-header">
               <Typography variant="h2">UP Mobile</Typography>
             </div>
             <div className="full-screen-carousel-container">
-              <OwlCarousel className="owl-theme" {...options} autoplay={isAutoplayEnabled}>
+              <Slider {...settings} autoplay={isAutoplayEnabled}>
                 {project.images.map((image, index) => (
                   <div key={index} className="full-screen-carousel-item">
-                    <img className ="full-screen-carousel-img" src={image} alt={`Project ${index + 1}`} />
+                    <img className="full-screen-carousel-img" src={image} alt={`Project ${index + 1}`} />
                   </div>
                 ))}
-              </OwlCarousel>
+              </Slider>
             </div>
             <CloseIcon className="close-icon" onClick={handleCloseModal} />
             <IconButton onClick={handleToggleAutoplay} className="autoplay-button">
@@ -137,7 +135,7 @@ const UPMobile = () => {
           </div>
         )}
       </div>
-      <RecentProjects/>
+      <RecentProjects />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+/* recentProjects.css */
 
 .recent-projects {
     width: 100%;
@@ -15,8 +16,8 @@
     align-items: center;
     text-align: left;
     max-width: 1200px;
-   /* Adjust padding as needed */
-    border-radius: 5px; 
+    /* Adjust padding as needed */
+    border-radius: 5px;
 }
 
 .section-header-1 h4 {
@@ -29,7 +30,6 @@
     padding-bottom: 8px;
     border-bottom: 1px solid;
     border-bottom-color: #036ad9;
-
 }
 
 .section-header-1 p {
@@ -39,7 +39,6 @@
 
 .recent-projects-carousel-container {
     padding: 2px;
- 
     border: 1px solid #eee;
     border-radius: 3px;
     overflow: hidden;
@@ -48,7 +47,7 @@
 }
 
 .project-details {
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .project-details h5 {
@@ -61,40 +60,37 @@
 }
 
 .project-details p {
-    padding: 0%;
+    padding: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
     overflow: hidden;
-    display: -webkit-box;
+    display: block;
 }
 
 .recent-project-item {
-    border: 2px solid rgb(247, 247, 247);
-    height: 300px; 
-    width: auto;
+    border: 2px solid #f7f7f7;
     height: auto;
+    width: 100%;
     cursor: pointer;
-}
-.recent-project-item:hover{
-    .project-details h5{
-        color:#036ad9;
-    }
+    overflow: hidden;
 }
 
-  .recent-project-item img {
-object-fit: contain;
-aspect-ratio: 3/2;
-  }
- 
-
-.recentProjects-owl-nav{
-  
+.recent-project-item:hover .project-details h5 {
+    color: #036ad9;
 }
-  .recent-projects-owl-prev,
-  .recent-projects-owl-next{
- 
+
+.recent-project-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.recentProjects-owl-nav {
+    margin-top: 10px;
+}
+
+.recent-projects-owl-prev,
+.recent-projects-owl-next {
     font-size: 1.4em;
     height: 22px;
     width: 22px;
@@ -102,25 +98,14 @@ aspect-ratio: 3/2;
     cursor: pointer;
     line-height: 22px;
     display: inline-block;
-    zoom: 1;
     border-radius: 2px;
     background-color: #fff;
     margin-left: 4px;
-    margin: 2px;
-    width: 20px;
     color: #ccc;
+}
 
-  }
- 
-  .recent-projects-owl-prev:hover{
+.recent-projects-owl-prev:hover,
+.recent-projects-owl-next:hover {
     color: #fff;
-    background-color:#0729e6 ;
-  }
-
-  .recent-projects-owl-next:hover{
-    color: #fff;
-    background-color:#0729e6 ;
-  }
-  
- 
-   
+    background-color: #0729e6;
+}

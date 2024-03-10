@@ -11,11 +11,20 @@
   margin-bottom: 40px;
 }
 
+
 .breadcrumb-heading {
   text-align: center;
   flex: 1;
 }
+.project-carousel-container .slick-track {
+  display: flex !important;
+  justify-content: space-between; /* Adjust the spacing between images */
+  align-items: center; /* Align images vertically */
+}
 
+.project-carousel-container .slick-slide {
+  flex: 0 0 auto;
+}
 .breadcrumb-text {
   margin-top: 30px;
   color: rgb(6, 24, 24);
@@ -66,20 +75,19 @@
 
 .project-carousel-item {
   position: relative;
-
 }
+
 .project-carousel-container {
   flex: 3;
   max-width: 100%;
   cursor: pointer;
-
   position: relative; /* Add position relative to position the thumb overlay */
 }
 
 .project-carousel-item img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .description-container {
@@ -87,7 +95,7 @@
   padding: 0 20px;
 }
 
-.Project-description-heading1{
+.Project-description-heading1 {
   margin-top: 12px;
   margin-bottom: 12px;
   border-bottom: 2px solid;
@@ -100,17 +108,18 @@
   color: #444;
 }
 
-.Project-description-text{
+.Project-description-text {
   margin-top: 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   line-height: 21px;
   font-weight: 300;
-  color: #666;;
+  color: #666;
   box-sizing: border-box;
   padding: 0%;
 }
-.Project-detals-heading{
+
+.Project-detals-heading {
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, #4547dc, #ece2db);
   border-image-slice: 1;
@@ -121,15 +130,15 @@
   margin-top: 20px;
   color: #444;
 }
+
 /* Thumb Overlay */
 .thumb-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
-
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .project-carousel-item:hover .thumb-overlay {
@@ -155,41 +164,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
-}
-
-.full-screen-image {
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.full-screen-icon {
-  font-size: 80px; /* Increase the icon size */
-
- position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  color: rgb(0, 0, 0);
-
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.project-carousel-item:hover .full-screen-icon {
-  transform: translate(50%, -50%) scale(1.2); /* Scale up the icon on hover */
-}
-
-.full-screen-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Center content vertically */
   z-index: 9999;
 }
 
@@ -198,12 +173,14 @@
   top: 20px;
   left: 20px;
   z-index: 999;
-  font-weight:900;
+  font-weight: 900;
   color: rgb(255, 255, 255);
 }
 
 .full-screen-carousel-container {
   width: 70%; /* Adjust the width of the carousel container */
+  max-height: 90vh; /* Limit the height of the carousel container */
+  overflow: hidden; /* Hide overflow content */
 }
 
 .full-screen-carousel-item {
@@ -251,21 +228,20 @@
   transform: scale(1.2);
 }
 
-
 /* Adjust the position and size of other elements as needed */
 
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
   .project-detail-container {
-    flex-direction: row; 
+    flex-direction: row;
   }
-  
+
   .description-container {
     width: 100%; /* Ensure the description container takes full width */
     max-width: unset; /* Reset max-width */
   }
-  
+
   .project-carousel-container {
     max-width: 700px; /* Adjust the maximum width of the carousel container */
   }
@@ -275,15 +251,12 @@
   .project-detail-container {
     flex-direction: column; /* Change to column layout for screens smaller than 768px */
   }
-  
+
   .full-screen-icon {
     font-size: 50px; /* Increase the icon size */
   }
 
-  
-
   .project-carousel-container {
-
     max-width: 100%; /* Adjust the maximum width of the carousel container */
   }
 }
@@ -293,16 +266,12 @@
     flex-direction: column; /* Change to column layout for screens smaller than 992px */
   }
 
-
   .project-carousel-container {
-  
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;  }
+    max-width: 100%; /* Adjust the maximum width of the carousel container */
+  }
 
   .description-container {
     margin-top: 20px;
     max-width: 90%; /* Ensure the description container takes up to 90% width */
   }
 }
-
