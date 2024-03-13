@@ -15,12 +15,13 @@ const Clients = () => {
     jsconsultant,
     ZahrawiCollege,
     LR,
-    SE
+    SE,
+    ZahrawiCollege,
   ];
 
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: true, // Ensure infinite looping
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,

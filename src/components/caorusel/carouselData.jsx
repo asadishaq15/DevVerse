@@ -4,8 +4,8 @@
           title1: "WELCOME TO",
           title2: "DevVerse",
           description: "Leading top software house in Pakistan. We offer our services in web designing, CRM systems, digital marketing, and mobile apps.",
-          rightImageSrc: 'https://img.freepik.com/premium-photo/white-wall-clean-cement-background-textured-blank-copy-space_24076-674.jpg', // Add the right image source
-          buttonLink: "https://www.example.com/apps" 
+          buttonLink: "https://www.example.com/apps", 
+          backgroundColor:"#f2f3f4 ",
         },
        
         {

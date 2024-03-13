@@ -30,30 +30,57 @@ const testimonials = [
   },
 ];
 
+const settings = {
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  centerMode: true, // Enable center mode
+  centerPadding: '0px 100px 0px 0px',
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerMode: true,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+      }
+    }
+  ]
+};
+
+
 const UserReviews = () => {
-  const options = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    responsive: [
-      {
-        breakpoint: 0,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-        }
-      },
-      
-    ]
-  };
 
   return (
     <div className="user-reviews-container">
       <div className="content-container">
         <div className="content-header">
           <h2>What they've said about us</h2>
-          <p>Employers 100% satisfaction ratio and tremendous respect showcase the affection of employers towards Elexoft.</p>
+          <p>Employers 100% satisfaction ratio and tremendous respect showcase the affection of employers towards DevVerse.</p>
           <Link to="/contact">
             <button>Contact Us <span style={{ paddingLeft: '5px', fontSize: "20px" }}>&rarr;</span></button>
           </Link>
@@ -61,9 +88,10 @@ const UserReviews = () => {
       </div>
 
       <div className="testimonial-container">
-        <Slider {...options}>
-          {testimonials.map(testimonial => (
-            <div className="testimonial-card" key={testimonial.id}>
+      <Slider {...settings}>
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className="slide">
+            <div className="testimonial-card">
               <div className="backQuote">
                 <p>{`"${testimonial.text}"`}</p>
               </div>
@@ -77,8 +105,9 @@ const UserReviews = () => {
                 </div>
               </div>
             </div>
-          ))}
-        </Slider>
+          </div>
+        ))}
+      </Slider>
       </div>
     </div>
   );
