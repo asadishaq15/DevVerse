@@ -5,7 +5,8 @@
           title2: "DevVerse",
           description: "Leading top software house in Pakistan. We offer our services in web designing, CRM systems, digital marketing, and mobile apps.",
           buttonLink: "https://www.example.com/apps", 
-          backgroundColor:"#f2f3f4 ",
+
+          rightImageSrc: "devPulse-frontend/src/assets/firstSlideBg.MP4",
         },
        
         {

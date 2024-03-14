@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import bg_slide1 from "../../images/img2.jpg";
+import FirstSlideBg from "../../assets/firstSlideBg.MP4"
 import Arrow from './arrow';
 import './carousel.css';
 import slides from './carouselData';
@@ -116,7 +117,7 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
             </div>
           )}
         </div>
-        {rightImageSrc && (
+        {!isFirstSlide && ( // Check if it's not the first slide
           <motion.div
             className="image-content"
             initial={{ opacity: 0, x: -50 }}
@@ -136,6 +137,15 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
             />
           </motion.div>
         )}
+        {isFirstSlide && ( // Render video only for the first slide
+        <div style={{ position: "absolute", zIndex: -1, width: "100vw", height: "100%", backgroundColor: "black", opacity: 0.4 }}>
+        <video autoPlay loop muted style={{ width: "200%", height: "100%", objectFit: "cover", borderRadius: "0px" }}>
+              <source src={FirstSlideBg} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        )}
+
       </div>
     </motion.div>
   </div>
@@ -242,6 +252,8 @@ const Carousel = () => {
                   isButtonVisible={index !== 0}
                   isFirstSlide={index === 0} 
                   buttonLink={slide.buttonLink}
+                  index={index}
+                  currentSlide={currentSlide}
                 />
               )}
             </AnimatePresence>
