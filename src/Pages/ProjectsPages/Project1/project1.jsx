@@ -25,8 +25,8 @@ const BARS = () => {
   }, []); 
   const project = {
     name:"BARS",
-    description: "",
-   ProjectDetail:"",
+    description: "BARS is a versatile application designed to streamline communication within teams by providing a centralized platform for sharing ideas, files, and updates. It's built with React for the frontend and Node.js with Express for the backend, ensuring a smooth user experience. BARS integrates with MongoDB for efficient data storage, facilitating seamless collaboration among team members",
+    TechStack :"React, Node.js, Express, MongoDB",
     images: [img1, img2]
   };
 
@@ -111,10 +111,23 @@ const BARS = () => {
             lineHeight:"21px"
           }}
           >{project.description}</Typography>
-          <h4 className='Project-detals-heading'>
-              Project Details
-          <Typography variant="body1" className='Project-description-details'>{project.ProjectDetail}</Typography>
-          </h4>
+      
+          
+
+          <Typography variant="h2" className='Project-description-heading1'><h4
+          style={{
+            fontSize:"16px",
+            lineHeight: "22px",
+            marginBottom:"8px"
+          }}
+          >Tech Stack</h4></Typography>
+          <Typography variant="body1" className='Project-description-text' 
+          style={{
+            marginTop:"8px",
+            fontSize:"13px",
+            lineHeight:"21px"
+          }}
+          >{project.TechStack}</Typography>
         </div>
 
         {isImageModalOpen && (

@@ -18,8 +18,9 @@ const SmartCode = () => {
 
   const project = {
     name: "Project Description",
-    description: "",
-   ProjectDetail:"",
+    description: "Smart Code revolutionizes coding by offering a suite of tools for developers. Built with Angular and Firebase, it empowers developers with real-time collaboration, code sharing, and version control. Smart Code's intuitive interface and seamless integration with Firebase backend services enhance coding efficiency.",
+  Challenges:"",
+   TechStack:"Angular, Firebase",
     images: [img2]
   };
 
@@ -104,7 +105,7 @@ const SmartCode = () => {
             lineHeight: "22px",
             marginBottom:"8px"
           }}
-          >{project.name}</h4></Typography>
+          >Project Description</h4></Typography>
           <Typography variant="body1" className='Project-description-text' 
           style={{
             marginTop:"8px",
@@ -112,10 +113,20 @@ const SmartCode = () => {
             lineHeight:"21px"
           }}
           >{project.description}</Typography>
-          <h4 className='Project-detals-heading'>
-              Project Details
-          <Typography variant="body1" className='Project-description-details'>{project.ProjectDetail}</Typography>
-          </h4>
+          <Typography variant="h2" className='Project-description-heading1'><h4
+          style={{
+            fontSize:"16px",
+            lineHeight: "22px",
+            marginBottom:"8px"
+          }}
+          >Tech Stack</h4></Typography>
+          <Typography variant="body1" className='Project-description-text' 
+          style={{
+            marginTop:"8px",
+            fontSize:"13px",
+            lineHeight:"21px"
+          }}
+          >{project.TechStack}</Typography>
         </div>
 
         {/* Full Screen Image Modal */}

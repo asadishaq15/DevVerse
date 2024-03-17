@@ -24,8 +24,8 @@ const UPMobile = () => {
 
   const project = {
     name: "Project Description",
-    description: "",
-    ProjectDetail:"",
+    description: "UP Mobile is a comprehensive mobile productivity app developed for iOS using Swift. It empowers users to stay organized and productive while on the go, offering features such as task management, event scheduling, and seamless communication with colleagues. Additionally, UP Mobile offers mobile website templates crafted with HTML to give websites a fresh and modern look on mobile devices.",
+    TechStack:"iOS, Swift",
     images: [img3,img3,img3]
   };
 
@@ -102,16 +102,37 @@ const UPMobile = () => {
         </div>
 
         <div className="description-container">
-          <Typography variant="h2" className='Project-description-heading1'>
-            <h4 style={{ fontSize: "16px", lineHeight: "22px", marginBottom: "8px" }}>{project.name}</h4>
-          </Typography>
-          <Typography variant="body1" className='Project-description-text' style={{ marginTop: "8px", fontSize: "13px", lineHeight: "21px" }}>
-            {project.description}
-          </Typography>
-          <h4 className='Project-detals-heading'>
-            Project Details
-            <Typography variant="body1" className='Project-description-details'>{project.ProjectDetail}</Typography>
-          </h4>
+        <Typography variant="h2" className='Project-description-heading1'><h4
+          style={{
+            fontSize:"16px",
+            lineHeight: "22px",
+            marginBottom:"8px"
+          }}
+          >Project Description</h4></Typography>
+          <Typography variant="body1" className='Project-description-text' 
+          style={{
+            marginTop:"8px",
+            fontSize:"13px",
+            lineHeight:"21px"
+          }}
+          >{project.description}</Typography>
+      
+          
+
+          <Typography variant="h2" className='Project-description-heading1'><h4
+          style={{
+            fontSize:"16px",
+            lineHeight: "22px",
+            marginBottom:"8px"
+          }}
+          >Tech Stack</h4></Typography>
+          <Typography variant="body1" className='Project-description-text' 
+          style={{
+            marginTop:"8px",
+            fontSize:"13px",
+            lineHeight:"21px"
+          }}
+          >{project.TechStack}</Typography>
         </div>
 
         {isImageModalOpen && (

@@ -66,12 +66,16 @@ padding: 0%;
   justify-content: flex-end;
   align-items: center;
 }
-.slide-content .image-content img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 
+
+.slide-content .image-content img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 10px;
 }
+
+
 .slide-content img {
   max-height: 100%;
   max-width: 100%;
@@ -131,13 +135,13 @@ padding: 0%;
   transform: translate(-50%, -50%);
   width: 19px;
   height: 19px;
-  background-color: #5a5454; /* Change color as needed */
+  background-color: #5a5454;
 
-  transition: background-color 0.3s ease; /* Add transition for smoother color change */
+  transition: background-color 0.3s ease; 
 }
 
 .slick-dots li.slick-active button::before {
-  background-color: #ffffff; /* Change color of active bullet */
+  background-color: #ffffff; 
 }
 
 .arrow-container {
@@ -154,7 +158,7 @@ padding: 0%;
 
 .custom-carousel-wrapper:hover .arrow-container {
   visibility: visible;
-  opacity: 1; /* Change opacity to 1 when hovering over the carousel wrapper */
+  opacity: 1;
 }
 
 
@@ -180,7 +184,7 @@ padding: 0%;
   .contentWrap {
     width: 100%;
     padding: 0; 
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box; 
   }
   
   .text-content {

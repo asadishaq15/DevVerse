@@ -26,6 +26,7 @@ import GetQuotePage from './components/getQuotePage/getQuotePage';
 import GoToTop from './components/gotoTop/goToTop';
 import ChatIcon from './components/chatIcon/chatIcon';
 import Home from './Pages/Home/home';
+import PageNotFound from './Pages/PageNotFound/pageNotFound';
 
 function App() {
   return (
@@ -54,7 +55,7 @@ function App() {
           <Route path="/project/118/oceam-application" element={<OCEAM />} />
           <Route path="/project/119/swipe-gallery" element={<SwipeGallery />} />
           <Route path="/project/121/the-drawers" element={<TheDrawers />} />
-
+          <Route path="*" element={<PageNotFound />} />
 
 
         </Routes>

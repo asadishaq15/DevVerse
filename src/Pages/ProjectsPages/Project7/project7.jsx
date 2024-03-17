@@ -22,9 +22,9 @@ const TheDrawers = () => {
       document.title='DevVerse | The Drawers'
     })
   const project = {
-    name: "Project Description",
-    description: "",
-   ProjectDetail:"",
+    name: "",
+    description: "The Drawers is a powerful web-based document management and collaboration system designed for organizations. Developed using Python with Django framework and MySQL database, it offers secure storage, version control, and access control features. Its user-friendly interface and robust backend architecture make it ideal for businesses seeking efficient document management solutions.",
+    TechStack: "Python, Django, MySQL",
     images: [img7]
   };
 
@@ -99,6 +99,7 @@ const TheDrawers = () => {
         </div>
 
         {/* Description */}
+  
         <div className="description-container">
           <Typography variant="h2" className='Project-description-heading1'><h4
           style={{
@@ -106,7 +107,7 @@ const TheDrawers = () => {
             lineHeight: "22px",
             marginBottom:"8px"
           }}
-          >{project.name}</h4></Typography>
+          >Project Description</h4></Typography>
           <Typography variant="body1" className='Project-description-text' 
           style={{
             marginTop:"8px",
@@ -114,10 +115,23 @@ const TheDrawers = () => {
             lineHeight:"21px"
           }}
           >{project.description}</Typography>
-          <h4 className='Project-detals-heading'>
-              Project Details
-          <Typography variant="body1" className='Project-description-details'>{project.ProjectDetail}</Typography>
-          </h4>
+      
+          
+
+          <Typography variant="h2" className='Project-description-heading1'><h4
+          style={{
+            fontSize:"16px",
+            lineHeight: "22px",
+            marginBottom:"8px"
+          }}
+          >Tech Stack</h4></Typography>
+          <Typography variant="body1" className='Project-description-text' 
+          style={{
+            marginTop:"8px",
+            fontSize:"13px",
+            lineHeight:"21px"
+          }}
+          >{project.TechStack}</Typography>
         </div>
 
         {/* Full Screen Image Modal */}

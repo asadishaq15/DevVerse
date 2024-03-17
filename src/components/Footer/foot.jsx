@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="col-md-3 footer-newsletter">
               <h4>GET IN TOUCH</h4>
               <p>Contact Us</p>
-              <form action="" method="post">
+              <form action="http://localhost:3001/subscription" method="post">
                 <input type="email" name="email" placeholder='mail@example.com' />
                 <input type="submit" value="Send" />
               </form>
@@ -92,12 +92,12 @@ const Footer = () => {
     </div>
     <div className="col-md-6 col-sm-12 Footer-button-container">
       <div className="button-list">
-      <Link to="/"><button className="button">Home</button></Link>
-      <Link to="/services"><button className="button">Services</button></Link>
-      <Link to="/testimonials"><button className="button">Testimonials</button></Link>
-      <Link to="/web-development"><button className="button">Web Development</button></Link>
-      <Link to="/mobile-apps"><button className="button">App Development</button></Link>
-      <Link to="/seo-services"><button className="button">SEO Services</button></Link>
+      <Link to="/"><button className="footer-button">Home</button></Link>
+      <Link to="/services"><button className="footer-button">Services</button></Link>
+      <Link to="/testimonials"><button className="footer-button">Testimonials</button></Link>
+      <Link to="/web-development"><button className="footer-button">Web Development</button></Link>
+      <Link to="/mobile-apps"><button className="footer-button">App Development</button></Link>
+      <Link to="/seo-services"><button className="footer-button">SEO Services</button></Link>
 
       </div>
     </div>

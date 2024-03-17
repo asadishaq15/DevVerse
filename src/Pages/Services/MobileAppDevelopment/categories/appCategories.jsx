@@ -51,7 +51,7 @@ const AppCategories = () => {
         </div>
       </div>
       <div className="button-wrapper">
-            <Link to="/case-study" className='View-caseStudy'>
+            <Link to="/request-quote" className='View-caseStudy'>
               <button className="view-case-study-button" >GET FREE QUOTE</button>
             </Link>
           </div>

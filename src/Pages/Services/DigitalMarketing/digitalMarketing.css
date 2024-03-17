@@ -128,9 +128,9 @@
   
 
 
-  /* Media queries for responsive design */
+ 
 @media screen and (max-width: 992px) {
-    /* Adjust width and padding for smaller screens */
+  
     .Digital-Marketing-container,
     .seo-content,
     .smo-container,
@@ -158,7 +158,7 @@
   }
   
   @media screen and (max-width: 768px) {
-    /* Adjust padding for smaller screens */
+ 
     .breadcrumb-container,
     .Digital-Marketing-container,
     .seo-container,
@@ -167,7 +167,7 @@
       padding: 15px;
     }
   
-    /* Stack content in a column and center align */
+   
     .seo-content,
     .smo-container,
     .marketing-strategies {
@@ -175,7 +175,7 @@
       align-items: center;
     }
   
-    /* Adjust width for better fit and add space between image and text */
+   
     .seo-Text-container,
     .smo-Text-container {
       padding: 0;

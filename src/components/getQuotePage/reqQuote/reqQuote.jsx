@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import SelectCountry from 'react-select-country-list';
 import './reqQuote.css';
 import FlagApp from '../CountryCodeApi/flagApp';
-import ContactInfoContainer from '../contactInfo/contactInfo';
 import axios from 'axios';
 
 const ReqQuotePage = () => {
@@ -16,9 +14,6 @@ const ReqQuotePage = () => {
     setFlagAppData(data);
   };
 
-  const handleCountryChange = (value) => {
-    setSelectedCountry(value);
-  };
 
   const [formData, setFormData] = useState({
     projectName: '',

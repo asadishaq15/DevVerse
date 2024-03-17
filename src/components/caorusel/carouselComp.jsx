@@ -38,7 +38,7 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
   
   const handleTapEnd = () => {
     setIsTapped(false);
-    // Implement the functionality for the 'Read More' action here
+   
   };
   
   const handleTapCancel = () => {
@@ -137,14 +137,10 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
             />
           </motion.div>
         )}
-        {isFirstSlide && ( // Render video only for the first slide
-        <div style={{ position: "absolute", zIndex: -1, width: "100vw", height: "100%", backgroundColor: "black", opacity: 0.4 }}>
-        <video autoPlay loop muted style={{ width: "200%", height: "100%", objectFit: "cover", borderRadius: "0px" }}>
-              <source src={FirstSlideBg} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        )}
+     {isFirstSlide && (
+            <div style={{ position: "absolute", zIndex: -1, width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.4)", opacity: 0.4 }}>
+            </div>
+          )}
 
       </div>
     </motion.div>
@@ -174,7 +170,7 @@ const Carousel = () => {
     dots: true,
     infinite: true,
     speed: 400,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 8000,
     slidesToShow: 1,
     slidesToScroll: 1,

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import DeilveredProjects from '../deliveredProjects/deliveredProjects'
-import Testimonials from './testimonials'
 import AskProject from '../askProject/askProject'
 import TestimonialsBanner from '../testimonialBanner/TestimonialsBanner'
 import OneStopSolution from '../../OneStopSolution/oneStopSolution'

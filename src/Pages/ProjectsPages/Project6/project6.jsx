@@ -23,8 +23,8 @@ const SwipeGallery = () => {
 
   const project = {
     name: "Project Description",
-    description: "",
-   ProjectDetail:"",
+    description: "Swipe Gallery is a captivating mobile application that offers an immersive experience for exploring multimedia content. Developed using React Native with Redux, it delivers a responsive and engaging user interface. Swipe Gallery allows seamless navigation through images and videos with intuitive swipe gestures, providing users with a delightful and interactive experience.",
+    techStack: "React Native, Redux",
     images: [img6,img6,img6]
   };
 
@@ -99,14 +99,14 @@ const SwipeGallery = () => {
         </div>
 
         {/* Description */}
-        <div className="description-container">
+         <div className="description-container">
           <Typography variant="h2" className='Project-description-heading1'><h4
           style={{
             fontSize:"16px",
             lineHeight: "22px",
             marginBottom:"8px"
           }}
-          >{project.name}</h4></Typography>
+          >Project Description</h4></Typography>
           <Typography variant="body1" className='Project-description-text' 
           style={{
             marginTop:"8px",
@@ -114,10 +114,24 @@ const SwipeGallery = () => {
             lineHeight:"21px"
           }}
           >{project.description}</Typography>
-          <h4 className='Project-detals-heading'>
-              Project Details
-          <Typography variant="body1" className='Project-description-details'>{project.ProjectDetail}</Typography>
-          </h4>
+      
+          
+
+          <Typography variant="h2" className='Project-description-heading1'><h4
+          style={{
+            fontSize:"16px",
+            lineHeight: "22px",
+            marginBottom:"8px"
+          }}
+          >Tech Stack</h4></Typography>
+          <Typography variant="body1" className='Project-description-text' 
+          style={{
+            marginTop:"8px",
+            fontSize:"13px",
+            lineHeight:"21px"
+          }}
+          >{project.techStack}</Typography>
+
         </div>
 
         {/* Full Screen Image Modal */}

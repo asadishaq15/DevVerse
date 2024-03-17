@@ -20,8 +20,8 @@ const OCEAM = () => {
 
   const project = {
     name: "Project Description",
-    description: "",
-    ProjectDetail:"",
+    description: "OCEAM is a robust web application designed to streamline operations across various business domains. Built with Java and Spring Boot, it offers scalability, security, and reliability. OCEAM's modular architecture and extensive feature set adapt to diverse business requirements, ensuring efficient workflows and seamless integration with existing systems.",
+    techStack: "Java, Spring Boot",
     images: [img4]
   };
 
@@ -99,20 +99,39 @@ const OCEAM = () => {
 
         {/* Description */}
         <div className="description-container">
-          <Typography variant="h2" className='Project-description-heading1'>
-            <h4 style={{ fontSize:"16px", lineHeight: "22px", marginBottom:"8px" }}>
-              {project.name}
-            </h4>
-          </Typography>
-          <Typography variant="body1" className='Project-description-text'>
-            {project.description}
-          </Typography>
-          <h4 className='Project-detals-heading'>
-            Project Details
-            <Typography variant="body1" className='Project-description-details'>
-              {project.ProjectDetail}
-            </Typography>
-          </h4>
+         
+        <Typography variant="h2" className='Project-description-heading1'><h4
+          style={{
+            fontSize:"16px",
+            lineHeight: "22px",
+            marginBottom:"8px"
+          }}
+          >Project Description</h4></Typography>
+          <Typography variant="body1" className='Project-description-text' 
+          style={{
+            marginTop:"8px",
+            fontSize:"13px",
+            lineHeight:"21px"
+          }}
+          >{project.description}</Typography>
+      
+          
+
+          <Typography variant="h2" className='Project-description-heading1'><h4
+          style={{
+            fontSize:"16px",
+            lineHeight: "22px",
+            marginBottom:"8px"
+          }}
+          >Tech Stack</h4></Typography>
+          <Typography variant="body1" className='Project-description-text' 
+          style={{
+            marginTop:"8px",
+            fontSize:"13px",
+            lineHeight:"21px"
+          }}
+          >{project.TechStack}</Typography>
+
         </div>
 
         {/* Full Screen Image Modal */}

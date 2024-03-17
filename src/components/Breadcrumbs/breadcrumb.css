@@ -1,6 +1,6 @@
 /* Breadcrumb container styles */
 .breadcrumb-container {
-    background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/breadcrumb-bg.png');
+    background-image: url('devPulse-frontend/public/breadcrumb-bg.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;

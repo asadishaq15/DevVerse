@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import './techStack.css'; // Create a corresponding CSS file for styling
+import './techStack.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import laravel from "../../images/laravel-2.svg";

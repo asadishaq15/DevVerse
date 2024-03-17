@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import "./digitalMarketing.css"
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Link from '@mui/material/Link';
 import MarketingCategories from './categories/marketingCategorie';
 import Clients from '../../../components/clients/clients';
 import seo from "../../../assets/SEOimg2.png"
 import smo from "../../../assets/images.png"
+import { Link } from 'react-router-dom';
 const DigitalMarketing = () => {
   useEffect(()=>{
     document.title='Best Digital Marketing Services';
@@ -124,7 +124,7 @@ const DigitalMarketing = () => {
                 </div>
                 </div>
                 <div className="button-wrapper">
-            <Link to="/case-study" className='View-caseStudy'>
+            <Link to="/request-quote" className='View-caseStudy'>
               <button className="view-case-study-button" >GET FREE QUOTE</button>
             </Link>
           </div>

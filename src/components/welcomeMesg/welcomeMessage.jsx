@@ -4,7 +4,6 @@ import AOS from 'aos';
 import icon from "../../images/companyIcon.png"
 import 'aos/dist/aos.css';
 import './welcomeMessage.css'; 
-import Clients from '../clients/clients';
 
 const WelcomeMessage = () => {
     useEffect(() => {

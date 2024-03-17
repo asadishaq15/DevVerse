@@ -3,10 +3,10 @@ import React, { useEffect } from 'react';
 import "./seoServices.css"
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Link from '@mui/material/Link';
 import Clients from '../../../components/clients/clients';
 import SeoCategories from './categories/seoCategories';
 import seo from "../../../assets/seoimg.png"
+import { Link } from 'react-router-dom';
 
 
 const SeoServices  = () => {
@@ -71,13 +71,13 @@ const SeoServices  = () => {
              <p>Regular and constructive communication between the SEO agency and you, 
                 the client, is essential for building trust and achieving success.</p>
           </div>
-          {/* Second sub-container */}
+
           
           </div>
         </div>
         <SeoCategories/>
            <div className="button-wrapper">
-            <Link to="/case-study" className='View-caseStudy'>
+            <Link to="/request-quote" className='View-caseStudy'>
               <button className="view-case-study-button" >GET FREE QUOTE</button>
             </Link>
           </div>
