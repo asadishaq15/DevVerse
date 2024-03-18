@@ -134,9 +134,7 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
               />
             </motion.div>
           )}
-          {isFirstSlide && (
-            <div style={{ position: "absolute", zIndex: -1, width: "100%", height: "100%", backgroundImage: `url(${bg_slide1})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.4 }}></div>
-          )}
+         
         </div>
       </motion.div>
     </div>

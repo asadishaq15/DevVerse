@@ -1,5 +1,5 @@
 .breadcrumb-container {
-  background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/assets/breadcrumb-bg.jpg');
+  background-image: url('/Users/asad/Desktop/DevPulse/devPulse-frontend/public/breadcrumb-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -18,8 +18,8 @@
 }
 .project-carousel-container .slick-track {
   display: flex !important;
-  justify-content: space-between; /* Adjust the spacing between images */
-  align-items: center; /* Align images vertically */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project-carousel-container .slick-slide {
@@ -249,29 +249,29 @@
 
 @media screen and (max-width: 767px) {
   .project-detail-container {
-    flex-direction: column; /* Change to column layout for screens smaller than 768px */
+    flex-direction: column;
   }
 
   .full-screen-icon {
-    font-size: 50px; /* Increase the icon size */
+    font-size: 50px;
   }
 
   .project-carousel-container {
-    max-width: 100%; /* Adjust the maximum width of the carousel container */
+    max-width: 100%; 
   }
 }
 
 @media screen and (max-width: 992px) {
   .project-detail-container {
-    flex-direction: column; /* Change to column layout for screens smaller than 992px */
+    flex-direction: column; 
   }
 
   .project-carousel-container {
-    max-width: 100%; /* Adjust the maximum width of the carousel container */
+    max-width: 100%;
   }
 
   .description-container {
     margin-top: 20px;
-    max-width: 90%; /* Ensure the description container takes up to 90% width */
-  }
+    max-width: 90%;
+}
 }
