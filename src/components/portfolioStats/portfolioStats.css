@@ -1,13 +1,13 @@
 .portfolio-stats-container {
     display: flex;
     justify-content: space-around;
-    background: rgba(0, 0, 0, 0.9) url('https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg') center/cover fixed no-repeat;
+    background: rgba(0, 0, 0, 0.9) url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/assets/portfolioStatsBg.png') center/cover fixed no-repeat;
     
     padding: 40px;
 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
-    color: #fff; /* Adjust text color for better visibility */
+    color: #fff; 
   }
   
   .stat-column {
@@ -18,30 +18,30 @@
     align-items: center;
   }
   
-  /* Updated styles for the icons */
+
   .stat-column .fa-icon {
-    color: #345bbf; /* Blue color */
+    color: #345bbf;
     font-size: 35px;
-    margin-bottom: 15px; /* Adjust margin-bottom for spacing */
+    margin-bottom: 15px; 
   }
   
   .stat-label {
     font-weight: bold;
     margin: 12px 0;
-    color: #fff; /* Adjust text color for better visibility */
+    color: #fff; 
     font-size: 18px;
   }
   
   .stat-value {
     font-size: 24px;
     color: #345bbf;
-    font-weight: bold; /* Bold numeric values */
+    font-weight: bold; 
     margin: 0;
   }
   
   .stat-description {
-    color: #ddd; /* Adjust text color for better visibility */
-    margin-top: 8px; /* Adjust margin-top for spacing */
+    color: #ddd; 
+    margin-top: 8px; 
     font-size: 20px;
   }
   

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../categories.css'
-import Clients from '../../../../components/clients/clients';
 
 const CategoryCard = ({ title, description }) => {
   return (

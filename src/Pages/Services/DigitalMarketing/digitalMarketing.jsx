@@ -59,14 +59,14 @@ const DigitalMarketing = () => {
           </div>
           {/* Second sub-container */}
           <div className="seo-Image-container">
-            <img src={seo} alt="CMS Image" />
+            <img src={seo} alt="seo Image" />
           </div>
           </div>
         </div>
 
         <div className="smo-container">
         <div className="smo-Image-container">
-                <img src={smo} alt="CRM Image" />
+                <img src={smo} alt="smo" />
               </div>
               <div className="smo-Text-container">
                 <h2>Social Media Optimization (SMO)</h2>

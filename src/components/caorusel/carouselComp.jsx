@@ -47,104 +47,99 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
   const isFirstSlide = index === 0;
   return (
     <div className="contentWrap">
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.5 }}
-      transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="content"
-    >
-      {index === currentSlide && <div className="overlay"></div>}
-      <div className="slide-content">
-        <div className="text-content">
-          <motion.h1
-            style={{
-              color: "#007bff",
-              fontFamily: "sans-serif",
-              fontWeight: "500",
-            }}
-            className="heading-title-1"
-            initial={{ translateY: "100%", opacity: 0 }}
-            animate={{ translateY: "0%", opacity: 1 }}
-            transition={{ duration: 0.3, ease: 'easeOut', delay: 0.5 }}
-          >
-            {title1}
-          </motion.h1>
-          <motion.h1
-            style={{
-              color: isFirstSlide ? "red" : "black",
-              fontFamily: "sans-serif",
-              fontWeight: "500",
-              marginTop: "8px"
-            }}
-            className="heading-title-2"
-            initial={{ translateY: "100%", opacity: 0 }}
-            animate={{ translateY: "0%", opacity: 1 }}
-            transition={{ duration: 0.3, ease: 'easeOut', delay: 1.0 }}
-          >
-            {title2}
-          </motion.h1>
-          <motion.p
-            style={{
-              color: isFirstSlide ? "white" : "black",
-              fontFamily: "Arial",
-              fontWeight: "300",
-              marginTop: "15px"
-            }}
-            className="slide-description"
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.3, ease: 'easeOut', delay: 1.4 }}
-          >
-            {description}
-          </motion.p>
-          {isButtonVisible && (
-            <div className="button-container-wrap">
-              <Link to={buttonLink}>
-                <motion.button
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 0.3, ease: 'easeOut', delay: 2.0 }}
-                  whileTap={{ scale: 0.8 }}
-                  onTapStart={handleTapStart}
-                  onTap={handleTapEnd}
-                  onTapCancel={handleTapCancel}
-                  className={`your-read-more-button-styles ${isTapped ? 'tapped' : ''}`}
-                >
-                  {buttonText}
-                </motion.button>
-              </Link>
-            </div>
-          )}
-        </div>
-        {!isFirstSlide && ( // Check if it's not the first slide
-          <motion.div
-            className="image-content"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut', delay: 1.0 }}
-          >
-            <motion.img
-              src={rightImageSrc}
-              alt={title1}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
+        className="content"
+      >
+        {index === currentSlide && <div className="overlay"></div>}
+        <div className="slide-content">
+          <div className="text-content">
+            <motion.h1
+              style={{
+                color: "#007bff",
+                fontFamily: "sans-serif",
+                fontWeight: "500",
+              }}
+              className="heading-title-1"
+              initial={{ translateY: "100%", opacity: 0 }}
+              animate={{ translateY: "0%", opacity: 1 }}
+              transition={{ duration: 0.3, ease: 'easeOut', delay: 0.5 }}
+            >
+              {title1}
+            </motion.h1>
+            <motion.h1
+              style={{
+                color: isFirstSlide ? "red" : "black",
+                fontFamily: "sans-serif",
+                fontWeight: "500",
+                marginTop: "8px"
+              }}
+              className="heading-title-2"
+              initial={{ translateY: "100%", opacity: 0 }}
+              animate={{ translateY: "0%", opacity: 1 }}
+              transition={{ duration: 0.3, ease: 'easeOut', delay: 1.0 }}
+            >
+              {title2}
+            </motion.h1>
+            <motion.p
+              style={{
+                color: isFirstSlide ? "white" : "black",
+                fontFamily: "Arial",
+                fontWeight: "300",
+                marginTop: "15px"
+              }}
+              className="slide-description"
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.3, ease: 'easeOut', delay: 1.4 }}
+            >
+              {description}
+            </motion.p>
+            {isButtonVisible && (
+              <div className="button-container-wrap">
+                <Link to={buttonLink}>
+                  <motion.button
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.3, ease: 'easeOut', delay: 2.0 }}
+                    whileTap={{ scale: 0.8 }}
+                    className={`your-read-more-button-styles`}
+                  >
+                    {buttonText}
+                  </motion.button>
+                </Link>
+              </div>
+            )}
+          </div>
+          {!isFirstSlide && (
+            <motion.div
+              className="image-content"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 1.0 }}
-              style={{
-                width: "100%",
-                borderRadius: "10px",
-              }}
-            />
-          </motion.div>
-        )}
-     {isFirstSlide && (
-            <div style={{ position: "absolute", zIndex: -1, width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.4)", opacity: 0.4 }}>
-            </div>
+            >
+              <motion.img
+                src={rightImageSrc}
+                alt={title1}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut', delay: 1.0 }}
+                style={{
+                  width: "100%",
+                  borderRadius: "10px",
+                }}
+              />
+            </motion.div>
           )}
-
-      </div>
-    </motion.div>
-  </div>
+          {isFirstSlide && (
+            <div style={{ position: "absolute", zIndex: -1, width: "100%", height: "100%", backgroundImage: `url(${bg_slide1})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.4 }}></div>
+          )}
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

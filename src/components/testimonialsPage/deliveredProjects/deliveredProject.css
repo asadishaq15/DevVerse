@@ -1,31 +1,28 @@
-/* deliveredProject.css */
-
 .DeliveredProjects-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  width: 100%; /* Set the container to cover full width of the screen */
+  width: 100%;
 }
 
 .DeliveredProjects-info {
-width: 100%;
-  max-width: 650px; /* Ensure the container takes up the full width */
-  margin-right: auto; /* Push the container to the left side of the page */
+  width: 100%;
+  max-width: 650px;
+  margin-right: auto;
   padding: 20px;
 }
 
 .DeliveredProjects-heading {
-  width: 100%; /* Add some space between the heading and the carousel */
+  width: 100%;
   padding: 20px;
   margin-bottom: 40px;
-
 }
 
 .DeliveredProjects-heading h2 {
-  font-size: 34px; /* Adjust heading font size */
+  font-size: 34px;
   color: #3265b7;
-  margin-bottom: 10px; /* Add some space below the heading */
+  margin-bottom: 10px;
 }
 
 .DeliveredProjects-heading p {
@@ -33,82 +30,70 @@ width: 100%;
   color: #000000;
   width: 100%;
   line-height: 1.6;
-  word-spacing: 4px; /* Adjust the spacing between words */
-  border-radius: 8px; /* Add border radius for rounded corners */
+  word-spacing: 4px;
+  border-radius: 8px;
 }
-
 
 .DeliveredProjects-carousel-container {
   width: 108%;
   height: auto;
-
-
 }
 
 .carousel-item img {
-  width: 100%; /* Set the image to cover the full width of the container */
-  height: 95vh; /* Set the height of the image */
+  width: 100%;
+  height: 95vh;
   padding: 0%;
   margin-right: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+
 @media only screen and (max-width: 768px) {
   .DeliveredProjects-carousel-container {
-    width: 140%; 
-    height:auto;; /* Adjust height for smaller screens */
+    width: 140%;
+    height:auto;
   }
   .carousel-item img {
-    width: 100%; /* Set the image to cover the full width of the container */
-    height: auto; /* Set the height of the image */
-
+    width: 100%;
+    height: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
   }
- 
   .DeliveredProjects-info {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 10px;
   }
   .DeliveredProjects-heading h2 {
-    font-size: 24px; /* Further reduce heading font size */
+    font-size: 24px;
   }
-  
   .DeliveredProjects-heading p {
-    font-size: 14px; /* Further reduce paragraph font size */
+    font-size: 14px;
   }
-  
   .DeliveredProjects-heading {
-    padding: 15px; /* Reduce padding for smaller screens */
-    margin-bottom: 30px; /* Reduce margin bottom for smaller screens */
+    padding: 15px;
+    margin-bottom: 30px;
   }
   .DeliveredProjects-heading p {
-    width: 70%; /* Set the width to 60% of its container */
-    padding: 0%; 
+    width: 70%;
+    padding: 0%;
+  }
 }
-}
-
-
 
 @media only screen and (max-width: 576px) {
-
-  .banner-content{
+  .banner-content {
     padding: 0%;
   }
   .DeliveredProjects-carousel-container {
-    width: 150%; 
-    height:auto;; /* Adjust height for smaller screens */
+    width: 150%;
+    height:auto;
   }
-
   .DeliveredProjects-heading p {
-    width: 100%; /* Set the width to 60% of its container */
-    padding: 0%; 
+    width: 100%;
+    padding: 0%;
     margin: 0%;
+  }
 }
-}
-
-
 
 .carousel-item:not(:last-child) {
   margin-right: 10px;

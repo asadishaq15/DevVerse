@@ -5,7 +5,7 @@ import PsebLogo from "../../assets/secp logo.jpeg";
 import PakFlag from "../../assets/pak flag.png";
 import SaudiFlag from "../../assets/saudi flag.png";
 import { Link } from 'react-router-dom';
-import "./footer.css"
+
 const Footer = () => {
   return (
     <div className="footer">

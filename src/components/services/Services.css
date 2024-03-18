@@ -14,10 +14,10 @@
   font-family: serif;
   font-size: 20px;
   z-index: 1;
-  background: url("https://cdn.pixabay.com/photo/2018/05/05/15/12/chipboard-3376564_1280.jpg") center/cover no-repeat;
+  background: url("/Users/asad/Desktop/DevPulse/devPulse-frontend/src/assets/ourServices.jpg") center/cover no-repeat;
   padding: 40px 10px;
-  background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
-  will-change: transform, opacity; /* Optimize for animations */
+  background-attachment: fixed; 
+  will-change: transform, opacity;
 }
 
 .services-content-container{
@@ -63,7 +63,7 @@
   margin-bottom: 10px;
   white-space: nowrap; 
   overflow: hidden; 
-  text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+  text-overflow: ellipsis;
 }
 
 

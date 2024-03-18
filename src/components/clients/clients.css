@@ -11,8 +11,16 @@
 }
 
 .section-header {
-  text-align: center; /* Center the header */
+  display: flex;
+  justify-content: space-between; /* Added to push the navigation buttons to the right */
+  align-items: center; /* Added for vertical alignment of header content */
 }
+
+.clients-owl-nav {
+  display: flex;
+  align-items: center; /* Added for vertical alignment of navigation buttons */
+}
+
 
 .section-header h4 {
   font-size: 20px;

@@ -17,7 +17,7 @@
     align-items: center;
   }
 
-  /* Common styles for all headings */
+
   .Graphic-designer-container h2,
   .Flyer-Brochures-Text-container h2,
   .Logo-Design-Text-container h2 {
@@ -27,13 +27,13 @@
     margin: 20px 0;
   }
   
-  /* Additional styles for specific headings */
+
   .Flyer-Brochures-Text-container h2,
   .Logo-Design-Text-container h2 {
     margin-bottom: 30px;
   }
   
-  /* Container for Flyer and Brochures section */
+ 
   .Flyer-Brochures-container {
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@
     width: 100%;
   }
   
-  /* Content wrapper for Flyer and Brochures */
+ 
   .Flyer-Brochures-content {
     display: flex;
     flex-wrap: wrap;
@@ -49,14 +49,14 @@
     width: 100%;
   }
   
-  /* Text container for Flyer and Brochures */
+
   .Flyer-Brochures-Text-container {
     flex: 3;
     padding: 20px;
     text-align: start;
   }
   
-  /* Image container for Flyer and Brochures */
+
   .Flyer-Brochures-Image-container {
     flex: 1;
     display: flex;
@@ -64,14 +64,14 @@
     align-items: center;
   }
   
-  /* Image styles for Flyer and Brochures */
+
   .Flyer-Brochures-Image-container img {
     max-width: 100%;
     height: auto;
     max-height: 200px;
   }
   
-  /* Container for Logo Design section */
+
   .Logo-Design-container {
     display: flex;
     justify-content: center;
@@ -80,13 +80,13 @@
     margin-top: 40px;
   }
   
-  /* Text container for Logo Design */
+
   .Logo-Design-Text-container {
     flex: 3;
     padding: 20px;
   }
   
-  /* Image container for Logo Design */
+
   .Logo-Design-Image-container {
     flex: 1;
     display: flex;
@@ -94,14 +94,14 @@
     align-items: center;
   }
   
-  /* Image styles for Logo Design */
+
   .Logo-Design-Image-container img {
     max-width: 100%;
     height: auto;
     max-height: 200px;
   }
   
-  /* Media queries for responsive design */
+
   @media screen and (max-width: 992px) {
     /* Adjust width and padding for smaller screens */
     .Logo-Design-container  {
@@ -111,14 +111,14 @@
   }
   
   @media screen and (max-width: 768px) {
-    /* Adjust padding for smaller screens */
+
     .Graphic-designer-container,
     .Flyer-Brochures-container,
     .Logo-Design-container {
       padding: 10px;
     }
   
-    /* Stack content in a column and center align */
+
     .Graphic-designer-container,
     .Flyer-Brochures-container,
     .Logo-Design-container,
@@ -130,17 +130,17 @@
       align-items: center;
     }
   
-    /* Adjust width for better fit and add space between image and text */
+
     .Flyer-Brochures-Image-container,
     .Logo-Design-Image-container {
       width: 100%;
       margin-bottom: 20px;
     }
   
-    /* Align list items to the start */
+
     .Logo-Design-container {
-        width: 100%; /* Make the container occupy full width */
-        padding: 8px; /* Adjust padding for better spacing */
+        width: 100%; 
+        padding: 8px; 
       }
       .Logo-Design-Image-container {
         flex: 1;

@@ -67,14 +67,14 @@ const MobileAppDevelopment = () => {
           </div>
           {/* Second sub-container */}
           <div className="Iphone-Apps-Image-container">
-            <img src={iosDev} alt="CMS Image" />
+            <img src={iosDev} alt="Ios Dev" />
           </div>
           </div>
         </div>
 
         <div className="Android-Apps-container">
         <div className="Android-Apps-Image-container">
-                <img src={androidDev} alt="CRM Image" />
+                <img src={androidDev} alt="android Dev" />
               </div>
               <div className="Android-Apps-Text-container">
                 <h2>Android Apps</h2>

@@ -9,7 +9,6 @@ import P1 from "../../images/Slider_1.png";
 import P2 from "../../images/Slider_2.png";
 import P3 from "../../images/Slider_3.png";
 import P4 from "../../images/Slider_4.png";
-import P5 from "../../images/Slider_5.png";
 import P6 from "../../images/Slider_6.png";
 import P7 from "../../images/Slider_7.png";
 import { Link } from 'react-router-dom';
