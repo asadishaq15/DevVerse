@@ -8,7 +8,7 @@
   text-align: center;
 
   z-index: 1;
-  background: url("/Users/asad/Desktop/DevPulse/devPulse-frontend/src/assets/onestopSolBg.jpg") center/cover fixed no-repeat;
+  background: url("") center/cover fixed no-repeat;
   padding: 10px;
   transform: translate3d(0px,0px,0px);
 }
