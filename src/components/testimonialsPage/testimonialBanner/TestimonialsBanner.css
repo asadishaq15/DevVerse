@@ -2,8 +2,7 @@
 
 .testimonials-banner {
     position: relative;
-    background-image: rgba(0, 0, 0, 0.5) url('/Users/asad/Desktop/DevPulse/devPulse-frontend/src/images/home-testimonial-background.jpg') center/cover fixed no-repeat; 
-    color: #fff; 
+        color: #fff; 
     text-align: left; 
     padding: 100px 20px; 
   }
