@@ -6,6 +6,7 @@ import Link from '@mui/material/Link';
 import AppCategories from './categories/appCategories';
 import iosDev from "../../../assets/ios-1.png"
 import androidDev from "../../../assets/android.png"
+import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
 const MobileAppDevelopment = () => {
   useEffect(()=>{
     document.title='Best Mobile Apps Development';
@@ -15,20 +16,7 @@ const MobileAppDevelopment = () => {
 <div className="mobile-App-Main">
     <div className="Mobile-App-page">
    
-      <div className="breadcrumb-container">
-        <div className="breadcrumb-heading">
-          <Typography variant="h1">Design and Development of Mobile Application</Typography>
-        </div>
-        <div className="breadcrumb-text">
-        <Breadcrumbs aria-label="breadcrumb">
-          <Link color="inherit" href="/" style={{fontSize:"15px"}}>
-            <strong>Home</strong>
-          </Link>
-          <Typography color="textPrimary" style={{fontSize:"13px"}}>Mobile Apps Services</Typography>
-        </Breadcrumbs>
-        </div>
-
-      </div>
+    <Breadcrumb page="Design & Development of Mobile applications"/>
 
       <div className="Mobile-App-container">
         <h2>Development of Mobile App</h2>

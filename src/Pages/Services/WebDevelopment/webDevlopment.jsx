@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import "./webDevelopment.css"
-import Typography from '@mui/material/Typography';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import WebDevCategories from './categories/webDevCategories';
 import CMS from "../../../assets/CMS-Web-Development.png";
 import CRM from "../../../assets/CRM-handdrawn.jpg";
 import ecommerce from "../../../assets/E-Commerce.png";
+import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
+
 
 const WebDevelopmentPage = () => {
   useEffect(()=>{
@@ -16,19 +16,7 @@ const WebDevelopmentPage = () => {
     <div className="webDevelopmentMain">
     <div className="web-development-page">
       {/* Breadcrumb with background image */}
-      <div className="breadcrumb-container">
-        <div className="breadcrumb-heading">
-          <Typography variant="h1">Best Web Design and Development Services</Typography>
-        </div>
-        <div className="breadcrumb-text">
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link color="inherit" href="/" style={{fontSize:"15px"}}>
-              <strong>Home</strong>
-            </Link>
-            <Typography color="textPrimary" style={{fontSize:"13px"}}>Web Development Services</Typography>
-          </Breadcrumbs>
-        </div>
-      </div>
+      <Breadcrumb page="Best Web Development"/>
 
       <div className="web-development-container">
         <h2>Code For The Next Level Development</h2>

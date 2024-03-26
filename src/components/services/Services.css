@@ -14,7 +14,7 @@
   font-family: serif;
   font-size: 20px;
   z-index: 1;
-  background: url("") center/cover no-repeat;
+
   padding: 40px 10px;
   background-attachment: fixed; 
   will-change: transform, opacity;

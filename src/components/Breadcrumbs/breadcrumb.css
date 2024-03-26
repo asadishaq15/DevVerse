@@ -24,3 +24,25 @@
       margin-top: 10px;
     }
   }
+
+
+  /* breadcrumb.css */
+.breadcrumb-container {
+  /* Add background image styles */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: #fff; /* Font color for breadcrumbs */
+}
+
+.breadcrumb-page {
+  /* Styles for page name */
+  font-size: 24px;
+  /* Add other styles as needed */
+}
+
+.breadcrumb-link {
+  /* Styles for breadcrumb links */
+  font-size: 15px;
+  /* Add other styles as needed */
+}

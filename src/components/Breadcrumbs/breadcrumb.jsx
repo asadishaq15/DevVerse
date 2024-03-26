@@ -1,17 +1,28 @@
+// Breadcrumb.js
 import React from 'react';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import './breadcrumb.css'
-const BreadCrumb = ({ page }) => {
+import bgImage from '../../assets/breadbg.jpg';
+
+const Breadcrumb = ({ page }) => {
+
+
   return (
-    <Breadcrumbs aria-label="breadcrumb">
-      <Link color="inherit" href="/">
-        Home
-      </Link>
-      <Typography color="textPrimary">{page}</Typography>
-    </Breadcrumbs>
+    <div className="breadcrumb-container" style={{ backgroundImage: `url(${bgImage})` }}>
+      <div className="breadcrumb-heading">
+        <Typography variant="h1" className="breadcrumb-page">{page}</Typography>
+      </div>
+      <div className="breadcrumb-text">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link color="inherit" href="/" className="breadcrumb-link">
+            Home
+          </Link>
+          <Typography color="textPrimary" className="breadcrumb-page">{page}</Typography>
+        </Breadcrumbs>
+      </div>
+    </div>
   );
 };
 
-export default BreadCrumb;
+export default Breadcrumb;

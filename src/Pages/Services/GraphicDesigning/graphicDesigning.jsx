@@ -7,6 +7,7 @@ import GraphicCategories from './categories/graphicCategories';
 import brochures from "../../../assets/Brochuretrifold.png"
 import LogoDesign from "../../../assets/Creative-Logo-Design-Services-in-USA.png"
 import Clients from '../../../components/clients/clients';
+import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
 
 const GraphicDesign = () => {
   
@@ -18,19 +19,9 @@ const GraphicDesign = () => {
   return (
   <div className="graphic-deigining-main">
     <div className="Graphic-designer-page">
-      <div className="breadcrumb-container">
-        <div className="breadcrumb-heading">
-          <Typography variant="h1">Best Graphic Designing Services</Typography>
-        </div>
-        <div className="breadcrumb-text">
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link color="inherit" href="/" style={{fontSize:"15px"}}>
-              <strong>Home</strong>
-            </Link>
-            <Typography color="textPrimary" style={{fontSize:"13px"}}>Graphic Designing Services</Typography>
-          </Breadcrumbs>
-        </div>
-      </div>
+
+    <Breadcrumb page="Best graphic designing services"/>
+
 
       <div className="Graphic-designer-container">
         <h2>Our Design For Your Business Achievement</h2>

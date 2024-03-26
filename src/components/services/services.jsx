@@ -12,6 +12,7 @@ import DigitalMarketing from "../../assets/digital-marketing-5816304_640.jpg"
 import IOSApps from "../../assets/IOSDevelopment.png"
 import AndroidApps from "../../assets/Android-Applications.jpg"
 import ASO from "../../assets/AppStoreOpt.png"
+import headingBackground from "../../assets/ourServices.jpg"
 
 const ServiceCard = ({  title, description, imageUrl ,path,aosDelay}) => {
 
@@ -115,7 +116,17 @@ const Services = () => {
   return (
     <div className="services-container">
     <div className="services-content-container">
-      <div className="Services-Heading-container" data-aos="fade-down">
+      <div className="Services-Heading-container" data-aos="fade-down"
+      
+      style={{
+      
+        backgroundImage: `url(${headingBackground})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+        
+        }}>
         <h2>OUR <strong>SERVICES</strong></h2>
       </div>
   

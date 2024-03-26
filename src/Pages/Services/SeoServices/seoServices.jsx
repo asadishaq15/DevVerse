@@ -1,12 +1,11 @@
 
 import React, { useEffect } from 'react';
 import "./seoServices.css"
-import Typography from '@mui/material/Typography';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Clients from '../../../components/clients/clients';
 import SeoCategories from './categories/seoCategories';
 import seo from "../../../assets/seoimg.png"
 import { Link } from 'react-router-dom';
+import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
 
 
 const SeoServices  = () => {
@@ -17,20 +16,7 @@ const SeoServices  = () => {
   return (
     <div className="Seo-Services-page">
    
-      <div className="breadcrumb-container">
-        <div className="breadcrumb-heading">
-          <Typography variant="h1">Best SEO Services</Typography>
-        </div>
-        <div className="breadcrumb-text">
-        <Breadcrumbs aria-label="breadcrumb">
-          <Link color="inherit" href="/" style={{fontSize:"15px"}}>
-            <strong>Home</strong>
-          </Link>
-          <Typography color="textPrimary" style={{fontSize:"13px", color:"black"}}>SEO Services</Typography>
-        </Breadcrumbs>
-        </div>
-
-      </div>
+   <Breadcrumb page="Best SEO services"/>
 
       <div className="Seo-Services-container">
         <h2>Our SEO Services</h2>

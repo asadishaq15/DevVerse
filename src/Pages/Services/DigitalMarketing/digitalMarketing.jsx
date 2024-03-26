@@ -7,6 +7,7 @@ import Clients from '../../../components/clients/clients';
 import seo from "../../../assets/SEOimg2.png"
 import smo from "../../../assets/images.png"
 import { Link } from 'react-router-dom';
+import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
 const DigitalMarketing = () => {
   useEffect(()=>{
     document.title='Best Digital Marketing Services';
@@ -14,20 +15,8 @@ const DigitalMarketing = () => {
   return (
     <div className="Digital-Marketing-page">
    
-      <div className="breadcrumb-container">
-        <div className="breadcrumb-heading">
-          <Typography variant="h1">Best Digital Marketing Services</Typography>
-        </div>
-        <div className="breadcrumb-text">
-        <Breadcrumbs aria-label="breadcrumb">
-          <Link color="inherit" href="/" style={{fontSize:"15px"}}>
-            <strong>Home</strong>
-          </Link>
-          <Typography color="textPrimary" style={{fontSize:"13px"}}>Digital Marketing Services</Typography>
-        </Breadcrumbs>
-        </div>
+   <Breadcrumb page="Best digital marketing services"/>
 
-      </div>
 
       <div className="Digital-Marketing-container">
         <h2>Professional digital marketing services that generate results</h2>
