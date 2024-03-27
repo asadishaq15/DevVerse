@@ -1,4 +1,7 @@
-
+import webDevelopment from "../../assets/website-development.webp"
+import AppDevelopment from "../../assets/mobile-app-development.webp"
+import seo from "../../assets/seo-services-carousel.webp"
+import sde from "../../assets/softwareDevelopment.webp"
     const slides = [
         {
           title1: "WELCOME TO",
@@ -15,7 +18,7 @@
           title2: "Responsive & Reliable",
           description: "We plan, design your website from start to finish, ensuring a high ROI for clients. Our major concern is client satisfaction.",
           buttonText: "READ MORE",
-          rightImageSrc: "https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png", // Add the right image source
+          rightImageSrc: webDevelopment, 
           backgroundColor:"#e5e4e2 ",
           buttonLink: '/web-development'
         },
@@ -25,7 +28,7 @@
           title2: "We Build Awesome Apps",
           description: "We know how to build Apps that will help you increase business.",
           buttonText: "READ MORE",
-          rightImageSrc: "https://cdn.pixabay.com/photo/2023/02/26/07/37/android-mobile-app-development-7815022_1280.png", // Add the right image source
+          rightImageSrc: AppDevelopment,
           backgroundColor:"#f2f3f4",
           buttonLink: "/mobile-apps" 
         },
@@ -36,7 +39,7 @@
           title2: "We Focus on Quality ",
           description: "We work together with our Clients to build a Compelling Product that provide lasting excitement and value to our customers, We have Passionate, Creative, Experienced Developers.",
           buttonText: "READ MORE",
-          rightImageSrc: "https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png", // Add the right image source
+          rightImageSrc: sde,
           backgroundColor:"#e5e4e2 ",
           buttonLink: "/services",
         },
@@ -45,7 +48,7 @@
           title2: "Optimization",
           description: "We start the SEO process with a full website audit and recommendations report. Our team will review your key metrics, perform keyword research, analyze your competitors, your linkscape, and key pages of your website, and create a detailed implementation plan.",
           buttonText: "READ MORE",
-          rightImageSrc: "https://cdn.pixabay.com/photo/2016/10/17/03/01/seo-1746842_1280.png", // Add the right image source
+          rightImageSrc: seo,
           backgroundColor:"#bebebe  ",
           buttonLink: "/seo-services",
         },

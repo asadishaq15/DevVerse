@@ -20,15 +20,13 @@ const WelcomeMessage = () => {
           <div className="text-container">
             <h1 className="welcome-heading">Welcome to DevVerse – Fastest Growing IT Company</h1>
             <p className="welcome-description">
-              DevVerse Technologies is an IT Software Company founded in Sep 2021 in Pakistan. 
-              We are offering multiple services in Website Development, Graphic Designing, Digital Marketing,
-              and Mobile Apps Development. We make CMS, CRM and provide ERP solutions.
-              DevVerse is a top software house in Pakistan and also a registered company in Pakistan. 
-              Additional services that we provide include website Designing, API's Development, 
-              SEO Services and IOS app development. We have highly experienced web developers who have successfully
-              launched various huge projects and proved their skills in many projects. We are responsible for the working,
-              and we try to keep the best relationship with our customers. As a Leading Software house in Pakistan, 
-              We have designed hundreds of Websites, Mobile Apps, Logos and Icons for our clients with a unique research-based process. Our software house is spreading the best services in the industry of IT from last three years.
+            DevVerse Technologies, founded in September 2021 in Pakistan, is a pioneering IT firm committed to delivering exceptional digital solutions. Specializing in AI-integrated websites, web apps, mobile apps, CRM development, and e-commerce solutions, we empower brands to thrive online. Our expertise extends to captivating 3D UI/UX designs crafted for superior user experiences.
+
+            As a premier software house in Pakistan, we prioritize excellence and client satisfaction. With a team of highly skilled professionals, we've successfully executed numerous large-scale projects, showcasing our expertise in the field. Additionally, we offer bespoke services like API development, SEO, and iOS app development, ensuring comprehensive support for diverse needs.
+
+            At DevVerse, we prioritize strong client relationships, fostering open communication and collaboration throughout projects. Over the past three years, we've delivered unparalleled services, designing hundreds of websites, mobile apps, logos, and icons through meticulous research-driven processes.
+
+            Choose DevVerse Technologies for cutting-edge digital solutions that exceed expectations and propel your business to new heights in the digital landscape
             </p>
           </div>
         </div>

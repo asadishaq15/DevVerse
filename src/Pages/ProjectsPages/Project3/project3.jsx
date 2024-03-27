@@ -10,8 +10,9 @@ import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import { IconButton } from '@mui/material';
 import '../projects.css';
-import img3 from "../../../images/Slider_3.png";
+import img3 from "../../../images/Slider_3.webp";
 import RecentProjects from '../../../components/RecentProjects/recentProjects';
+import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
 
 const UPMobile = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -70,22 +71,7 @@ const UPMobile = () => {
 
   return (
     <div className="project-page-container">
-      <div className="breadcrumb-container">
-        <div className="breadcrumb-heading">
-          <Typography variant="h1">UP Mobile</Typography>
-        </div>
-        <div className="breadcrumb-text">
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link to="/" color="inherit" href="/" style={{ fontSize: "15px" }}>
-              <strong>Home</strong>
-            </Link>
-            <Link to="/portfolio" color="inherit" href="/portfolio" style={{ fontSize: "15px" }}>
-              <strong>Portfolio</strong>
-            </Link>
-            <Typography color="textPrimary" style={{ fontSize: "13px" }}>Project</Typography>
-          </Breadcrumbs>
-        </div>
-      </div>
+       <Breadcrumb page="UPMobile"/>
 
       <div className="project-detail-container">
         <div className="project-carousel-container">

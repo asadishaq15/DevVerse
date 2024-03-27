@@ -7,9 +7,6 @@
   align-items: center;
 
 }
-
-
-
 .custom-carousel-wrapper{
 max-width: 100%;
 margin: 0;
@@ -32,11 +29,6 @@ padding: 0%;
 
 
 /*styling the content in the slides*/
-
-
-
-
-
 .heading-title-1 {
   margin-bottom: 8px;
   font-size:5.7rem;
@@ -157,17 +149,10 @@ padding: 0%;
   visibility: visible;
   opacity: 1;
 }
-
-
-
-
 /* Default styles */
 .contentWrap {
   padding: 120px;
 }
-
-
-
 .image-content img {
   border-radius: 10px;
 }
@@ -244,9 +229,9 @@ margin-top: 20px;
 
 @media screen and (max-width: 768px) {
   .contentWrap {
-    width: 100%; /* Take full width */
+    width: 100%; 
     padding: 0; /* Remove padding */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box; 
   }
   .slide-content{
     height: 350px;
@@ -286,7 +271,7 @@ margin-top: 20px;
   .contentWrap {
     width: 100%; /* Take full width */
     
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box; 
   }
 
   .custom-carousel-wrapper:hover .arrow-container {

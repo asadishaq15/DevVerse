@@ -1,13 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
-import companyLogo from "../../assets/companyLogo.png"
+import companyLogo from "../../assets/companyLogo.webp"
 import './header.css';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
-  const [isDropdownOpen, setisDropdownOpen] = useState(false); // State for Services dropdown
-  const [isTopHeaderScrolled, setIsTopHeaderScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const navRef = useRef(null);
 
@@ -44,10 +42,7 @@ const Header = () => {
 
 
 
-  // Function to toggle Services dropdown
-  const toggleServicesDropdown = () => {
-    setisDropdownOpen(!isDropdownOpen);
-  };
+
   const message = encodeURIComponent("Welcome to DevVerse!");
   return (
 

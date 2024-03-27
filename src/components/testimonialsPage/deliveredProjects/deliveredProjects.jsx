@@ -3,13 +3,13 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './deliveredProject.css'; // Ensure to import your CSS file for styling
-import s1 from "../../../assets/s1h.png"
-import s2 from "../../../assets/s2h.png"
-import s3 from "../../../assets/s3h.png"
-import s4 from "../../../assets/s4h.png"
-import s5 from "../../../assets/s5h.png"
-import s6 from "../../../assets/s6h.png"
-import s7 from "../../../assets/s7h.png"
+import s1 from "../../../assets/s1h.webp"
+import s2 from "../../../assets/s2h.webp"
+import s3 from "../../../assets/s3h.webp"
+import s4 from "../../../assets/s4h.webp"
+import s5 from "../../../assets/s5h.webp"
+import s6 from "../../../assets/s6h.webp"
+import s7 from "../../../assets/s7h.webp"
 
 const DeliveredProjects = ({ photos }) => {
   const DeliveredProjects = [

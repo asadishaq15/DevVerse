@@ -3,8 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import bg_slide1 from "../../images/img2.jpg";
-import FirstSlideBg from "../../assets/firstSlideBg.MP4"
 import Arrow from './arrow';
 import './carousel.css';
 import slides from './carouselData';
@@ -31,19 +29,6 @@ function NextArrow(props) {
 }
 
 const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,isButtonVisible ,index,buttonLink,currentSlide}) => {
-  const [isTapped, setIsTapped] = useState(false);
-  const handleTapStart = () => {
-    setIsTapped(true);
-  };
-  
-  const handleTapEnd = () => {
-    setIsTapped(false);
-   
-  };
-  
-  const handleTapCancel = () => {
-    setIsTapped(false);
-  };
   const isFirstSlide = index === 0;
   return (
     <div className="contentWrap">

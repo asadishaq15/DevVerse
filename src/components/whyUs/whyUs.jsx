@@ -4,6 +4,7 @@ import { faCogs, faClock, faShieldAlt, faWrench } from '@fortawesome/free-solid-
 import './whyUs.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import containerImage from "../../assets/whyUsContainerImage.webp"
 
 const WhyUS = () => {
   useEffect(() => {
@@ -91,7 +92,7 @@ const WhyUS = () => {
             </div>
           </div>
           <div className="photo-side" data-aos="fade-left">
-            <img src="https://cdn.pixabay.com/photo/2019/06/06/16/02/technology-4256272_1280.jpg" alt="Company Photo" className="photo" />
+            <img src={containerImage} alt="Company Photo" className="photo" />
           </div>
         </div>
       </div>

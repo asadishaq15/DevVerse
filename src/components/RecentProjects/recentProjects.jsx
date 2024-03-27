@@ -5,12 +5,12 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './recentProjects.css';
-import P1 from "../../images/Slider_1.png";
-import P2 from "../../images/Slider_2.png";
-import P3 from "../../images/Slider_3.png";
-import P4 from "../../images/Slider_4.png";
-import P6 from "../../images/Slider_6.png";
-import P7 from "../../images/Slider_7.png";
+import P1 from "../../images/Slider_1.webp";
+import P2 from "../../images/Slider_2.webp";
+import P3 from "../../images/Slider_3.webp";
+import P4 from "../../images/Slider_4.webp";
+import P6 from "../../images/Slider_6.webp";
+import P7 from "../../images/Slider_7.webp";
 import { Link } from 'react-router-dom';
 
 const RecentProjects = () => {

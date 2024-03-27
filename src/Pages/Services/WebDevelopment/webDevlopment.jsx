@@ -1,112 +1,89 @@
 import React, { useEffect } from 'react';
 import "./webDevelopment.css"
-import Link from '@mui/material/Link';
 import WebDevCategories from './categories/webDevCategories';
-import CMS from "../../../assets/CMS-Web-Development.png";
-import CRM from "../../../assets/CRM-handdrawn.jpg";
-import ecommerce from "../../../assets/E-Commerce.png";
+import CMS from "../../../assets/CMS-Web-Development.webp";
+import CRM from "../../../assets/CRM-handdrawn.webp";
+import ecommerce from "../../../assets/E-Commerce.webp";
 import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
 
-
 const WebDevelopmentPage = () => {
-  useEffect(()=>{
-    document.title='Best Web Design and Development';
-  },[]);
+  useEffect(() => {
+    document.title = 'Best Web Design and Development Company in Pakistan';
+  }, []);
+
   return (
     <div className="webDevelopmentMain">
-    <div className="web-development-page">
-      {/* Breadcrumb with background image */}
-      <Breadcrumb page="Best Web Development"/>
+      <div className="web-development-page">
+        {/* Breadcrumb with background image */}
+        <Breadcrumb page="Best Web Development" />
 
-      <div className="web-development-container">
-        <h2>Code For The Next Level Development</h2>
-        <p>
-          DevVerse, a very well renowned web development company currently working in Pakistan. 
-          We’re bunch of guys who’re adept and skillful web designers and we are master of this field. 
-          Site advancement has been an issue and we as web Development Company working enthusiastically to come up with first-rate solution.
-           We’ll keep on working until we get the job done. Here at DevVerse, you’ll get any web of your choice and it’s our responsibility to give you our best through our website maintenance services.
-        </p>
-        
-        <h2>Professional And Leading Web Design And Development Company</h2>
-        <p>
-          DevVerse Technologies is one of the leading web design and development company in Pakistan.
-           we provide tailored end-to-end web design & development services, which are rich in creativity, functional,
-            and highly flexible for your unique needs and preferences.
-
-          We offer extraordinary services in web designing to create brand’s visibility.
-           Our work helped us gain the recognition as best web design company and managed to create space in international industry as well.
-
-          Our experts create most affordable web design and development services considering the size of every business.
-           We hire the best resources to help you create flexible, user friendly, and trendsetting website in the market. 
-           DevVerse Technologies excells in web designing and development because we dive into customers’ 
-           business strategy and requirements to help create the competitive online presence.
-        </p>
-      </div>
-
-      <div className="CMS-container">
-        <div className="cms-content">
-          <div className="cms-Text-container">
-            <h2>Content Management System</h2>
-            <p>
-              Content management system (CMS) is considered a difficult task to maintain but we’re making it real simple 
-              by implementing our own techniques. Here our clients can survey and revise the content generated and this 
-              has done because of our web developers. By CMS web development, you can reach out to us.
-            </p>
-          </div>
-          {/* Second sub-container */}
-          <div className="cms-Image-container">
-            <img src={CMS} alt="CMS Image" />
-          </div>
-        </div>
-      </div>
-
-      <div className="CRM-container">
-        <div className="crm-Image-container">
-          <img src={CRM} alt="CRM Image" />
-        </div>
-        <div className="crm-Text-container">
-          <h2>Customer Relationship Management (CRM)</h2>
+        <div className="web-development-container">
+          <h2>Cutting-Edge Web Development Services</h2>
           <p>
-            A customer relationship management (CRM) is a tool allowing you to have better management of your business contacts. It offers the possibility of having a panel of marketing solutions in order to capture and build customer loyalty to your brand. Right now, a very good factor and a guarantee of reputation for a company is to ensure a unique relationship with its customers. At Elexoft, we set up a CRM based on your activity by defining the indicators that will be important to take into account. You will be able to process and analyze data relating to your customers and define good business planning.
+            DevVerse is a leading web development company based in Pakistan, offering cutting-edge solutions for businesses of all sizes. Our team of skilled web developers and designers specializes in creating high-performance, user-friendly, and visually stunning websites tailored to your unique needs.
           </p>
-          <h2>Our CRM expertise</h2>
-          <ul>
-            <li>After Sales</li>
-            <li>Assessment KPI's</li>
-            <li>Identification of Customer Needs</li>
-            <li>Customer Relationship</li>
-            <li>Improved Sales</li>
-            <li>Prospect Contact Base</li>
-            <li>Customer Follow-up</li>
-            <li>Marketing</li>
-          </ul>
-        </div>
-      </div>
 
-      <div className="Customization-container">
-        <div className="customization-content">
-          <div className="customization-Text-container">
-            <h2>Wordpress, Joomla, Shopify Customization</h2>
+          <h2>Professional Web Design and Development Experts</h2>
+          <p>
+            At DevVerse, we pride ourselves on being one of the top web design and development companies in Pakistan. Our end-to-end services encompass creativity, functionality, and flexibility, ensuring your website stands out in the digital landscape. Our affordable web design and development solutions cater to businesses of all scales, leveraging the latest trends and technologies to create a competitive online presence.
+          </p>
+        </div>
+
+        <div className="CMS-container">
+          <div className="cms-content">
+            <div className="cms-Text-container">
+              <h2>Content Management System (CMS) Development</h2>
+              <p>
+                Our expert web developers specialize in building robust and user-friendly Content Management Systems (CMS) that simplify content creation, management, and publishing. With our custom CMS solutions, you can easily update and maintain your website's content without any technical expertise.
+              </p>
+            </div>
+            {/* Second sub-container */}
+            <div className="cms-Image-container">
+              <img src={CMS} alt="CMS Web Development" />
+            </div>
+          </div>
+        </div>
+
+        <div className="CRM-container">
+          <div className="crm-Image-container">
+            <img src={CRM} alt="CRM Web Development" />
+          </div>
+          <div className="crm-Text-container">
+            <h2>Customer Relationship Management (CRM) Integration</h2>
             <p>
-              If you’re looking for Wordpress or Joomla, trust us that we’ve got it covered for you. 
-              In case you’re having any sort of inconvenience in your project or assignment, our web developers can make this job really easy for you. 
-              We’re a web developing company who is bringing much needed advancement in wordpress, joomla and shopify customization and we’re doing it in style. 
-              Through our shopify tool, you can sell your administration on your web and we can guide as best web development company. 
-              We’ll help you by all means in starting your any sort of entrepreneurship business and through our website maintenance services; 
-              you can make your business a big thing in a span of couple of weeks/months. In today’s world it is really hectic and tough to start an online 
-              merchandise store because you need absolute knowledge to get the ball rolling. But in our case, we can simply make it happen for you.
+              Enhance your customer experience with our seamless Customer Relationship Management (CRM) integration services. Our CRM solutions enable you to manage customer interactions, streamline sales processes, and gain valuable insights for better business planning and customer retention.
             </p>
-          </div>
-          {/* Second sub-container */}
-          <div className="customization-Image-container">
-            <img src={ecommerce} alt="Customization Image" />
+            <h2>Our CRM Expertise</h2>
+            <ul>
+              <li>After-Sales Support</li>
+              <li>KPI Tracking and Analysis</li>
+              <li>Customer Needs Identification</li>
+              <li>Customer Relationship Management</li>
+              <li>Sales Optimization</li>
+              <li>Prospect Database Management</li>
+              <li>Customer Follow-up Automation</li>
+              <li>Marketing Automation</li>
+            </ul>
           </div>
         </div>
-      </div>
-      
 
-    </div>
-    <WebDevCategories/>
+        <div className="Customization-container">
+          <div className="customization-content">
+            <div className="customization-Text-container">
+              <h2>WordPress, Joomla, and Shopify Customization</h2>
+              <p>
+                Whether you need a custom WordPress, Joomla, or Shopify website, our web development team has the expertise to deliver tailored solutions that meet your unique requirements. From e-commerce platforms to content management systems, we offer comprehensive customization services to ensure your website stands out and delivers an exceptional user experience.
+              </p>
+            </div>
+            {/* Second sub-container */}
+            <div className="customization-Image-container">
+              <img src={ecommerce} alt="E-commerce Web Development" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <WebDevCategories />
     </div>
   );
 };

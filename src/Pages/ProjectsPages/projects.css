@@ -1,5 +1,4 @@
 .breadcrumb-container {
-  background-image: url('');
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -12,9 +11,9 @@
 }
 
 
-.breadcrumb-heading {
-  text-align: center;
-  flex: 1;
+.breadcrumb-heading { text-align: center;
+  flex: 2;
+ 
 }
 .project-carousel-container .slick-track {
   display: flex !important;

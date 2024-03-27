@@ -5,12 +5,12 @@ import './Services.css';
 import { Link } from 'react-router-dom';
 import WebDevelopment from "../../assets/WebDevelopment.gif"
 import MobileApps from "../../assets/MobileAppsDev.png"
-import SEOServices from "../../assets/seo-services.png"
-import CRMDev from "../../assets/CRM.png"
+import SEOServices from "../../assets/seo-services.webp"
+import CRMDev from "../../assets/CRM.webp"
 import GraphicDesigning from "../../assets/GraphicDesigning.jpg"
-import DigitalMarketing from "../../assets/digital-marketing-5816304_640.jpg"
+import DigitalMarketing from "../../assets/digital-marketing-5816304_640.webp"
 import IOSApps from "../../assets/IOSDevelopment.png"
-import AndroidApps from "../../assets/Android-Applications.jpg"
+import AndroidApps from "../../assets/Android-Applications.webp"
 import ASO from "../../assets/AppStoreOpt.png"
 import headingBackground from "../../assets/ourServices.jpg"
 

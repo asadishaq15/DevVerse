@@ -3,16 +3,15 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Typography from '@mui/material/Typography';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import { Link } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import { IconButton } from '@mui/material';
 import '../projects.css';
-import img1 from "../../../images/Slider_1.png";
-import img2 from "../../../images/Slider_5.png";
+import img1 from "../../../images/Slider_1.webp";
+import img2 from "../../../images/Slider_5.webp";
 import RecentProjects from '../../../components/RecentProjects/recentProjects';
+import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
 
 const BARS = () => {
   
@@ -61,23 +60,7 @@ const BARS = () => {
   return (
     <div className="project-page-container">
       {/* Breadcrumb */}
-      <div className="breadcrumb-container">
-        {/* Material-UI Breadcrumbs */}
-        <div className="breadcrumb-heading">
-          <Typography variant="h1">BARS</Typography>
-        </div>
-        <div className="breadcrumb-text">
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link to="/" color="inherit" style={{ fontSize: "15px" }}>
-              <strong>Home</strong>
-            </Link>
-            <Link  to="/portfolio" color="inherit"style={{ fontSize: "15px" }}>
-              <strong>Portfolio</strong>
-            </Link>
-            <Typography color="textPrimary" style={{ fontSize: "13px" }}>Project</Typography>
-          </Breadcrumbs>
-        </div>
-      </div>
+      <Breadcrumb page="BARS"/>
 
       <div className="project-detail-container">
         {/* Carousel */}

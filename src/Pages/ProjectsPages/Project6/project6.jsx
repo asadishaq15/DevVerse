@@ -10,8 +10,9 @@ import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import { IconButton } from '@mui/material';
 import '../projects.css';
-import img6 from "../../../images/Slider_6.png";
+import img6 from "../../../images/Slider_6.webp";
 import RecentProjects from '../../../components/RecentProjects/recentProjects';
+import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
 
 const SwipeGallery = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -64,23 +65,7 @@ const SwipeGallery = () => {
   return (
     <div className="project-page-container">
       {/* Breadcrumb */}
-      <div className="breadcrumb-container">
-        {/* Material-UI Breadcrumbs */}
-        <div className="breadcrumb-heading">
-          <Typography variant="h1">Swipe Gallery</Typography>
-        </div>
-        <div className="breadcrumb-text">
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link to="/"  color="inherit" href="/" style={{ fontSize: "15px" }}>
-              <strong>Home</strong>
-            </Link>
-            <Link to="/portfolio"  color="inherit" href="/portfolio" style={{ fontSize: "15px" }}>
-              <strong>Portfolio</strong>
-            </Link>
-            <Typography color="textPrimary" style={{ fontSize: "13px" }}>Project</Typography>
-          </Breadcrumbs>
-        </div>
-      </div>
+      <Breadcrumb page="Swipe Gallery"/>
 
       <div className="project-detail-container">
         {/* Carousel */}

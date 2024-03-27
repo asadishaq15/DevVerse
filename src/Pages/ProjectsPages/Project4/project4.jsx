@@ -10,8 +10,9 @@ import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import { IconButton } from '@mui/material';
 import '../projects.css';
-import img4 from "../../../images/Slider_4.png";
+import img4 from "../../../images/Slider_4.webp";
 import RecentProjects from '../../../components/RecentProjects/recentProjects';
+import Breadcrumb from '../../../components/Breadcrumbs/breadcrumb';
 
 const OCEAM = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
@@ -63,23 +64,7 @@ const OCEAM = () => {
   return (
     <div className="project-page-container">
       {/* Breadcrumb */}
-      <div className="breadcrumb-container">
-        {/* Material-UI Breadcrumbs */}
-        <div className="breadcrumb-heading">
-          <Typography variant="h1">OCEAM</Typography>
-        </div>
-        <div className="breadcrumb-text">
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link to="/"  color="inherit" href="/" style={{ fontSize: "15px" }}>
-              <strong>Home</strong>
-            </Link>
-            <Link to="/portfolio"  color="inherit" href="/portfolio" style={{ fontSize: "15px" }}>
-              <strong>Portfolio</strong>
-            </Link>
-            <Typography color="textPrimary" style={{ fontSize: "13px" }}>Project</Typography>
-          </Breadcrumbs>
-        </div>
-      </div>
+      <Breadcrumb page="OCEAM"/>
 
       <div className="project-detail-container">
         {/* Carousel */}

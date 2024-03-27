@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
 import './TestimonialsBanner.css'; // Import the CSS file for styling
 import Clients from '../../clients/clients';
-import testimonialBackground from "../../../assets/home-testimonial-background.jpg"
+import testimonialBackground from "../../../assets/home-testimonial-background.webp"
 
 const TestimonialsBanner = () => {
   return (

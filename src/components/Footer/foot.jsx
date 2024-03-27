@@ -1,9 +1,9 @@
 import React from 'react';
 
-import CompanyLogo from "../../assets/0.1.png";
-import PsebLogo from "../../assets/secp logo.jpeg";
-import PakFlag from "../../assets/pak flag.png";
-import SaudiFlag from "../../assets/saudi flag.png";
+import CompanyLogo from "../../assets/01.webp";
+import PsebLogo from "../../assets/secp logo.webp";
+import PakFlag from "../../assets/pak flag.webp";
+import SaudiFlag from "../../assets/saudi flag.webp";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
