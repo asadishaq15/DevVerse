@@ -16,7 +16,7 @@ import sde from "../../assets/softwareDevelopment.webp"
         
           title1: "Web Development",
           title2: "Responsive & Reliable",
-          description: "We plan, design your website from start to finish, ensuring a high ROI for clients. Our major concern is client satisfaction.",
+          description: "We plan, design your website from start to finish, ensuring a high ROI for clients.",
           buttonText: "READ MORE",
           rightImageSrc: webDevelopment, 
           backgroundColor:"#e5e4e2 ",
@@ -37,7 +37,7 @@ import sde from "../../assets/softwareDevelopment.webp"
         
           title1: "Software Development",
           title2: "We Focus on Quality ",
-          description: "We work together with our Clients to build a Compelling Product that provide lasting excitement and value to our customers, We have Passionate, Creative, Experienced Developers.",
+          description: "We have passionate, creative, experienced developers",
           buttonText: "READ MORE",
           rightImageSrc: sde,
           backgroundColor:"#e5e4e2 ",
@@ -46,7 +46,7 @@ import sde from "../../assets/softwareDevelopment.webp"
         {
           title1: "Search Engine",
           title2: "Optimization",
-          description: "We start the SEO process with a full website audit and recommendations report. Our team will review your key metrics, perform keyword research, analyze your competitors, your linkscape, and key pages of your website, and create a detailed implementation plan.",
+          description: "We start SEO with a full website audit, keyword research, and competitor analysis.",
           buttonText: "READ MORE",
           rightImageSrc: seo,
           backgroundColor:"#bebebe  ",

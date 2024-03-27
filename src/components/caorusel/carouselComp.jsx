@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Arrow from './arrow';
 import './carousel.css';
 import slides from './carouselData';
+import workingplace from "../../assets/final-working-space.webp"
 import { Link } from 'react-router-dom';
 
 function PrevArrow(props) {
@@ -38,6 +39,22 @@ const SlideContent = ({ title1,title2, description, buttonText, rightImageSrc,is
         exit={{ opacity: 0, scale: 0.5 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         className="content"
+        style={{
+          width: '100%',
+          height: '100%',
+          position: 'relative',
+          ...(isFirstSlide && {
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${workingplace})`,            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+          }),
+        }}
+
       >
         {index === currentSlide && <div className="overlay"></div>}
         <div className="slide-content">
